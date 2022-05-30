@@ -14,7 +14,7 @@
   
   ##
  <div>
-    <img align="right" alt="Rafa-pic" height="150" style="border-radius:50px;" src="https://cdn.discordapp.com/attachments/980933879433166929/980940496815915058/Design_sem_nome.gif">
+    <img align="right" alt="atara-pic" height="150" style="border-radius:50px;" src="https://cdn.discordapp.com/attachments/980933879433166929/980940496815915058/Design_sem_nome.gif">
 </div>
   
 <div> 
