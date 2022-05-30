@@ -14,7 +14,8 @@
   
   ##
  <div>
-    <img align="right" alt="atara-pic" height="150" style="border-radius:50px;" src="https://cdn.discordapp.com/attachments/980933879433166929/980940496815915058/Design_sem_nome.gif">
+    <img align="right" alt="atara-pic" height="150" style="border-radius:50px;" src="https://user-images.githubusercontent.com/67087509/171060268-c5ebf44c-9679-476d-9fce-b406cbee8f4e.gif)
+">
 </div>
   
 <div> 
