@@ -2,7 +2,8 @@ nome: Gerar Dados
 
 em:
   horário: # executar a cada 12 horas
-    - cron: "* */12 * * * * workflow_dispatch:
+    
+workflow_dispatch:
 
 empregos:
   construir:
