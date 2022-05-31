@@ -2,8 +2,8 @@ nome: Gerar Dados
 
 em:
   horário: # executar a cada 12 horas
-    
-workflow_dispatch:
+    - cron: "* */12 * * * *
+  workflow_dispatch:
 
 empregos:
   construir:
@@ -14,7 +14,7 @@ empregos:
       - usos: Platane/snk@master
         id: snake-gif
         com:
-          github_user_name: atararossatti
+          github_user_name: duribeiro
           svg_out_path: dist/github-contribution-grid-snake.svg
 
       - usos: crazy-max/ghaction-github-pages@v2.1.3
