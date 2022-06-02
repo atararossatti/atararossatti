@@ -26,7 +26,8 @@
   <img align="center" alt="atara-linux" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg">
   <img align="center" alt="atara-windows" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg">
   <img align="center" alt="atara-gc" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg">
-                                                                                                                                             
+      <a></a>
+           <a></a>                                                                                                                                  
    <img align="right" alt="atara-pic" height="150" style="border-radius:50px;" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhETGeaAyZsEybRwKDHBEUlvAM1l5aME2T-L__iAzOnMbctJdNNsKINBCrO-H6wKbUd0aYvJ6d0te4Bx9M-kuVoeXRJChJ7i5kSKxWhFqJ2cmY6gnFJwcsxsuAhVCcrMVmMhiUg1k-dWwAo6EyBpklwhmxsZM1Zfqep7769_l_pO8wazT-ThuP2fzAm4Q/s320/Design_sem_nome.gif width=676&height=676">
  </div>
 
