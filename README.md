@@ -6,13 +6,14 @@
 
 <div align="center" dir="auto">
   <a href="https://github.com/atararossatti"> 
-   <img height="180em"src="https://github-readme-stats.vercel.app/api?username=atararossatti&count_private=true&include_all_commits=true&show_icons=true&theme=dracula&hide_border=false&show_owner=true" style="max-width: 100%;">
-   <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=atararossatti&theme=dracula&hide_border=false&&layout=compact" style="max-width: 100%;">
-   </a> 
+   <img height="180em"
+   src="https://camo.githubusercontent.com/953dd37976777f858b122763c51efc2bfe824f9ac2349e54cb93d85ede1a0452/68747470733a2f2f6769746875622d726561646d652d73746174732e76657263656c2e6170702f6170693f757365726e616d653d7261666162616c6c6572696e692673686f775f69636f6e733d74727565267468656d653d64726163756c6126696e636c7564655f616c6c5f636f6d6d6974733d7472756526636f756e745f707269766174653d74727565" data-canonical-src="https://github-readme-stats.vercel.app/api?username=atararossatti&amp;show_icons=true&amp;theme=dracula&amp;include_all_commits=true&amp;count_private=true">
+   <img height="180em"  src="https://camo.githubusercontent.com/73dc596043c316d78c506d53f5c0e74709f261e552f7073aeadef8a1a561d966/68747470733a2f2f6769746875622d726561646d652d73746174732e76657263656c2e6170702f6170692f746f702d6c616e67732f3f757365726e616d653d7261666162616c6c6572696e69266c61796f75743d636f6d70616374266c616e67735f636f756e743d37267468656d653d64726163756c61" data-canonical-src="https://github-readme-stats.vercel.app/api/top-langs/?username=atararossatti&amp;layout=compact&amp;langs_count=7&amp;theme=dracula>
+  </a> 
 </div>
 
-<div align="center" dir="auto">
-  <a href="https://github.com/atararossatti">
+##
+<div dir="auto">
   <img align="center" alt="atara-gc" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg">
   <img align="center" alt="atara-PHP" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-plain.svg">
   <img align="center" alt="atara-J" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg">
@@ -25,7 +26,8 @@
   <img align="center" alt="atara-linux" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg">
   <img align="center" alt="atara-windows" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg">
   <img align="center" alt="atara-gc" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg">
-  
+  <img align="right" alt="Rafa-pic" height="150" src="https://camo.githubusercontent.com/d8c497a4d2fb61ba1860e253d32713474fa63ae538d4a9d2ada45431af37ff74/68747470733a2f2f6d656469612e646973636f72646170702e6e65742f6174746163686d656e74732f3633393935363132373035363133343137382f3839303337333437383938383031333632382f5075626c696361636f65735f496e7374616772616d5f315f312e706e673f77696474683d363736266865696768743d363736" data-canonical-src="https://www.facebook.com/100009740650989/videos/738361930940334/" style="max-width: 100%;" _mstalt="101764">
+ </div>
 
 ##
   
