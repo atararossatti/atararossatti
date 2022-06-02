@@ -6,11 +6,11 @@
 
 
 <a href="https://github.com/anuraghazra/github-readme-stats">
-  <img align="center" width="45%" src="https://github-readme-stats.vercel.app/api?username=atararossatti&show_icons=true&theme=radical"/>
+  <img align="center" width="530em" src="https://github-readme-stats.vercel.app/api?username=atararossatti&show_icons=true&theme=radical"/>
 </a>
 
 <a href="https://github.com/anuraghazra/convoychat">
-  <img align="center" width="45%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=atararossatti&layout=compact&langs_count=7&theme=radical" />
+  <img align="center" width="530em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=atararossatti&layout=compact&langs_count=7&theme=radical" />
 </a>
 
 
