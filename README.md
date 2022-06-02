@@ -26,7 +26,8 @@
   <img align="center" alt="atara-linux" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg">
   <img align="center" alt="atara-windows" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg">
   <img align="center" alt="atara-gc" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg">
-  <img align="right" alt="Rafa-pic" height="150" src="https://camo.githubusercontent.com/d8c497a4d2fb61ba1860e253d32713474fa63ae538d4a9d2ada45431af37ff74/68747470733a2f2f6d656469612e646973636f72646170702e6e65742f6174746163686d656e74732f3633393935363132373035363133343137382f3839303337333437383938383031333632382f5075626c696361636f65735f496e7374616772616d5f315f312e706e673f77696474683d363736266865696768743d363736" data-canonical-src="https://www.facebook.com/100009740650989/videos/738361930940334/" style="max-width: 100%;" _mstalt="101764">
+                                                                                                                                             
+   <img align="right" alt="atara-pic" height="150" style="border-radius:50px;" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhETGeaAyZsEybRwKDHBEUlvAM1l5aME2T-L__iAzOnMbctJdNNsKINBCrO-H6wKbUd0aYvJ6d0te4Bx9M-kuVoeXRJChJ7i5kSKxWhFqJ2cmY6gnFJwcsxsuAhVCcrMVmMhiUg1k-dWwAo6EyBpklwhmxsZM1Zfqep7769_l_pO8wazT-ThuP2fzAm4Q/s320/Design_sem_nome.gif width=676&height=676">
  </div>
 
 ##
