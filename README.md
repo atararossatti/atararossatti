@@ -4,15 +4,15 @@
  ✍️ Estudando Análise e Desenvolvimento de Sistemas
  😊 Pronouns: ela/dela
 
-<div align="justify">
+<div align="center" dir="auto">
   <a href="https://github.com/atararossatti"> 
-   <img height="160em" width"500em" src="https://github-readme-stats.vercel.app/api?username=atararossatti&count_private=true&include_all_commits=true&show_icons=true&theme=dracula&hide_border=false&show_owner=true">
-   <img height="160em" width="500em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=atararossatti&theme=dracula&hide_border=false&&layout=compact">
+   <img height="180em"src="https://github-readme-stats.vercel.app/api?username=atararossatti&count_private=true&include_all_commits=true&show_icons=true&theme=dracula&hide_border=false&show_owner=true" style="max-width: 100%;">
+   <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=atararossatti&theme=dracula&hide_border=false&&layout=compact" style="max-width: 100%;">
    </a> 
 </div>
 
-
-<div align="center" valign="top"><br>
+<div align="center" dir="auto">
+  <a href="https://github.com/atararossatti">
   <img align="center" alt="atara-gc" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg">
   <img align="center" alt="atara-PHP" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-plain.svg">
   <img align="center" alt="atara-J" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg">
