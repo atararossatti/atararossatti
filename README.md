@@ -4,11 +4,11 @@
  ✍️ Estudando Análise e Desenvolvimento de Sistemas
  😊 Pronouns: ela/dela
 
-<div align="center">
-  <a href="https://github.com/atararossatti">
-   <img height="150em" width="500" src="https://github-readme-stats.vercel.app/api?username=atararossatti&count_private=true&include_all_commits=true&show_icons=true&theme=dracula&hide_border=false&show_owner=true">
-   <img height="150em" width="500" src="https://github-readme-stats.vercel.app/api/top-langs/?username=atararossatti&theme=dracula&hide_border=false&&layout=compact">
-  </a>
+<div align="justify">
+  <a href="https://github.com/atararossatti"> 
+   <img height="160em" width"500em" src="https://github-readme-stats.vercel.app/api?username=atararossatti&count_private=true&include_all_commits=true&show_icons=true&theme=dracula&hide_border=false&show_owner=true">
+   <img height="160em" width="500em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=atararossatti&theme=dracula&hide_border=false&&layout=compact">
+   </a> 
 </div>
 
 
