@@ -4,15 +4,14 @@
  ✍️ Estudando Análise e Desenvolvimento de Sistemas
  😊 Pronouns: ela/dela
 
-
-<a href="https://github.com/anuraghazra/github-readme-stats">
-  <img align="center" width="530em" src="https://github-readme-stats.vercel.app/api?username=atararossatti&show_icons=true&theme=radical"/>
+<div align="center">
+<a href="https://github.com/atararossatti">
+  <img align="center" width="530em" src="https://github-readme-stats.vercel.app/api?username=atararossatti&show_icons=true&theme=dracula&include_all_commits=true&count_private=true"/>
 </a>
-
-<a href="https://github.com/anuraghazra/convoychat">
-  <img align="center" width="530em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=atararossatti&layout=compact&langs_count=7&theme=radical" />
+<a>
+  <img align="center" width="530em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=atararossatti&layout=compact&langs_count=7&theme=dracula" />
 </a>
-
+</div>
 
 
   
