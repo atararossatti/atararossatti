@@ -1,7 +1,7 @@
 ### Oii!! Eu sou Atara Rossatti 👋
 
  💼 Hoje trabalho com front-end 
- ✍️ Estudando Análise e Desenvolvimento de Sistemas
+ ✍️ Graduada em Análise e Desenvolvimento de Sistemas
  😊 Pronouns: ela/dela
 
 <div align="center">
