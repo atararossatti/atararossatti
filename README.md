@@ -3,18 +3,6 @@
  💼 Hoje trabalho com front-end 
  ✍️ Graduada em Análise e Desenvolvimento de Sistemas
  😊 Pronouns: ela/dela
-
-<div align="center">
-<a href="https://github.com/atararossatti">
-  <img align="center" width="530em" src="https://github-readme-stats.vercel.app/api?username=atararossatti&show_icons=true&theme=dracula&include_all_commits=true&count_private=true"/>
-</a>
-<a>
-  <img align="center" width="530em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=atararossatti&layout=compact&langs_count=7&theme=dracula" />
-</a>
-</div>
-
-
-  
  
 
 ##
