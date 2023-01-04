@@ -19,8 +19,8 @@ Analysis and Systems Development 👩🏻‍🎓</p></h3>
  
 <div align="center">
   <a href="https://github.com/atararossatti">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=atararossatti&show_icons=true&hide=contribs,prs&cache_seconds=86400&theme=monokai"/>
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=atararossatti&layout=compact&langs_count=7&theme=monokai"/>
+  <img height="130em" src="https://github-readme-stats.vercel.app/api?username=atararossatti&show_icons=true&hide=contribs,prs&cache_seconds=86400&theme=monokai"/>
+  <img height="130em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=atararossatti&layout=compact&langs_count=7&theme=monokai"/>
   <img align="right" alt="atara-pic" height="150" style="border-radius:50px;" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhETGeaAyZsEybRwKDHBEUlvAM1l5aME2T-L__iAzOnMbctJdNNsKINBCrO-H6wKbUd0aYvJ6d0te4Bx9M-kuVoeXRJChJ7i5kSKxWhFqJ2cmY6gnFJwcsxsuAhVCcrMVmMhiUg1k-dWwAo6EyBpklwhmxsZM1Zfqep7769_l_pO8wazT-ThuP2fzAm4Q/s320/Design_sem_nome.gif width=676&height=676">
 </div>
 
