@@ -1,6 +1,6 @@
 <div align="center">
    <h1>Hi there, I'm <a href="https://hemant.codes">Átara Rossatti</a> <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25px"> </h1>
-   <img src="https://pronoun.cyou/x/y?subject=She&object=Herm&height=20"> 
+   <img src="https://pronoun.cyou/x/y?subject=She&object=Her&height=20"> 
 </div>
 
 <p align='center'>
@@ -13,7 +13,7 @@
  </p>
  
  <div align="center">
-<h3><img src="https://www.alura.com.br/artigos/assets/como-criar-um-readme-para-seu-perfil-github/imagem14.gif" width="40"> 🙎 Atara Rossatti | 💻 Front-end Web Developer | 🛸 São Paulo , BR <img src="https://www.alura.com.br/artigos/assets/como-criar-um-readme-para-seu-perfil-github/imagem14.gif" width="40"></h3>
+<h3><img src="https://www.alura.com.br/artigos/assets/como-criar-um-readme-para-seu-perfil-github/imagem14.gif" width="40"> 🙎 Atara Rossatti | 💻 Front-end Web Developer | 🛸 São Paulo - BR  <img src="https://www.alura.com.br/artigos/assets/como-criar-um-readme-para-seu-perfil-github/imagem14.gif" width="40"><p> Formada em Análise e Desenvolvimento de Sistemas 👩🏻‍🎓</p></h3>
 </div>
  
 <div align="center">
