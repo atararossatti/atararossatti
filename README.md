@@ -13,7 +13,8 @@
  </p>
  
  <div align="center">
-<h3><img src="https://www.alura.com.br/artigos/assets/como-criar-um-readme-para-seu-perfil-github/imagem14.gif" width="40"> 🙎 Atara Rossatti | 💻 Front-end Web Developer | 🛸 São Paulo - BR  <img src="https://www.alura.com.br/artigos/assets/como-criar-um-readme-para-seu-perfil-github/imagem14.gif" width="40"><p> Formada em Análise e Desenvolvimento de Sistemas 👩🏻‍🎓</p></h3>
+<h3><img src="https://www.alura.com.br/artigos/assets/como-criar-um-readme-para-seu-perfil-github/imagem14.gif" width="40"> 🙎 Atara Rossatti | 💻 Front-end Web Developer | 🛸 São Paulo - BR  <img src="https://www.alura.com.br/artigos/assets/como-criar-um-readme-para-seu-perfil-github/imagem14.gif" width="40"><p> 
+Analysis and Systems Development 👩🏻‍🎓</p></h3>
 </div>
  
 <div align="center">
