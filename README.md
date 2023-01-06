@@ -58,7 +58,9 @@ Analysis and Systems Development 👩🏻‍🎓</p></h3>
 </div>
 
 <p align="center">
- <img src= "https://img.icons8.com/emoji/512/spain-emoji.png" width="40">
- <img src= "https://img.icons8.com/emoji/512/us-outlying-islands-emoji.png" width="40">
- <img src= "https://img.icons8.com/emoji/512/brazil-emoji.png" width="40">
+  <img src= "https://img.icons8.com/emoji/512/brazil-emoji.png" width="40">
+  <img src= "https://img.icons8.com/emoji/512/us-outlying-islands-emoji.png" width="40">
+  <img src= "https://img.icons8.com/emoji/512/spain-emoji.png" width="40">
+ 
+ 
               
