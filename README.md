@@ -46,12 +46,12 @@ Analysis and Systems Development 👩🏻‍🎓</p></h3>
   <img 
     src="https://camo.githubusercontent.com/fc89ac8e9f000fbbe267257034e95a1ce517ae280cd49d155ce8673aa400314c/68747470733a2f2f692e6962622e636f2f667030327167792f696d6167652d72656d6f766562672d707265766965772d372e706e67" 
     alt="kiki" 
-    style="height: 500px; margin-right: 10px;"
+    style="height: 400px; margin-right: 10px;"
   >
   <img 
     src="https://media.giphy.com/media/f9XgHHnPnDjOF1hWpl/giphy.gif" 
     alt="Gif Animation" 
-    style="height: 500px;"
+    style="height: 400px;"
   >
 </div>
 
