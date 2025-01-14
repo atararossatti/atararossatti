@@ -1,4 +1,8 @@
  <div align="center">
+   <h1>Hi there, I'm <a href="https://hemant.codes">Átara Rossatti</a> <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25px"> </h1>
+    
+</div>
+ <div align="center">
 <h3><img src="https://www.alura.com.br/artigos/assets/como-criar-um-readme-para-seu-perfil-github/imagem14.gif" width="40"> 🙎 Atara Rossatti | 💻 Front-end Web Developer | 🛸 São Paulo - BR  <img src="https://www.alura.com.br/artigos/assets/como-criar-um-readme-para-seu-perfil-github/imagem14.gif" width="40"><p> 
 Analysis and Systems Development 👩🏻‍🎓</p></h3>
 </div>
