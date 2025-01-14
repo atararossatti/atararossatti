@@ -46,17 +46,3 @@ Analysis and Systems Development 👩🏻‍🎓</p></h3>
    <img src="https://media.giphy.com/media/f9XgHHnPnDjOF1hWpl/giphy.gif" />
    </div>
  
-  <div align="center">
-  <p>Feito com :heart: </p>
-</div>
-
-<p align="center">
-  <img src= "https://img.icons8.com/emoji/512/brazil-emoji.png" width="40">
-  <img src= "https://img.icons8.com/emoji/512/us-outlying-islands-emoji.png" width="40">
-  <img src= "https://img.icons8.com/emoji/512/spain-emoji.png" width="40">
- 
- <div align="center">
-   <h1>Hi there, I'm <a href="https://hemant.codes">Átara Rossatti</a> <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25px"> </h1>
-    
-</div>
-              
