@@ -10,14 +10,14 @@
 <h3 align="center">Sou Desenvolvedora Full-Stack e Designer UX/UI</h3>
 
 
-<p>
-    <img align="left" src="./General_Pinguim.webp" width="150" height="150" style="margin-right: 10px;"/>
-    🏅 Participe do Hackathon Anatel <a href="https://g1.globo.com/sp/sao-paulo/noticia/2024/09/29/apos-promover-desafio-anatel-seleciona-3-melhores-solucoes-para-acabar-com-tv-boxes-ilegais.ghtml?kclid=P70KwpF6jI5KWOWW">TV Boxes ilegal</a><br>
-    📝 Participei do Hackathon Visite São Paulo <a href="https://www.linkedin.com/feed/update/urn:li:activity:7257178025828491265/">Aplicativo para Turismo em São Paulo</a><br>
-    📞 Você pode me contatar através do <a href="https://wa.me/+5511961187372">Telefone</a><br>
-    👨‍💻 Conheça minhas experiências <a href="https://www.linkedin.com/in/atarasilva/">LinkedIn</a><br>
-    📫 Ou me envie um e-mail para <b>atarasilva@hotmail.com</b>
-</p>
+
+
+- 🏅 Participe do Hackathon Anatel [TV Boxes ilegal](https://g1.globo.com/sp/sao-paulo/noticia/2024/09/29/apos-promover-desafio-anatel-seleciona-3-melhores-solucoes-para-acabar-com-tv-boxes-ilegais.ghtml?kclid=P70KwpF6jI5KWOWW)
+- 📝 Participei do Hackathon Visite São Paulo [Aplicativo para Turismo em São Paulo](https://www.linkedin.com/feed/update/urn:li:activity:7257178025828491265/)
+- 📞 Você pode me contatar através do [Telefone](https://wa.me/+5511961187372)
+- 👨‍💻 Conheça minhas experiências [https://www.linkedin.com/in/atarasilva/](https://www.linkedin.com/in/atarasilva/)
+- 📫 Ou me envie um e-mail para **atarasilva@hotmail.com**
+
 
 <img src="https://github.com/atararossatti/atararossatti/blob/output/github-contribution-grid-snake.svg" alt="Snake animation" />
 
