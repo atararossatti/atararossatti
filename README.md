@@ -1,23 +1,47 @@
- <div align="center">
-   <h1>Hi there, I'm <a href="https://hemant.codes">Átara Rossatti</a> <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25px"> </h1>
-    
-</div>
- <div align="center">
-<h3><img src="https://www.alura.com.br/artigos/assets/como-criar-um-readme-para-seu-perfil-github/imagem14.gif" width="40"> 🙎 Atara Rossatti | 💻 Front-end Web Developer | 🛸 São Paulo - BR  <img src="https://www.alura.com.br/artigos/assets/como-criar-um-readme-para-seu-perfil-github/imagem14.gif" width="40"><p> 
-Analysis and Systems Development 👩🏻‍🎓</p></h3>
-</div>
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=atararossatti&label=Profile%20views&color=0e75b6&style=flat" alt="atararossatti" /> </p>
+<a href='https://www.linkedin.com/in/atarasilva/' target="_blank"><img width="100%" src="./ar_dev.png"></a>
+<a href="https://img.shields.io/badge/Star-Nominate%20@atararossatti-ffdd00.svg?"><img src="https://img.shields.io/badge/Star-Nominate%20@atararossatti-ffdd00.svg?logo=github&labelColor=181717&longCache=true&style=for-the-badge" alt="Star Nominate @atararossatti"></a>
+<a href = "mailto:atarasilva@hotmail.com"><img src= "https://img.shields.io/badge/Microsoft_Outlook-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white" target="_blank"></a> 
+<a href="https://www.linkedin.com/in/atararsilva/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
+<a href="https://www.youtube.com/channel/UCTKuBkzcLU78PTAn6B8j99w" target="_blank"><img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" target="_blank"></a>
+<a href="https://www.instagram.com/atara_rossatti/" target="_blank"><img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a>
+<a href="https://www.twitch.tv/sixty0" target="_blank"><img src="https://img.shields.io/badge/Twitch-9146FF?style=for-the-badge&logo=twitch&logoColor=white" target="_blank"></a>
+<h1 align="center">Olá 👋, sou Atara Rossatti</h1>
+<h3 align="center">Sou Desenvolvedora Full-Stack e Designer UX/UI</h3>
 
-<p align='center'>
-   <a href="https://www.youtube.com/channel/UCTKuBkzcLU78PTAn6B8j99w" target="_blank"><img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" target="_blank"></a>
-  <a href="https://www.instagram.com/um_raio_de_sol_/" target="_blank"><img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a>
-  <a href="https://www.twitch.tv/sixty0" target="_blank"><img src="https://img.shields.io/badge/Twitch-9146FF?style=for-the-badge&logo=twitch&logoColor=white" target="_blank"></a>
- <a href="https://discord.gg/vNgekgG4ta" target="_blank"><img src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white" target="_blank"></a> 
-  <a href = "mailto:atarasilva@hotmail.com"><img src= "https://img.shields.io/badge/Microsoft_Outlook-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white" target="_blank"></a>
-  <a href="https://www.linkedin.com/in/atararsilva/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
- </p>
 
-<img style="display: block;-webkit-user-select: none;margin: auto;cursor: zoom-in;background-color: hsl(0, 0%, 90%);" src="https://user-images.githubusercontent.com/74038190/212747903-e9bdf048-2dc8-41f9-b973-0e72ff07bfba.gif" width="1050" height="469"> 
+<p>
+    <img align="left" src="./General_Pinguim.webp" width="150" height="150" style="margin-right: 10px;"/>
+    🏅 Participe do Hackathon Anatel <a href="https://g1.globo.com/sp/sao-paulo/noticia/2024/09/29/apos-promover-desafio-anatel-seleciona-3-melhores-solucoes-para-acabar-com-tv-boxes-ilegais.ghtml?kclid=P70KwpF6jI5KWOWW">TV Boxes ilegal</a><br>
+    📝 Participei do Hackathon Visite São Paulo <a href="https://www.linkedin.com/feed/update/urn:li:activity:7257178025828491265/">Aplicativo para Turismo em São Paulo</a><br>
+    📞 Você pode me contatar através do <a href="https://wa.me/+5511961187372">Telefone</a><br>
+    👨‍💻 Conheça minhas experiências <a href="https://www.linkedin.com/in/atarasilva/">LinkedIn</a><br>
+    📫 Ou me envie um e-mail para <b>atarasilva@hotmail.com</b>
+</p>
 
+<img src="https://github.com/atararossatti/atararossatti/blob/output/github-contribution-grid-snake.svg" alt="Snake animation" />
+
+<img align="center" src="https://github-profile-trophy.vercel.app/?username=atararossatti&theme=darkhub&no-frame=true&margin-w=15&column=2" alt="GitHub Trophies" />
+
+
+
+
+
+
+
+<img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=atararossatti&show_icons=true&locale=en&layout=compact&theme=dark" alt="atararossatti" />
+<img align="center" src="https://github-readme-stats.vercel.app/api?username=atararossatti&show_icons=true&locale=en&theme=dark" alt="atararossatti" style="width: 40%; max-width: 400px;" />
+<img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=atararossatti&theme=dark" alt="atararossatti" style="width: 40%; max-width: 500px;" />
+
+ 
+ 
+
+
+   
+ 
+  
+ 
+ 
  ### - Languages and Tools...
 
 
