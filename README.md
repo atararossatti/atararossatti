@@ -4,9 +4,13 @@
 <a href='https://www.linkedin.com/in/atarasilva/' target="_blank"><img width="100%" src="./ar_dev.png"></a>
 <a href="https://img.shields.io/badge/Star-Nominate%20@atararossatti-ffdd00.svg?"><img src="https://img.shields.io/badge/Star-Nominate%20@atararossatti-ffdd00.svg?logo=github&labelColor=181717&longCache=true&style=for-the-badge" alt="Star Nominate @atararossatti"></a>
 <a href="https://www.linkedin.com/in/atararsilva/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
-<a href="https://www.youtube.com/channel/UCTKuBkzcLU78PTAn6B8j99w" target="_blank"><img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" target="_blank"></a>
 <a href="https://www.facebook.com/ataraross" target="_blank"><img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" alt="Facebook" /></a>
 <a href="https://www.instagram.com/atara_rossatti/" target="_blank"><img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a>
+<a href="https://dev.to/atararossatti" target="_blank"><img src="https://img.shields.io/badge/Dev.to-0A0A0A?style=for-the-badge&logo=devdotto&logoColor=white" target="_blank"></a>
+<a href="https://stackoverflow.com/users/atararossatti" target="_blank"><img src="https://img.shields.io/badge/Stack%20Overflow-FE7A16?style=for-the-badge&logo=stack-overflow&logoColor=white" target="_blank"></a>
+<a href="https://cursos.alura.com.br/certificate/atara-rossatti/figma-construindo-layout-primeiro-site-mobile" target="_blank"><img src="https://img.shields.io/badge/Alura-2F6D92?style=for-the-badge&logo=alura&logoColor=white" target="_blank"></a>
+
+
 </div>
 
 <h1 align="center">Olá 👋, sou Atara Rossatti</h1>
@@ -22,11 +26,17 @@
     📫 Ou me envie um e-mail para <b>atarasilva@hotmail.com</b>
 </p>
 
+[![Certificado Credly](https://images.credly.com/size/110x110/images/25b13818-6498-47e7-a2b5-83852dacabf2/blob)](https://www.credly.com/badges/8ebc4ed7-fc22-40ac-905b-3aeadc437996/public_url)
+[![Certificado Credly](https://images.credly.com/size/110x110/images/52ea4613-6f77-4d62-8e19-5bb5c51722b8/blob)](https://www.credly.com/badges/eb37ba60-d984-4580-adea-1f1ce2abac09/public_url)
+[![Certificado Credly](https://images.credly.com/size/110x110/images/712a773b-9acc-4bc8-90fa-6afdfc95da1e/image.png)](https://www.credly.com/badges/2314d46d-07d5-4dad-a4a8-0b4aa8e13ab8/public_url)
+<a href="https://www.credly.com/badges/b6384d16-3412-4ee5-830c-73a90abd7df4/public_url"><img src="https://brasil.certiprof.com/cdn/shop/files/Fundamentos_da_Lei_Geral_de_Prote_o_de_Dados_LGPDF_480x480.webp?v=1733256864" width="115" height="115" /></a>
+[![Certificado Credly](https://images.credly.com/size/110x110/images/4e3d6f9f-55d7-4ea7-b0e6-f4d4ff543e22/image.png)](https://www.credly.com/badges/1ba73005-0f15-49f2-b97b-ca90c7f30ba4/public_url)
 
 
 <img src="https://github.com/atararossatti/atararossatti/blob/output/github-contribution-grid-snake.svg" alt="Snake animation" />
 
 <img align="center" src="https://github-profile-trophy.vercel.app/?username=atararossatti&theme=darkhub&no-frame=true&margin-w=15&column=2" alt="GitHub Trophies" />
+
 
 
 
