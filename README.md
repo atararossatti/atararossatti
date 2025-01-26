@@ -69,6 +69,11 @@
 <a href="https://www.credly.com/badges/1ba73005-0f15-49f2-b97b-ca90c7f30ba4/public_url"><img src="https://images.credly.com/size/110x110/images/4e3d6f9f-55d7-4ea7-b0e6-f4d4ff543e22/image.png" alt="Emblema 5" width="110" height="110" /></a>
 </p>
 
+- 🌍 Unindo expertise técnica e visão estratégica para construir o futuro da tecnologia. Com sólida experiência em trabalho remoto, sou adepta da colaboração global e da inovação, usando ferramentas e metodologias ágeis como Scrum para entregar resultados consistentes e de alta qualidade.
+- 🔐 Especialista em Cybersecurity e Proteção de Dados, dedico-me a criar ambientes digitais seguros e confiáveis, protegendo informações críticas e assegurando conformidade com as melhores práticas e regulamentações.
+- 📈 Acredito que tecnologia não é apenas sobre código, mas sobre impactar pessoas e transformar negócios. Meu compromisso é ir além dos desafios, buscando soluções que entreguem valor real, eficiência e segurança.
+- 💡 **Inovação guiada por propósito e impulsionada pela excelência!**
+
 <p align="center"><img src="https://github.com/atararossatti/atararossatti/blob/output/github-contribution-grid-snake.svg" alt="Snake animation" /></p>
 <p align="center"><img align="center" src="https://github-profile-trophy.vercel.app/?username=atararossatti&theme=darkhub&no-frame=true&margin-w=15&column=5" alt="GitHub Trophies" /></p>
 
