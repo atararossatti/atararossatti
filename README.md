@@ -47,7 +47,16 @@
   <img src="https://camo.githubusercontent.com/5ad6679a100599b10c6833c4c4eb5e7128b58e66a1f95f77fb87bfc791b4dd24/68747470733a2f2f63756c746f667468657061727479706172726f742e636f6d2f706172726f74732f68642f676974687562706172726f742e676966" alt="Passaro 1" width="45" height="45">
   </p>
   
+<table align="center">
+  <h3 align="center">🎨Projetos</h3>
+  <tr>
+  <td align="center"><img src="./Project Llhama Impact.gif" width="200" height="200"><br>Projeto Lhama Impact</td>
+  <td align="center"><img src="./Aplicativo Turismo sao paulo.gif" width="300" height="200"><br>Aplicativo Turismo São Paulo</td>
+  <td align="center"><img src="./Project Dashboard.gif" width="200" height="200"><br>Projeto Dashboard</td>
+  </tr>
+</table>
 
+<br><br><br> <!-- Adiciona três quebras de linha para aumentar o espaço -->
 
 <h3 align="center">🏆 Meus Emblemas</h3>
 
@@ -60,11 +69,10 @@
 </p>
 
 <p align="center"><img src="https://github.com/atararossatti/atararossatti/blob/output/github-contribution-grid-snake.svg" alt="Snake animation" /></p>
-
-
 <p align="center"><img align="center" src="https://github-profile-trophy.vercel.app/?username=atararossatti&theme=darkhub&no-frame=true&margin-w=15&column=5" alt="GitHub Trophies" /></p>
 
 
+<br><br><br> <!-- Adiciona três quebras de linha para aumentar o espaço -->
 
 <p align="center">
   <img src="https://camo.githubusercontent.com/5ad6679a100599b10c6833c4c4eb5e7128b58e66a1f95f77fb87bfc791b4dd24/68747470733a2f2f63756c746f667468657061727479706172726f742e636f6d2f706172726f74732f68642f676974687562706172726f742e676966" alt="Passaro 1" width="45" height="45">
@@ -120,25 +128,11 @@
   <a href="https://reactnative.dev/" target="_blank" rel="noreferrer"> <img src="https://reactnative.dev/img/header_logo.svg" alt="reactnative" width="40" height="40"/></a> 
   <a href="https://vuejs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original-wordmark.svg" alt="vuejs" width="40" height="40"/></a> 
 </p>
- <br><br><br> <!-- Adiciona três quebras de linha para aumentar o espaço -->
+<br><br><br> <!-- Adiciona três quebras de linha para aumentar o espaço -->
 
-<h3 align="center">🎨 Projetos</h3>
 
-<table align="center">
-  <tr>
-    <td align="center"><img src="./Project Llhama Impact.gif" width="200" height="200"><br>
-Projeto Lhama Impact
-    </td>
-    <td align="center">
-      <img src="./Aplicativo Turismo sao paulo.gif" width="300" height="200"><br>
-      Aplicativo Turismo São Paulo
-    </td>
-    <td align="center">
-      <img src="./Project Dashboard.gif" width="200" height="200"><br>
-      Projeto Dashboard
-    </td>
-  </tr>
-</table>
+
+
 
 
 
