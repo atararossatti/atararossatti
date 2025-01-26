@@ -120,10 +120,29 @@
   <a href="https://reactnative.dev/" target="_blank" rel="noreferrer"> <img src="https://reactnative.dev/img/header_logo.svg" alt="reactnative" width="40" height="40"/></a> 
   <a href="https://vuejs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original-wordmark.svg" alt="vuejs" width="40" height="40"/></a> 
 </p>
- 
-  
- 
- 
+ <br><br><br> <!-- Adiciona três quebras de linha para aumentar o espaço -->
+
+<h3 align="center">🎨 Projetos</h3>
+
+<table align="center">
+  <tr>
+    <td align="center"><img src="./Project Llhama Impact.gif" width="200" height="200"><br>
+Projeto Lhama Impact
+    </td>
+    <td align="center">
+      <img src="./Aplicativo Turismo sao paulo.gif" width="300" height="200"><br>
+      Aplicativo Turismo São Paulo
+    </td>
+    <td align="center">
+      <img src="./Project Dashboard.gif" width="200" height="200"><br>
+      Projeto Dashboard
+    </td>
+  </tr>
+</table>
+
+
+
+
 
 
 
