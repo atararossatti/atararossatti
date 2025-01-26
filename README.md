@@ -26,22 +26,31 @@
 </p>
 
 <br><br><br> <!-- Adiciona três quebras de linha para aumentar o espaço -->
-
 <p align="center">
-  <img src="./Vg1.gif" alt="Descrição da Imagem 1" width="100" height="100">
-  <img src="./Vg1.gif" alt="Descrição da Imagem 2" width="100" height="100">
-  <img src="./Vg1.gif" alt="Descrição da Imagem 3" width="100" height="100">
-  <img src="./Vg1.gif" alt="Descrição da Imagem 4" width="100" height="100">
-  <img src="./Vg1.gif" alt="Descrição da Imagem 1" width="100" height="100">
-  <img src="./Vg1.gif" alt="Descrição da Imagem 2" width="100" height="100">
-  <img src="./Vg1.gif" alt="Descrição da Imagem 3" width="100" height="100">
-  <img src="./Vg1.gif" alt="Descrição da Imagem 4" width="100" height="100">
-</p>
+  <img src="https://camo.githubusercontent.com/5ad6679a100599b10c6833c4c4eb5e7128b58e66a1f95f77fb87bfc791b4dd24/68747470733a2f2f63756c746f667468657061727479706172726f742e636f6d2f706172726f74732f68642f676974687562706172726f742e676966" alt="Passaro 1" width="45" height="45">
+  <img src="https://user-images.githubusercontent.com/74038190/216120974-24a76b31-7f39-41f1-a38f-b3c1377cc612.png" alt="café1" width="45" height="45">
+  <img src="https://camo.githubusercontent.com/428feb3c47baf3db1e34cdd839386a3d4bbe6c2c4b2671111f4c0edff0bedae0/68747470733a2f2f63756c746f667468657061727479706172726f742e636f6d2f666c6167732f68642f6972616e706172726f742e676966" alt="passaro2" width="45" height="45">
+  <img src="https://user-images.githubusercontent.com/74038190/216120974-24a76b31-7f39-41f1-a38f-b3c1377cc612.png" alt="café2" width="45" height="45">
+  <img src="https://camo.githubusercontent.com/ff4478f93581788c3f10a8961c0622cc36f37c7115f91a6b68443726005d4a43/68747470733a2f2f63756c746f667468657061727479706172726f742e636f6d2f706172726f74732f68642f3630667073706172726f742e676966" alt="passaro3" width="45" height="45">
+  <img src="https://user-images.githubusercontent.com/74038190/216120974-24a76b31-7f39-41f1-a38f-b3c1377cc612.png" alt="cafe3" width="45" height="45">
+  <img src="https://camo.githubusercontent.com/9cb8ee82745871e1145ec14cf88678cd603543778df5007c77e219e933fae8b1/68747470733a2f2f63756c746f667468657061727479706172726f742e636f6d2f706172726f74732f68642f6465616c7769746869746e6f77706172726f742e676966" alt="passaro4" width="45" height="45">
+  <img src="https://user-images.githubusercontent.com/74038190/216120974-24a76b31-7f39-41f1-a38f-b3c1377cc612.png" alt="cafe4" width="45" height="45">
+  <img src="https://camo.githubusercontent.com/5ad6679a100599b10c6833c4c4eb5e7128b58e66a1f95f77fb87bfc791b4dd24/68747470733a2f2f63756c746f667468657061727479706172726f742e636f6d2f706172726f74732f68642f676974687562706172726f742e676966" alt="Passaro 1" width="45" height="45">
+  <img src="https://user-images.githubusercontent.com/74038190/216120974-24a76b31-7f39-41f1-a38f-b3c1377cc612.png" alt="café1" width="45" height="45">
+  <img src="https://camo.githubusercontent.com/428feb3c47baf3db1e34cdd839386a3d4bbe6c2c4b2671111f4c0edff0bedae0/68747470733a2f2f63756c746f667468657061727479706172726f742e636f6d2f666c6167732f68642f6972616e706172726f742e676966" alt="passaro2" width="45" height="45">
+  <img src="https://user-images.githubusercontent.com/74038190/216120974-24a76b31-7f39-41f1-a38f-b3c1377cc612.png" alt="café2" width="45" height="45">
+  <img src="https://camo.githubusercontent.com/ff4478f93581788c3f10a8961c0622cc36f37c7115f91a6b68443726005d4a43/68747470733a2f2f63756c746f667468657061727479706172726f742e636f6d2f706172726f74732f68642f3630667073706172726f742e676966" alt="passaro3" width="45" height="45">
+  <img src="https://user-images.githubusercontent.com/74038190/216120974-24a76b31-7f39-41f1-a38f-b3c1377cc612.png" alt="cafe3" width="45" height="45">
+  <img src="https://camo.githubusercontent.com/9cb8ee82745871e1145ec14cf88678cd603543778df5007c77e219e933fae8b1/68747470733a2f2f63756c746f667468657061727479706172726f742e636f6d2f706172726f74732f68642f6465616c7769746869746e6f77706172726f742e676966" alt="passaro4" width="45" height="45">
+  <img src="https://user-images.githubusercontent.com/74038190/216120974-24a76b31-7f39-41f1-a38f-b3c1377cc612.png" alt="cafe4" width="45" height="45">
+  <img src="https://camo.githubusercontent.com/5ad6679a100599b10c6833c4c4eb5e7128b58e66a1f95f77fb87bfc791b4dd24/68747470733a2f2f63756c746f667468657061727479706172726f742e636f6d2f706172726f74732f68642f676974687562706172726f742e676966" alt="Passaro 1" width="45" height="45">
+  <img src="https://user-images.githubusercontent.com/74038190/216120974-24a76b31-7f39-41f1-a38f-b3c1377cc612.png" alt="café1" width="45" height="45">
+  <img src="https://camo.githubusercontent.com/428feb3c47baf3db1e34cdd839386a3d4bbe6c2c4b2671111f4c0edff0bedae0/68747470733a2f2f63756c746f667468657061727479706172726f742e636f6d2f666c6167732f68642f6972616e706172726f742e676966" alt="passaro2" width="45" height="45">
+  <img src="https://user-images.githubusercontent.com/74038190/216120974-24a76b31-7f39-41f1-a38f-b3c1377cc612.png" alt="café2" width="45" height="45">
+ </p>
+ 
+<h3 align="center">🏆 Meus Emblemas</h3>
 
-------
-<h3 align="center">🏆Meus Emblemas</h3>
-
-------
 <p align="center">
 <a href="https://www.credly.com/badges/8ebc4ed7-fc22-40ac-905b-3aeadc437996/public_url"><img src="https://images.credly.com/size/110x110/images/25b13818-6498-47e7-a2b5-83852dacabf2/blob" alt="Emblema 1" width="110" height="110" /></a>
 <a href="https://www.credly.com/badges/eb37ba60-d984-4580-adea-1f1ce2abac09/public_url"><img src="https://images.credly.com/size/110x110/images/52ea4613-6f77-4d62-8e19-5bb5c51722b8/blob" alt="Emblema 2" width="110" height="110" /></a>
@@ -50,21 +59,41 @@
 <a href="https://www.credly.com/badges/1ba73005-0f15-49f2-b97b-ca90c7f30ba4/public_url"><img src="https://images.credly.com/size/110x110/images/4e3d6f9f-55d7-4ea7-b0e6-f4d4ff543e22/image.png" alt="Emblema 5" width="110" height="110" /></a>
 </p>
 
+<p align="center"><img src="https://github.com/atararossatti/atararossatti/blob/output/github-contribution-grid-snake.svg" alt="Snake animation" /></p>
 
 
-<img src="https://github.com/atararossatti/atararossatti/blob/output/github-contribution-grid-snake.svg" alt="Snake animation" />
-
-<img align="center" src="https://github-profile-trophy.vercel.app/?username=atararossatti&theme=darkhub&no-frame=true&margin-w=15&column=2" alt="GitHub Trophies" />
-
-
+<p align="center"><img align="center" src="https://github-profile-trophy.vercel.app/?username=atararossatti&theme=darkhub&no-frame=true&margin-w=15&column=2" alt="GitHub Trophies" /></p>
 
 
 
+<p align="center">
+  <img src="https://camo.githubusercontent.com/5ad6679a100599b10c6833c4c4eb5e7128b58e66a1f95f77fb87bfc791b4dd24/68747470733a2f2f63756c746f667468657061727479706172726f742e636f6d2f706172726f74732f68642f676974687562706172726f742e676966" alt="Passaro 1" width="45" height="45">
+  <img src="https://user-images.githubusercontent.com/74038190/216120974-24a76b31-7f39-41f1-a38f-b3c1377cc612.png" alt="café1" width="45" height="45">
+  <img src="https://camo.githubusercontent.com/428feb3c47baf3db1e34cdd839386a3d4bbe6c2c4b2671111f4c0edff0bedae0/68747470733a2f2f63756c746f667468657061727479706172726f742e636f6d2f666c6167732f68642f6972616e706172726f742e676966" alt="passaro2" width="45" height="45">
+  <img src="https://user-images.githubusercontent.com/74038190/216120974-24a76b31-7f39-41f1-a38f-b3c1377cc612.png" alt="café2" width="45" height="45">
+  <img src="https://camo.githubusercontent.com/ff4478f93581788c3f10a8961c0622cc36f37c7115f91a6b68443726005d4a43/68747470733a2f2f63756c746f667468657061727479706172726f742e636f6d2f706172726f74732f68642f3630667073706172726f742e676966" alt="passaro3" width="45" height="45">
+  <img src="https://user-images.githubusercontent.com/74038190/216120974-24a76b31-7f39-41f1-a38f-b3c1377cc612.png" alt="cafe3" width="45" height="45">
+  <img src="https://camo.githubusercontent.com/9cb8ee82745871e1145ec14cf88678cd603543778df5007c77e219e933fae8b1/68747470733a2f2f63756c746f667468657061727479706172726f742e636f6d2f706172726f74732f68642f6465616c7769746869746e6f77706172726f742e676966" alt="passaro4" width="45" height="45">
+  <img src="https://user-images.githubusercontent.com/74038190/216120974-24a76b31-7f39-41f1-a38f-b3c1377cc612.png" alt="cafe4" width="45" height="45">
+  <img src="https://camo.githubusercontent.com/5ad6679a100599b10c6833c4c4eb5e7128b58e66a1f95f77fb87bfc791b4dd24/68747470733a2f2f63756c746f667468657061727479706172726f742e636f6d2f706172726f74732f68642f676974687562706172726f742e676966" alt="Passaro 1" width="45" height="45">
+  <img src="https://user-images.githubusercontent.com/74038190/216120974-24a76b31-7f39-41f1-a38f-b3c1377cc612.png" alt="café1" width="45" height="45">
+  <img src="https://camo.githubusercontent.com/428feb3c47baf3db1e34cdd839386a3d4bbe6c2c4b2671111f4c0edff0bedae0/68747470733a2f2f63756c746f667468657061727479706172726f742e636f6d2f666c6167732f68642f6972616e706172726f742e676966" alt="passaro2" width="45" height="45">
+  <img src="https://user-images.githubusercontent.com/74038190/216120974-24a76b31-7f39-41f1-a38f-b3c1377cc612.png" alt="café2" width="45" height="45">
+  <img src="https://camo.githubusercontent.com/ff4478f93581788c3f10a8961c0622cc36f37c7115f91a6b68443726005d4a43/68747470733a2f2f63756c746f667468657061727479706172726f742e636f6d2f706172726f74732f68642f3630667073706172726f742e676966" alt="passaro3" width="45" height="45">
+  <img src="https://user-images.githubusercontent.com/74038190/216120974-24a76b31-7f39-41f1-a38f-b3c1377cc612.png" alt="cafe3" width="45" height="45">
+  <img src="https://camo.githubusercontent.com/9cb8ee82745871e1145ec14cf88678cd603543778df5007c77e219e933fae8b1/68747470733a2f2f63756c746f667468657061727479706172726f742e636f6d2f706172726f74732f68642f6465616c7769746869746e6f77706172726f742e676966" alt="passaro4" width="45" height="45">
+  <img src="https://user-images.githubusercontent.com/74038190/216120974-24a76b31-7f39-41f1-a38f-b3c1377cc612.png" alt="cafe4" width="45" height="45">
+  <img src="https://camo.githubusercontent.com/5ad6679a100599b10c6833c4c4eb5e7128b58e66a1f95f77fb87bfc791b4dd24/68747470733a2f2f63756c746f667468657061727479706172726f742e636f6d2f706172726f74732f68642f676974687562706172726f742e676966" alt="Passaro 1" width="45" height="45">
+  <img src="https://user-images.githubusercontent.com/74038190/216120974-24a76b31-7f39-41f1-a38f-b3c1377cc612.png" alt="café1" width="45" height="45">
+  <img src="https://camo.githubusercontent.com/428feb3c47baf3db1e34cdd839386a3d4bbe6c2c4b2671111f4c0edff0bedae0/68747470733a2f2f63756c746f667468657061727479706172726f742e636f6d2f666c6167732f68642f6972616e706172726f742e676966" alt="passaro2" width="45" height="45">
+  <img src="https://user-images.githubusercontent.com/74038190/216120974-24a76b31-7f39-41f1-a38f-b3c1377cc612.png" alt="café2" width="45" height="45">
+ </p>
 
-
-<img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=atararossatti&show_icons=true&locale=en&layout=compact&theme=dark" alt="atararossatti" style="width: 30%; max-width: 400px;"/>
+<p align="center">
+<img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=atararossatti&show_icons=true&locale=en&layout=compact&theme=dark" alt="atararossatti" style="width: 30%; max-width: 400px;"/>
 <img align="center" src="https://github-readme-stats.vercel.app/api?username=atararossatti&show_icons=true&locale=en&theme=dark" alt="atararossatti" style="width: 40%; max-width: 400px;" />
 <img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=atararossatti&theme=dark" alt="atararossatti" style="width: 40%; max-width: 500px;" />
+</p>
 
  
  
