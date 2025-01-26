@@ -27,6 +27,34 @@
 
 <br><br><br> <!-- Adiciona três quebras de linha para aumentar o espaço -->
  ---------------------
+
+  
+<table align="center">
+  <h3 align="center">🎨Projetos</h3>
+  <tr>
+  <td align="center"><img src="./Project Llhama Impact.gif" width="200" height="200"><br>Projeto Lhama Impact</td>
+  <td align="center"><img src="./Aplicativo Turismo sao paulo.gif" width="300" height="200"><br>Aplicativo Turismo São Paulo</td>
+  <td align="center"><img src="./Project Dashboard.gif" width="200" height="200"><br>Projeto Dashboard</td>
+  </tr>
+</table>
+
+ ---------------------
+
+<h3 align="center">🏆 Meus Emblemas</h3>
+
+<p align="center">
+<a href="https://www.credly.com/badges/8ebc4ed7-fc22-40ac-905b-3aeadc437996/public_url"><img src="https://images.credly.com/size/110x110/images/25b13818-6498-47e7-a2b5-83852dacabf2/blob" alt="Emblema 1" width="110" height="110" /></a>
+<a href="https://www.credly.com/badges/eb37ba60-d984-4580-adea-1f1ce2abac09/public_url"><img src="https://images.credly.com/size/110x110/images/52ea4613-6f77-4d62-8e19-5bb5c51722b8/blob" alt="Emblema 2" width="110" height="110" /></a>
+<a href="https://www.credly.com/badges/2314d46d-07d5-4dad-a4a8-0b4aa8e13ab8/public_url"><img src="https://images.credly.com/size/110x110/images/712a773b-9acc-4bc8-90fa-6afdfc95da1e/image.png" alt="Emblema 3" width="110" height="110" /></a>
+<a href="https://www.credly.com/badges/b6384d16-3412-4ee5-830c-73a90abd7df4/public_url"><img src="https://brasil.certiprof.com/cdn/shop/files/Fundamentos_da_Lei_Geral_de_Prote_o_de_Dados_LGPDF_480x480.webp?v=1733256864" alt="Emblema 4" width="115" height="115" /></a>
+<a href="https://www.credly.com/badges/1ba73005-0f15-49f2-b97b-ca90c7f30ba4/public_url"><img src="https://images.credly.com/size/110x110/images/4e3d6f9f-55d7-4ea7-b0e6-f4d4ff543e22/image.png" alt="Emblema 5" width="110" height="110" /></a>
+</p>
+
+- 🌍 Unindo expertise técnica e visão estratégica para construir o futuro da tecnologia. Com sólida experiência em trabalho remoto, sou adepta da colaboração global e da inovação, usando ferramentas e metodologias ágeis como Scrum para entregar resultados consistentes e de alta qualidade.
+- 🔐 Especialista em Cybersecurity e Proteção de Dados, dedico-me a criar ambientes digitais seguros e confiáveis, protegendo informações críticas e assegurando conformidade com as melhores práticas e regulamentações.
+- 📈 Acredito que tecnologia não é apenas sobre código, mas sobre impactar pessoas e transformar negócios. Meu compromisso é ir além dos desafios, buscando soluções que entreguem valor real, eficiência e segurança.
+- 💡 **Inovação guiada por propósito e impulsionada pela excelência!**
+
 <p align="center">
   <img src="https://camo.githubusercontent.com/5ad6679a100599b10c6833c4c4eb5e7128b58e66a1f95f77fb87bfc791b4dd24/68747470733a2f2f63756c746f667468657061727479706172726f742e636f6d2f706172726f74732f68642f676974687562706172726f742e676966" alt="Passaro 1" width="45" height="45">
   <img src="https://user-images.githubusercontent.com/74038190/216120974-24a76b31-7f39-41f1-a38f-b3c1377cc612.png" alt="café1" width="45" height="45">
@@ -46,34 +74,6 @@
   <img src="https://user-images.githubusercontent.com/74038190/216120974-24a76b31-7f39-41f1-a38f-b3c1377cc612.png" alt="cafe4" width="45" height="45">
   <img src="https://camo.githubusercontent.com/5ad6679a100599b10c6833c4c4eb5e7128b58e66a1f95f77fb87bfc791b4dd24/68747470733a2f2f63756c746f667468657061727479706172726f742e636f6d2f706172726f74732f68642f676974687562706172726f742e676966" alt="Passaro 1" width="45" height="45">
   </p>
-  
-<table align="center">
-  <h3 align="center">🎨Projetos</h3>
-  <tr>
-  <td align="center"><img src="./Project Llhama Impact.gif" width="200" height="200"><br>Projeto Lhama Impact</td>
-  <td align="center"><img src="./Aplicativo Turismo sao paulo.gif" width="300" height="200"><br>Aplicativo Turismo São Paulo</td>
-  <td align="center"><img src="./Project Dashboard.gif" width="200" height="200"><br>Projeto Dashboard</td>
-  </tr>
-</table>
-
-<br><br><br> <!-- Adiciona três quebras de linha para aumentar o espaço -->
- ---------------------
-
-<h3 align="center">🏆 Meus Emblemas</h3>
-
-<p align="center">
-<a href="https://www.credly.com/badges/8ebc4ed7-fc22-40ac-905b-3aeadc437996/public_url"><img src="https://images.credly.com/size/110x110/images/25b13818-6498-47e7-a2b5-83852dacabf2/blob" alt="Emblema 1" width="110" height="110" /></a>
-<a href="https://www.credly.com/badges/eb37ba60-d984-4580-adea-1f1ce2abac09/public_url"><img src="https://images.credly.com/size/110x110/images/52ea4613-6f77-4d62-8e19-5bb5c51722b8/blob" alt="Emblema 2" width="110" height="110" /></a>
-<a href="https://www.credly.com/badges/2314d46d-07d5-4dad-a4a8-0b4aa8e13ab8/public_url"><img src="https://images.credly.com/size/110x110/images/712a773b-9acc-4bc8-90fa-6afdfc95da1e/image.png" alt="Emblema 3" width="110" height="110" /></a>
-<a href="https://www.credly.com/badges/b6384d16-3412-4ee5-830c-73a90abd7df4/public_url"><img src="https://brasil.certiprof.com/cdn/shop/files/Fundamentos_da_Lei_Geral_de_Prote_o_de_Dados_LGPDF_480x480.webp?v=1733256864" alt="Emblema 4" width="115" height="115" /></a>
-<a href="https://www.credly.com/badges/1ba73005-0f15-49f2-b97b-ca90c7f30ba4/public_url"><img src="https://images.credly.com/size/110x110/images/4e3d6f9f-55d7-4ea7-b0e6-f4d4ff543e22/image.png" alt="Emblema 5" width="110" height="110" /></a>
-</p>
-
-- 🌍 Unindo expertise técnica e visão estratégica para construir o futuro da tecnologia. Com sólida experiência em trabalho remoto, sou adepta da colaboração global e da inovação, usando ferramentas e metodologias ágeis como Scrum para entregar resultados consistentes e de alta qualidade.
-- 🔐 Especialista em Cybersecurity e Proteção de Dados, dedico-me a criar ambientes digitais seguros e confiáveis, protegendo informações críticas e assegurando conformidade com as melhores práticas e regulamentações.
-- 📈 Acredito que tecnologia não é apenas sobre código, mas sobre impactar pessoas e transformar negócios. Meu compromisso é ir além dos desafios, buscando soluções que entreguem valor real, eficiência e segurança.
-- 💡 **Inovação guiada por propósito e impulsionada pela excelência!**
-
 <p align="center"><img src="https://github.com/atararossatti/atararossatti/blob/output/github-contribution-grid-snake.svg" alt="Snake animation" /></p>
 <p align="center"><img align="center" src="https://github-profile-trophy.vercel.app/?username=atararossatti&theme=darkhub&no-frame=true&margin-w=15&column=5" alt="GitHub Trophies" /></p>
 
