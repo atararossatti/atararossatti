@@ -15,10 +15,8 @@
 <p>
 <h1 align="center">Olá 👋, sou Atara Rossatti</h1>
 <h3 align="center">Sou Desenvolvedora Full-Stack e Designer UX/UI</h3>    
-<img align="right" alt="atara-pic" height="190" style="border-radius: 60px;" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhETGeaAyZsEybRwKDHBEUlvAM1l5aME2T-L__iAzOnMbctJdNNsKINBCrO-H6wKbUd0aYvJ6d0te4Bx9M-kuVoeXRJChJ7i5kSKxWhFqJ2cmY6gnFJwcsxsuAhVCcrMVmMhiUg1k-dWwAo6EyBpklwhmxsZM1Zfqep7769_l_pO8wazT-ThuP2fzAm4Q/s320/Design_sem_nome.gif width=676&height=676">
+<img align="right" alt="atara-pic" height="170" style="border-radius: 50px;" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhETGeaAyZsEybRwKDHBEUlvAM1l5aME2T-L__iAzOnMbctJdNNsKINBCrO-H6wKbUd0aYvJ6d0te4Bx9M-kuVoeXRJChJ7i5kSKxWhFqJ2cmY6gnFJwcsxsuAhVCcrMVmMhiUg1k-dWwAo6EyBpklwhmxsZM1Zfqep7769_l_pO8wazT-ThuP2fzAm4Q/s320/Design_sem_nome.gif width=676&height=676">
 </p>
-
-
 
 
 - 🏅 Participe do Hackathon Anatel <a href="https://g1.globo.com/sp/sao-paulo/noticia/2024/09/29/apos-promover-desafio-anatel-seleciona-3-melhores-solucoes-para-acabar-com-tv-boxes-ilegais.ghtml?kclid=P70KwpF6jI5KWOWW">TV Boxes ilegal</a><br>
@@ -28,6 +26,7 @@
 - 📫 Ou me envie um e-mail para <b>atarasilva@hotmail.com</b>
 
 <br><br><br> <!-- Adiciona três quebras de linha para aumentar o espaço -->
+
 <p align="center">
   <img src="https://camo.githubusercontent.com/5ad6679a100599b10c6833c4c4eb5e7128b58e66a1f95f77fb87bfc791b4dd24/68747470733a2f2f63756c746f667468657061727479706172726f742e636f6d2f706172726f74732f68642f676974687562706172726f742e676966" alt="Passaro 1" width="45" height="45">
   <img src="https://user-images.githubusercontent.com/74038190/216120974-24a76b31-7f39-41f1-a38f-b3c1377cc612.png" alt="café1" width="45" height="45">
@@ -47,7 +46,9 @@
   <img src="https://user-images.githubusercontent.com/74038190/216120974-24a76b31-7f39-41f1-a38f-b3c1377cc612.png" alt="cafe4" width="45" height="45">
   <img src="https://camo.githubusercontent.com/5ad6679a100599b10c6833c4c4eb5e7128b58e66a1f95f77fb87bfc791b4dd24/68747470733a2f2f63756c746f667468657061727479706172726f742e636f6d2f706172726f74732f68642f676974687562706172726f742e676966" alt="Passaro 1" width="45" height="45">
   </p>
- 
+  
+
+
 <h3 align="center">🏆 Meus Emblemas</h3>
 
 <p align="center">
@@ -61,7 +62,7 @@
 <p align="center"><img src="https://github.com/atararossatti/atararossatti/blob/output/github-contribution-grid-snake.svg" alt="Snake animation" /></p>
 
 
-<p align="center"><img align="center" src="https://github-profile-trophy.vercel.app/?username=atararossatti&theme=darkhub&no-frame=true&margin-w=15&column=2" alt="GitHub Trophies" /></p>
+<p align="center"><img align="center" src="https://github-profile-trophy.vercel.app/?username=atararossatti&theme=darkhub&no-frame=true&margin-w=15&column=5" alt="GitHub Trophies" /></p>
 
 
 
@@ -93,18 +94,36 @@
 
  
  
+<br><br><br> <!-- Adiciona três quebras de linha para aumentar o espaço -->
 
-
-   
+<h3 align="center"> 🛠 Linguagens e ferramentas:</h3>
+<p align="center"> <a href="https://angular.io" target="_blank" rel="noreferrer"> <img src="https://angular.io/assets/images/logos/angular/angular.svg" alt="angular" width="40" height="40"/></a> 
+  <a href="https://angular.io" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/angularjs/angularjs-original-wordmark.svg" alt="angularjs" width="40" height="40"/></a> 
+  <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/></a> 
+  <a href="https://www.figma.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" width="40" height="40"/></a> 
+  <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/></a> 
+  <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/></a> 
+  <a href="https://www.adobe.com/in/products/illustrator.html" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/adobe_illustrator/adobe_illustrator-icon.svg" alt="illustrator" width="40" height="40"/></a> 
+  <a href="https://www.java.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/></a> 
+  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/></a> 
+  <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/></a> 
+  <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/></a> 
+  <a href="https://www.microsoft.com/en-us/sql-server" target="_blank" rel="noreferrer"> <img src="https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg" alt="mssql" width="40" height="40"/></a> 
+  <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/></a> 
+  <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/></a>
+  <a href="https://www.oracle.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/oracle/oracle-original.svg" alt="oracle" width="40" height="40"/></a>
+  <a href="https://www.photoshop.com/en" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-line.svg" alt="photoshop" width="40" height="40"/></a> 
+  <a href="https://www.php.net" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" alt="php" width="40" height="40"/></a> 
+  <a href="https://www.postgresql.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40"/></a> 
+  <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/></a> 
+  <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" altura="40"/></a> 
+  <a href="https://reactnative.dev/" target="_blank" rel="noreferrer"> <img src="https://reactnative.dev/img/header_logo.svg" alt="reactnative" width="40" height="40"/></a> 
+  <a href="https://vuejs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original-wordmark.svg" alt="vuejs" width="40" height="40"/></a> 
+</p>
  
   
  
  
- ### - Languages and Tools...
-
-
-<img height="55" src="https://img.icons8.com/?size=100&id=PfmQUI56Ji0D&format=png&color=000000" alt="Logo chrome" style="max-width: 100%;"> <img height="55" src="https://img.icons8.com/?size=100&id=13441&format=png&color=000000" alt="Logo python" style="max-width: 100%;"> <img height="55" src="https://img.icons8.com/?size=100&id=t5K2CR8feVdX&format=png&color=000000" alt="Logo react" style="max-width: 100%;">
-<img height="55" src="https://img.icons8.com/?size=100&id=tGvHBPJaKqEd&format=png&color=000000" alt="Logo javascript" style="max-width: 100%;"> <img height="55" src="https://img.icons8.com/?size=100&id=NFQusZJ4neki&format=png&color=000000" alt="Data Science" style="max-width: 100%;"> <img height="55" src="https://img.icons8.com/?size=100&id=Lb0GijAhiD3r&format=png&color=000000" alt="HTML" style="max-width: 100%;"> <img height="55" src="https://img.icons8.com/?size=100&id=8gfeOoqrHqJU&format=png&color=000000" alt="FIGMA" style="max-width: 100%;"> <img height="55" src="https://img.icons8.com/?size=100&id=iWw83PVcBpLw&format=png&color=000000" alt="CANVA" style="max-width: 100%;"> <img height="55" src="https://img.icons8.com/?size=100&id=GPfHz0SM85FX&format=png&color=000000" alt="JAVA" style="max-width: 100%;"> <img height="55" src="" alt="" style="max-width: 100%;">
 
 ##
  
