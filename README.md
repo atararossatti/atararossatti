@@ -44,10 +44,7 @@
   <img src="https://camo.githubusercontent.com/9cb8ee82745871e1145ec14cf88678cd603543778df5007c77e219e933fae8b1/68747470733a2f2f63756c746f667468657061727479706172726f742e636f6d2f706172726f74732f68642f6465616c7769746869746e6f77706172726f742e676966" alt="passaro4" width="45" height="45">
   <img src="https://user-images.githubusercontent.com/74038190/216120974-24a76b31-7f39-41f1-a38f-b3c1377cc612.png" alt="cafe4" width="45" height="45">
   <img src="https://camo.githubusercontent.com/5ad6679a100599b10c6833c4c4eb5e7128b58e66a1f95f77fb87bfc791b4dd24/68747470733a2f2f63756c746f667468657061727479706172726f742e636f6d2f706172726f74732f68642f676974687562706172726f742e676966" alt="Passaro 1" width="45" height="45">
-  <img src="https://user-images.githubusercontent.com/74038190/216120974-24a76b31-7f39-41f1-a38f-b3c1377cc612.png" alt="café1" width="45" height="45">
-  <img src="https://camo.githubusercontent.com/428feb3c47baf3db1e34cdd839386a3d4bbe6c2c4b2671111f4c0edff0bedae0/68747470733a2f2f63756c746f667468657061727479706172726f742e636f6d2f666c6167732f68642f6972616e706172726f742e676966" alt="passaro2" width="45" height="45">
-  <img src="https://user-images.githubusercontent.com/74038190/216120974-24a76b31-7f39-41f1-a38f-b3c1377cc612.png" alt="café2" width="45" height="45">
- </p>
+  </p>
  
 <h3 align="center">🏆 Meus Emblemas</h3>
 
@@ -84,9 +81,6 @@
   <img src="https://camo.githubusercontent.com/9cb8ee82745871e1145ec14cf88678cd603543778df5007c77e219e933fae8b1/68747470733a2f2f63756c746f667468657061727479706172726f742e636f6d2f706172726f74732f68642f6465616c7769746869746e6f77706172726f742e676966" alt="passaro4" width="45" height="45">
   <img src="https://user-images.githubusercontent.com/74038190/216120974-24a76b31-7f39-41f1-a38f-b3c1377cc612.png" alt="cafe4" width="45" height="45">
   <img src="https://camo.githubusercontent.com/5ad6679a100599b10c6833c4c4eb5e7128b58e66a1f95f77fb87bfc791b4dd24/68747470733a2f2f63756c746f667468657061727479706172726f742e636f6d2f706172726f74732f68642f676974687562706172726f742e676966" alt="Passaro 1" width="45" height="45">
-  <img src="https://user-images.githubusercontent.com/74038190/216120974-24a76b31-7f39-41f1-a38f-b3c1377cc612.png" alt="café1" width="45" height="45">
-  <img src="https://camo.githubusercontent.com/428feb3c47baf3db1e34cdd839386a3d4bbe6c2c4b2671111f4c0edff0bedae0/68747470733a2f2f63756c746f667468657061727479706172726f742e636f6d2f666c6167732f68642f6972616e706172726f742e676966" alt="passaro2" width="45" height="45">
-  <img src="https://user-images.githubusercontent.com/74038190/216120974-24a76b31-7f39-41f1-a38f-b3c1377cc612.png" alt="café2" width="45" height="45">
  </p>
 
 <p align="center">
