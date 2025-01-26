@@ -6,7 +6,6 @@
 <a href="https://www.linkedin.com/in/atararsilva/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
 <a href="https://www.facebook.com/ataraross" target="_blank"><img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" alt="Facebook" /></a>
 <a href="https://www.instagram.com/atara_rossatti/" target="_blank"><img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a>
-<a href="https://dev.to/atararossatti" target="_blank"><img src="https://img.shields.io/badge/Dev.to-0A0A0A?style=for-the-badge&logo=devdotto&logoColor=white" target="_blank"></a>
 <a href="https://stackoverflow.com/users/atararossatti" target="_blank"><img src="https://img.shields.io/badge/Stack%20Overflow-FE7A16?style=for-the-badge&logo=stack-overflow&logoColor=white" target="_blank"></a>
 <a href="https://cursos.alura.com.br/certificate/atara-rossatti/figma-construindo-layout-primeiro-site-mobile" target="_blank"><img src="https://img.shields.io/badge/Alura-2F6D92?style=for-the-badge&logo=alura&logoColor=white" target="_blank"></a>
 
