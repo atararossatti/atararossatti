@@ -12,18 +12,20 @@
 </p>
 
 
-<h1 align="center">Olá 👋, sou Atara Rossatti</h1>
-<h3 align="center">Sou Desenvolvedora Full-Stack e Designer UX/UI</h3>
-
-
 <p>
-    <img align="right" src="https://cdn.discordapp.com/attachments/980933879433166929/1332837209748930580/menina.gif?ex=6796b4e1&is=67956361&hm=e63c34bd683870f99834b4879d5403e74dc97de4c32ac28e7aac56e2f75d34dc&" width="190" height="190" style="border-radius: 10px; margin-left: 10px;" />
-    🏅 Participe do Hackathon Anatel <a href="https://g1.globo.com/sp/sao-paulo/noticia/2024/09/29/apos-promover-desafio-anatel-seleciona-3-melhores-solucoes-para-acabar-com-tv-boxes-ilegais.ghtml?kclid=P70KwpF6jI5KWOWW">TV Boxes ilegal</a><br>
-    📝 Participei do Hackathon Visite São Paulo <a href="https://www.linkedin.com/feed/update/urn:li:activity:7257178025828491265/">Aplicativo para Turismo em São Paulo</a><br>
-    📞 Você pode me contatar através do <a href="https://wa.me/+5511961187372">Telefone</a><br>
-    👨‍💻 Conheça minhas experiências <a href="https://www.linkedin.com/in/atarasilva/">LinkedIn</a><br>
-    📫 Ou me envie um e-mail para <b>atarasilva@hotmail.com</b>
+<h1 align="center">Olá 👋, sou Atara Rossatti</h1>
+<h3 align="center">Sou Desenvolvedora Full-Stack e Designer UX/UI</h3>    
+<img align="right" alt="atara-pic" height="190" style="border-radius: 60px;" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhETGeaAyZsEybRwKDHBEUlvAM1l5aME2T-L__iAzOnMbctJdNNsKINBCrO-H6wKbUd0aYvJ6d0te4Bx9M-kuVoeXRJChJ7i5kSKxWhFqJ2cmY6gnFJwcsxsuAhVCcrMVmMhiUg1k-dWwAo6EyBpklwhmxsZM1Zfqep7769_l_pO8wazT-ThuP2fzAm4Q/s320/Design_sem_nome.gif width=676&height=676">
 </p>
+
+
+
+
+- 🏅 Participe do Hackathon Anatel <a href="https://g1.globo.com/sp/sao-paulo/noticia/2024/09/29/apos-promover-desafio-anatel-seleciona-3-melhores-solucoes-para-acabar-com-tv-boxes-ilegais.ghtml?kclid=P70KwpF6jI5KWOWW">TV Boxes ilegal</a><br>
+- 📝 Participei do Hackathon Visite São Paulo <a href="https://www.linkedin.com/feed/update/urn:li:activity:7257178025828491265/">Aplicativo para Turismo em São Paulo</a><br>
+- 📞 Você pode me contatar através do <a href="https://wa.me/+5511961187372">Telefone</a><br>
+- 👨‍💻 Conheça minhas experiências <a href="https://www.linkedin.com/in/atarasilva/">LinkedIn</a><br>
+- 📫 Ou me envie um e-mail para <b>atarasilva@hotmail.com</b>
 
 <br><br><br> <!-- Adiciona três quebras de linha para aumentar o espaço -->
 <p align="center">
@@ -110,7 +112,7 @@
   <a href="https://github.com/atararossatti">
   <img height="130em" src="https://github-readme-stats.vercel.app/api?username=atararossatti&show_icons=true&hide=contribs,prs&cache_seconds=86400&theme=monokai"/>
   <img height="130em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=atararossatti&layout=compact&langs_count=7&theme=monokai"/>
-  <img align="right" alt="atara-pic" height="124" style="border-radius:50px;" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhETGeaAyZsEybRwKDHBEUlvAM1l5aME2T-L__iAzOnMbctJdNNsKINBCrO-H6wKbUd0aYvJ6d0te4Bx9M-kuVoeXRJChJ7i5kSKxWhFqJ2cmY6gnFJwcsxsuAhVCcrMVmMhiUg1k-dWwAo6EyBpklwhmxsZM1Zfqep7769_l_pO8wazT-ThuP2fzAm4Q/s320/Design_sem_nome.gif width=676&height=676">
+  
 </p>
 
 
