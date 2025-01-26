@@ -36,7 +36,6 @@
   <img src="./Vg1.gif" alt="Descrição da Imagem 2" width="100" height="100">
   <img src="./Vg1.gif" alt="Descrição da Imagem 3" width="100" height="100">
   <img src="./Vg1.gif" alt="Descrição da Imagem 4" width="100" height="100">
-  <img src="./Vg1.gif" alt="Descrição da Imagem 4" width="100" height="100">
 </p>
 
 ------
