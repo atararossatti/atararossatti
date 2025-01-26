@@ -26,7 +26,7 @@
 - 📫 Ou me envie um e-mail para <b>atarasilva@hotmail.com</b>
 
 <br><br><br> <!-- Adiciona três quebras de linha para aumentar o espaço -->
-
+ ---------------------
 <p align="center">
   <img src="https://camo.githubusercontent.com/5ad6679a100599b10c6833c4c4eb5e7128b58e66a1f95f77fb87bfc791b4dd24/68747470733a2f2f63756c746f667468657061727479706172726f742e636f6d2f706172726f74732f68642f676974687562706172726f742e676966" alt="Passaro 1" width="45" height="45">
   <img src="https://user-images.githubusercontent.com/74038190/216120974-24a76b31-7f39-41f1-a38f-b3c1377cc612.png" alt="café1" width="45" height="45">
@@ -57,6 +57,7 @@
 </table>
 
 <br><br><br> <!-- Adiciona três quebras de linha para aumentar o espaço -->
+ ---------------------
 
 <h3 align="center">🏆 Meus Emblemas</h3>
 
@@ -94,15 +95,17 @@
   <img src="https://camo.githubusercontent.com/5ad6679a100599b10c6833c4c4eb5e7128b58e66a1f95f77fb87bfc791b4dd24/68747470733a2f2f63756c746f667468657061727479706172726f742e636f6d2f706172726f74732f68642f676974687562706172726f742e676966" alt="Passaro 1" width="45" height="45">
  </p>
 
+---------------------
+
 <p align="center">
 <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=atararossatti&show_icons=true&locale=en&layout=compact&theme=dark" alt="atararossatti" style="width: 30%; max-width: 400px;"/>
 <img align="center" src="https://github-readme-stats.vercel.app/api?username=atararossatti&show_icons=true&locale=en&theme=dark" alt="atararossatti" style="width: 40%; max-width: 400px;" />
 <img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=atararossatti&theme=dark" alt="atararossatti" style="width: 40%; max-width: 500px;" />
 </p>
 
- 
- 
-<br><br><br> <!-- Adiciona três quebras de linha para aumentar o espaço -->
+ <br><br><br> <!-- Adiciona três quebras de linha para aumentar o espaço -->
+
+
 
 <h3 align="center"> 🛠 Linguagens e ferramentas:</h3>
 <p align="center"> <a href="https://angular.io" target="_blank" rel="noreferrer"> <img src="https://angular.io/assets/images/logos/angular/angular.svg" alt="angular" width="40" height="40"/></a> 
