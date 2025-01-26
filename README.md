@@ -1,14 +1,16 @@
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=atararossatti&label=Profile%20views&color=0e75b6&style=flat" alt="atararossatti" /> </p>
 
-<div style="text-align: center;">
+
+<p align="center">
 <a href='https://www.linkedin.com/in/atarasilva/' target="_blank"><img width="100%" src="./ar_dev.png"></a>
+<br>
 <a href="https://img.shields.io/badge/Star-Nominate%20@atararossatti-ffdd00.svg?"><img src="https://img.shields.io/badge/Star-Nominate%20@atararossatti-ffdd00.svg?logo=github&labelColor=181717&longCache=true&style=for-the-badge" alt="Star Nominate @atararossatti"></a>
 <a href="https://www.linkedin.com/in/atararsilva/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
 <a href="https://www.instagram.com/atara_rossatti/" target="_blank"><img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a>
 <a href="https://stackoverflow.com/users/atararossatti" target="_blank"><img src="https://img.shields.io/badge/Stack%20Overflow-FE7A16?style=for-the-badge&logo=stack-overflow&logoColor=white" target="_blank"></a>
 <a href="https://cursos.alura.com.br/certificate/atara-rossatti/figma-construindo-layout-primeiro-site-mobile" target="_blank"><img src="https://img.shields.io/badge/Alura-2F6D92?style=for-the-badge&logo=alura&logoColor=white" target="_blank"></a>
+</p>
 
-</div>
 
 <h1 align="center">Olá 👋, sou Atara Rossatti</h1>
 <h3 align="center">Sou Desenvolvedora Full-Stack e Designer UX/UI</h3>
