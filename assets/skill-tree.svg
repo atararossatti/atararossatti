@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 910 510" width="910" height="510" role="img" aria-labelledby="t d">
+<title id="t">Árvore de habilidades</title>
+<desc id="d">Roadmap em três colunas: desbloqueado (JavaScript, HTML e CSS, PHP e Node.js, SQL, APIs, QA, Linux e cloud, Figma), em treino (Python, Jupyter, LLMs, Hugging Face, APIs de modelos, automação com IA) e próximo nível (fundamentos de ML, preparação de dados, treino e avaliação, RAG, IA em aplicações). Meta final: AI Engineer.</desc>
+<defs>
+<pattern id="dots" width="14" height="14" patternUnits="userSpaceOnUse"><circle cx="7" cy="7" r="1.8" fill="#7FB9C6" opacity=".16"/></pattern>
+<style>
+
+.chip{animation:pop .7s cubic-bezier(.2,.9,.3,1.2) both}
+@keyframes pop{from{opacity:0;transform:translateX(-18px)}to{opacity:1;transform:none}}
+.dim{}
+.march{animation:march 1.2s linear infinite}
+@keyframes march{to{stroke-dashoffset:-30}}
+.pulse{transform-box:fill-box;transform-origin:center;animation:pulse 1.4s ease-in-out infinite}
+@keyframes pulse{0%,100%{transform:scale(1);opacity:1}50%{transform:scale(.7);opacity:.6}}
+.chev{animation:chev 1.2s ease-in-out infinite}
+@keyframes chev{0%,100%{opacity:.2}50%{opacity:1}}
+.boss{animation:glow 2.2s ease-in-out infinite}
+@keyframes glow{0%,100%{filter:drop-shadow(0 0 2px #F7C948)}50%{filter:drop-shadow(0 0 12px #F7C948)}}
+.tw{transform-box:fill-box;transform-origin:center;animation:tw 2.6s ease-in-out infinite}
+@keyframes tw{0%,100%{transform:scale(.4) rotate(0);opacity:.3}50%{transform:scale(1.1) rotate(45deg);opacity:1}}
+
+@media (prefers-reduced-motion: reduce){*{animation:none !important}}
+</style>
+</defs>
+
+<rect width="910" height="510" rx="24" fill="#14141A"/>
+<rect width="910" height="510" rx="24" fill="url(#dots)"/>
+<rect x="4" y="4" width="902" height="502" rx="21" fill="none" stroke="#F1E8D9" stroke-width="3" opacity=".8"/>
+<g><rect x="29" y="24" width="250" height="52" rx="12" fill="#000" opacity=".5"/><rect x="25" y="20" width="250" height="52" rx="12" fill="#2E9AD1" stroke="#0B0D12" stroke-width="4"/><g transform="translate(55 46)"><path d="M-8,0 L-2,7 L9,-7" fill="none" stroke="#14141A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></g><text x="81" y="55" font-family="Impact, 'Arial Black', 'Haettenschweiler', 'Franklin Gothic Heavy', sans-serif" font-size="25" fill="#14141A" textLength="186" lengthAdjust="spacingAndGlyphs">DESBLOQUEADO</text></g>
+<g class="chip" style="animation-delay:0.00s">
+  <rect x="25" y="92" width="250" height="40" rx="10" fill="#1B232D" stroke="#2E9AD1" stroke-width="2.5"/>
+  <path d="M39,113 l5,6 l10,-12" fill="none" stroke="#2E9AD1" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="69" y="118" font-family="'Trebuchet MS', 'Segoe UI', Verdana, sans-serif" font-weight="700" font-size="17" fill="#F1E8D9">JavaScript</text>
+</g>
+<g class="chip" style="animation-delay:0.11s">
+  <rect x="25" y="142" width="250" height="40" rx="10" fill="#1B232D" stroke="#2E9AD1" stroke-width="2.5"/>
+  <path d="M39,163 l5,6 l10,-12" fill="none" stroke="#2E9AD1" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="69" y="168" font-family="'Trebuchet MS', 'Segoe UI', Verdana, sans-serif" font-weight="700" font-size="17" fill="#F1E8D9">HTML · CSS</text>
+</g>
+<g class="chip" style="animation-delay:0.22s">
+  <rect x="25" y="192" width="250" height="40" rx="10" fill="#1B232D" stroke="#2E9AD1" stroke-width="2.5"/>
+  <path d="M39,213 l5,6 l10,-12" fill="none" stroke="#2E9AD1" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="69" y="218" font-family="'Trebuchet MS', 'Segoe UI', Verdana, sans-serif" font-weight="700" font-size="17" fill="#F1E8D9">PHP · Node.js</text>
+</g>
+<g class="chip" style="animation-delay:0.33s">
+  <rect x="25" y="242" width="250" height="40" rx="10" fill="#1B232D" stroke="#2E9AD1" stroke-width="2.5"/>
+  <path d="M39,263 l5,6 l10,-12" fill="none" stroke="#2E9AD1" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="69" y="268" font-family="'Trebuchet MS', 'Segoe UI', Verdana, sans-serif" font-weight="700" font-size="17" fill="#F1E8D9">SQL · DBeaver</text>
+</g>
+<g class="chip" style="animation-delay:0.44s">
+  <rect x="25" y="292" width="250" height="40" rx="10" fill="#1B232D" stroke="#2E9AD1" stroke-width="2.5"/>
+  <path d="M39,313 l5,6 l10,-12" fill="none" stroke="#2E9AD1" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="69" y="318" font-family="'Trebuchet MS', 'Segoe UI', Verdana, sans-serif" font-weight="700" font-size="17" fill="#F1E8D9">APIs e integrações</text>
+</g>
+<g class="chip" style="animation-delay:0.55s">
+  <rect x="25" y="342" width="250" height="40" rx="10" fill="#1B232D" stroke="#2E9AD1" stroke-width="2.5"/>
+  <path d="M39,363 l5,6 l10,-12" fill="none" stroke="#2E9AD1" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="69" y="368" font-family="'Trebuchet MS', 'Segoe UI', Verdana, sans-serif" font-weight="700" font-size="17" fill="#F1E8D9">QA · testes de API</text>
+</g>
+<g class="chip" style="animation-delay:0.66s">
+  <rect x="25" y="392" width="250" height="40" rx="10" fill="#1B232D" stroke="#2E9AD1" stroke-width="2.5"/>
+  <path d="M39,413 l5,6 l10,-12" fill="none" stroke="#2E9AD1" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="69" y="418" font-family="'Trebuchet MS', 'Segoe UI', Verdana, sans-serif" font-weight="700" font-size="17" fill="#F1E8D9">Linux · Cloud</text>
+</g>
+<g class="chip" style="animation-delay:0.77s">
+  <rect x="25" y="442" width="250" height="40" rx="10" fill="#1B232D" stroke="#2E9AD1" stroke-width="2.5"/>
+  <path d="M39,463 l5,6 l10,-12" fill="none" stroke="#2E9AD1" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="69" y="468" font-family="'Trebuchet MS', 'Segoe UI', Verdana, sans-serif" font-weight="700" font-size="17" fill="#F1E8D9">Figma · UX/UI</text>
+</g>
+<g><rect x="334" y="24" width="250" height="52" rx="12" fill="#000" opacity=".5"/><rect x="330" y="20" width="250" height="52" rx="12" fill="#F29A38" stroke="#0B0D12" stroke-width="4"/><g transform="translate(360 46)"><path class="pulse" d="M-6,-9 L9,0 L-6,9Z" fill="#14141A"/></g><text x="386" y="55" font-family="Impact, 'Arial Black', 'Haettenschweiler', 'Franklin Gothic Heavy', sans-serif" font-size="25" fill="#14141A" textLength="140" lengthAdjust="spacingAndGlyphs">EM TREINO</text></g>
+<g class="chip" style="animation-delay:0.25s">
+  <rect x="330" y="92" width="250" height="40" rx="10" fill="#1B232D" stroke="#F29A38" stroke-width="2.5" stroke-dasharray="9 6" class="march"/>
+  <circle class="pulse" cx="354" cy="112" r="6" fill="#F29A38"/>
+  <text x="374" y="118" font-family="'Trebuchet MS', 'Segoe UI', Verdana, sans-serif" font-weight="700" font-size="17" fill="#F1E8D9">Python</text>
+</g>
+<g class="chip" style="animation-delay:0.36s">
+  <rect x="330" y="142" width="250" height="40" rx="10" fill="#1B232D" stroke="#F29A38" stroke-width="2.5" stroke-dasharray="9 6" class="march"/>
+  <circle class="pulse" cx="354" cy="162" r="6" fill="#F29A38"/>
+  <text x="374" y="168" font-family="'Trebuchet MS', 'Segoe UI', Verdana, sans-serif" font-weight="700" font-size="17" fill="#F1E8D9">Jupyter Notebook</text>
+</g>
+<g class="chip" style="animation-delay:0.47s">
+  <rect x="330" y="192" width="250" height="40" rx="10" fill="#1B232D" stroke="#F29A38" stroke-width="2.5" stroke-dasharray="9 6" class="march"/>
+  <circle class="pulse" cx="354" cy="212" r="6" fill="#F29A38"/>
+  <text x="374" y="218" font-family="'Trebuchet MS', 'Segoe UI', Verdana, sans-serif" font-weight="700" font-size="17" fill="#F1E8D9">LLMs e IA generativa</text>
+</g>
+<g class="chip" style="animation-delay:0.58s">
+  <rect x="330" y="242" width="250" height="40" rx="10" fill="#1B232D" stroke="#F29A38" stroke-width="2.5" stroke-dasharray="9 6" class="march"/>
+  <circle class="pulse" cx="354" cy="262" r="6" fill="#F29A38"/>
+  <text x="374" y="268" font-family="'Trebuchet MS', 'Segoe UI', Verdana, sans-serif" font-weight="700" font-size="17" fill="#F1E8D9">Hugging Face</text>
+</g>
+<g class="chip" style="animation-delay:0.69s">
+  <rect x="330" y="292" width="250" height="40" rx="10" fill="#1B232D" stroke="#F29A38" stroke-width="2.5" stroke-dasharray="9 6" class="march"/>
+  <circle class="pulse" cx="354" cy="312" r="6" fill="#F29A38"/>
+  <text x="374" y="318" font-family="'Trebuchet MS', 'Segoe UI', Verdana, sans-serif" font-weight="700" font-size="17" fill="#F1E8D9">APIs de modelos</text>
+</g>
+<g class="chip" style="animation-delay:0.80s">
+  <rect x="330" y="342" width="250" height="40" rx="10" fill="#1B232D" stroke="#F29A38" stroke-width="2.5" stroke-dasharray="9 6" class="march"/>
+  <circle class="pulse" cx="354" cy="362" r="6" fill="#F29A38"/>
+  <text x="374" y="368" font-family="'Trebuchet MS', 'Segoe UI', Verdana, sans-serif" font-weight="700" font-size="17" fill="#F1E8D9">Automação com IA</text>
+</g>
+<g><rect x="639" y="24" width="250" height="52" rx="12" fill="#000" opacity=".5"/><rect x="635" y="20" width="250" height="52" rx="12" fill="#7FB9C6" stroke="#0B0D12" stroke-width="4"/><g transform="translate(665 46)"><rect x="-8" y="-2" width="16" height="12" rx="2" fill="#14141A"/><path d="M-5,-2 V-6 A5,5 0 0 1 5,-6 V-2" fill="none" stroke="#14141A" stroke-width="3"/></g><text x="691" y="55" font-family="Impact, 'Arial Black', 'Haettenschweiler', 'Franklin Gothic Heavy', sans-serif" font-size="25" fill="#14141A" textLength="186" lengthAdjust="spacingAndGlyphs">PRÓXIMO NÍVEL</text></g>
+<g class="chip dim" style="animation-delay:0.50s">
+  <rect x="635" y="92" width="250" height="40" rx="10" fill="#1B232D" stroke="#7FB9C6" stroke-width="2.2" stroke-dasharray="3 6" opacity=".8"/>
+  <g transform="translate(659 112)" opacity=".85"><rect x="-6" y="-2" width="12" height="9" rx="1.5" fill="#7FB9C6"/><path d="M-3.5,-2 V-5 A3.5,3.5 0 0 1 3.5,-5 V-2" fill="none" stroke="#7FB9C6" stroke-width="2"/></g>
+  <text x="679" y="118" font-family="'Trebuchet MS', 'Segoe UI', Verdana, sans-serif" font-weight="700" font-size="17" fill="#F1E8D9">Fundamentos de ML</text>
+</g>
+<g class="chip dim" style="animation-delay:0.61s">
+  <rect x="635" y="142" width="250" height="40" rx="10" fill="#1B232D" stroke="#7FB9C6" stroke-width="2.2" stroke-dasharray="3 6" opacity=".8"/>
+  <g transform="translate(659 162)" opacity=".85"><rect x="-6" y="-2" width="12" height="9" rx="1.5" fill="#7FB9C6"/><path d="M-3.5,-2 V-5 A3.5,3.5 0 0 1 3.5,-5 V-2" fill="none" stroke="#7FB9C6" stroke-width="2"/></g>
+  <text x="679" y="168" font-family="'Trebuchet MS', 'Segoe UI', Verdana, sans-serif" font-weight="700" font-size="17" fill="#F1E8D9">Preparação de dados</text>
+</g>
+<g class="chip dim" style="animation-delay:0.72s">
+  <rect x="635" y="192" width="250" height="40" rx="10" fill="#1B232D" stroke="#7FB9C6" stroke-width="2.2" stroke-dasharray="3 6" opacity=".8"/>
+  <g transform="translate(659 212)" opacity=".85"><rect x="-6" y="-2" width="12" height="9" rx="1.5" fill="#7FB9C6"/><path d="M-3.5,-2 V-5 A3.5,3.5 0 0 1 3.5,-5 V-2" fill="none" stroke="#7FB9C6" stroke-width="2"/></g>
+  <text x="679" y="218" font-family="'Trebuchet MS', 'Segoe UI', Verdana, sans-serif" font-weight="700" font-size="17" fill="#F1E8D9">Treino e avaliação</text>
+</g>
+<g class="chip dim" style="animation-delay:0.83s">
+  <rect x="635" y="242" width="250" height="40" rx="10" fill="#1B232D" stroke="#7FB9C6" stroke-width="2.2" stroke-dasharray="3 6" opacity=".8"/>
+  <g transform="translate(659 262)" opacity=".85"><rect x="-6" y="-2" width="12" height="9" rx="1.5" fill="#7FB9C6"/><path d="M-3.5,-2 V-5 A3.5,3.5 0 0 1 3.5,-5 V-2" fill="none" stroke="#7FB9C6" stroke-width="2"/></g>
+  <text x="679" y="268" font-family="'Trebuchet MS', 'Segoe UI', Verdana, sans-serif" font-weight="700" font-size="17" fill="#F1E8D9">RAG</text>
+</g>
+<g class="chip dim" style="animation-delay:0.94s">
+  <rect x="635" y="292" width="250" height="40" rx="10" fill="#1B232D" stroke="#7FB9C6" stroke-width="2.2" stroke-dasharray="3 6" opacity=".8"/>
+  <g transform="translate(659 312)" opacity=".85"><rect x="-6" y="-2" width="12" height="9" rx="1.5" fill="#7FB9C6"/><path d="M-3.5,-2 V-5 A3.5,3.5 0 0 1 3.5,-5 V-2" fill="none" stroke="#7FB9C6" stroke-width="2"/></g>
+  <text x="679" y="318" font-family="'Trebuchet MS', 'Segoe UI', Verdana, sans-serif" font-weight="700" font-size="17" fill="#F1E8D9">IA em aplicações</text>
+</g>
+<path class="chev" style="animation-delay:0.0s" d="M284.5,237 L295.5,250 L284.5,263" fill="none" stroke="#F1E8D9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><path class="chev" style="animation-delay:0.25s" d="M297.5,237 L308.5,250 L297.5,263" fill="none" stroke="#F1E8D9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><path class="chev" style="animation-delay:0.5s" d="M310.5,237 L321.5,250 L310.5,263" fill="none" stroke="#F1E8D9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><path class="chev" style="animation-delay:0.0s" d="M589.5,237 L600.5,250 L589.5,263" fill="none" stroke="#F1E8D9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><path class="chev" style="animation-delay:0.25s" d="M602.5,237 L613.5,250 L602.5,263" fill="none" stroke="#F1E8D9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><path class="chev" style="animation-delay:0.5s" d="M615.5,237 L626.5,250 L615.5,263" fill="none" stroke="#F1E8D9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><g class="boss">
+  <rect x="635" y="372" width="250" height="100" rx="14" fill="#2A1F10" stroke="#F7C948" stroke-width="3.5"/>
+  <text x="760.0" y="399" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-weight="700" font-size="13" letter-spacing="3" fill="#7FB9C6">META FINAL</text>
+  <text x="760.0" y="434" text-anchor="middle" font-family="Impact, 'Arial Black', 'Haettenschweiler', 'Franklin Gothic Heavy', sans-serif" font-size="33" letter-spacing="1" fill="#F7C948" textLength="206" lengthAdjust="spacingAndGlyphs">AI ENGINEER</text>
+  <text x="760.0" y="458" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="12.5" fill="#F1E8D9" textLength="214" lengthAdjust="spacingAndGlyphs">Generative AI · Machine Learning</text>
+</g>
+<g transform="translate(877 376)"><path class="tw" d="M0,-14 L3.5,-3.5 L14,0 L3.5,3.5 L0,14 L-3.5,3.5 L-14,0 L-3.5,-3.5Z" fill="#F7C948"/></g><g transform="translate(645 468)"><path class="tw" style="animation-delay:.8s" d="M0,-14 L3.5,-3.5 L14,0 L3.5,3.5 L0,14 L-3.5,3.5 L-14,0 L-3.5,-3.5Z" fill="#F29A38"/></g>
+
+</svg>

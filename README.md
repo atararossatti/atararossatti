@@ -1,37 +1,28 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,24&height=190&section=header&text=%C3%81tara%20Rossatti&fontSize=52&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=curiosidade%20que%20vira%20c%C3%B3digo%20%C2%B7%20ideias%20que%20viram%20solu%C3%A7%C3%B5es&descSize=17&descAlignY=60" alt="Átara Rossatti" width="100%">
+<img src="assets/banner.svg" alt="Átara Rossatti — Desenvolvimento Full Stack, QA, Automação e, em evolução, AI & Machine Learning Engineering. Curiosidade que vira código. Ideias que viram soluções." width="100%">
 
-<a href="https://github.com/atararossatti">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=19&duration=3200&pause=900&color=8B5CF6&center=true&vCenter=true&width=640&lines=Desenvolvimento+Full+Stack;Quality+Assurance+%26+Testes;Automa%C3%A7%C3%A3o+de+processos;Em+evolu%C3%A7%C3%A3o+para+AI+%26+ML+Engineering+%E2%9C%A6" alt="Digitando: Full Stack, QA, Automação, AI & ML Engineering">
-</a>
+<br>
 
-<br><br>
+<p><sub><code>DESENVOLVER · INVESTIGAR · AUTOMATIZAR · EVOLUIR</code></sub></p>
 
-<img src="https://img.shields.io/badge/BUILD-8B5CF6?style=for-the-badge" alt="Build">
-<img src="https://img.shields.io/badge/TEST-06B6D4?style=for-the-badge" alt="Test">
-<img src="https://img.shields.io/badge/AUTOMATE-EC4899?style=for-the-badge" alt="Automate">
-<img src="https://img.shields.io/badge/LEARN-F59E0B?style=for-the-badge" alt="Learn">
-
-<br><br>
-
+<p>
 <a href="https://www.linkedin.com/in/atarasilva/">LinkedIn</a> &nbsp;·&nbsp;
 <a href="mailto:dev.tec@outlook.com.br">Vamos conversar</a> &nbsp;·&nbsp;
 <a href="https://github.com/atararossatti?tab=repositories">Explore meus projetos</a>
+</p>
 
 </div>
 
----
+<br>
 
-## `~/atara $ whoami`
+<div align="center"><img src="assets/h-01.svg" alt="01 · Por trás do código" width="100%"></div>
 
-```text
-nome         : Átara Rossatti
-trilha       : Full Stack  →  QA  →  Automação  →  IA & Machine Learning
-superpoder   : transformar "isso está estranho" em "achei a causa"
-modo padrão  : curiosa, investigativa, orientada a simplificar
-status       : 🌱 compilando a próxima versão de mim
-```
+<div align="center">
+  <img src="assets/terminal.svg" alt="Terminal: Átara Rossatti, Dev Full Stack, QA e Automação, a caminho de IA e Machine Learning. Superpoder: transformar 'isso está estranho' em 'achei a causa'." width="720">
+</div>
+
+<br>
 
 Gosto de entender como as coisas funcionam, investigar problemas e transformar ideias em soluções úteis. Minha trajetória reúne **desenvolvimento web, qualidade de software, implantação, suporte técnico, segurança da informação e UX/UI**.
 
@@ -39,22 +30,17 @@ Na **ELEV Tecnologia**, minha experiência passa pelo desenvolvimento de aplica�
 
 Hoje, estou ampliando meus conhecimentos em **Inteligência Artificial, IA Generativa e Machine Learning**, com foco em aplicações práticas, assistentes e automação de processos.
 
----
+| 🎯 Habilidade | Como aparece na prática |
+| --- | --- |
+| 🔎 **Detetive de bugs** | Investigo bugs, valido regras de negócio e documento evidências para melhorar a qualidade das entregas. |
+| ⚙️ **Conector de sistemas** | Trabalho com integrações, APIs e automação de atendimento. |
+| 🧩 **Pé no código, olho no usuário** | Combino desenvolvimento, usabilidade e resolução de problemas. |
+| 🤝 **Jogo em equipe** | Tenho experiência em equipes multidisciplinares e participação em hackathons. |
+| 🌱 **Missão atual** | Estou construindo minha trajetória em **AI Engineer / Generative AI Engineer / Machine Learning Engineer**. |
 
-## 🗺️ Linha do tempo (ou: meu `git log`)
+<br>
 
-```text
-* 🌱 agora      feat: aprofundar IA, IA Generativa e Machine Learning
-* 🤝 2024       feat: hackathons Anatel e Visite São Paulo (trabalho em equipe)
-* 🔎 ELEV Tec.  fix:  bugs investigados, regras validadas, evidências documentadas
-* ⚙️ ELEV Tec.  feat: integrações, APIs e automação de atendimento
-* 🧩 ELEV Tec.  chore: suporte N1/N2, implantação e QA
-* 💡 início     init: curiosidade (+ HTML, CSS e JavaScript)
-```
-
----
-
-## 🧰 Minha caixa de ferramentas
+<div align="center"><img src="assets/h-02.svg" alt="02 · Minha caixa de ferramentas" width="100%"></div>
 
 <div align="center">
 
@@ -75,7 +61,7 @@ Hoje, estou ampliando meus conhecimentos em **Inteligência Artificial, IA Gener
 
 <br>
 
-| 🎮 Fase | O que eu faço por lá |
+| 🎒 Slot | O que tem dentro |
 | --- | --- |
 | 🌐 **Desenvolvimento Web** | JavaScript, HTML, CSS, PHP, Node.js, interfaces responsivas, manutenção de aplicações e correção de bugs. |
 | 🔌 **APIs e integrações** | Consumo e desenvolvimento de APIs, integração entre sistemas e análise de requisições e respostas. |
@@ -86,65 +72,83 @@ Hoje, estou ampliando meus conhecimentos em **Inteligência Artificial, IA Gener
 | 💬 **Automação de atendimento** | Fluxos com Typebot, integrações com WhatsApp Business/API oficial e melhoria de processos. |
 | 🎨 **UX/UI e colaboração** | Figma, prototipação, usabilidade, Git, GitHub, GitLab, metodologias ágeis e conhecimentos de ITIL. |
 
----
+<br>
 
-## 🔭 Próxima fronteira: inteligência artificial
+<div align="center"><img src="assets/h-03.svg" alt="03 · Próxima fronteira: inteligência artificial" width="100%"></div>
 
-```python
-class Atara:
-    def __init__(self):
-        self.base   = ["desenvolvimento", "integrações", "QA"]
-        self.agora  = ["Python", "LLMs", "IA generativa", "Hugging Face"]
-        self.depois = ["Machine Learning", "RAG", "avaliação de modelos"]
+<div align="center">
+  <img src="assets/skill-tree.svg" alt="Árvore de habilidades. Desbloqueado: JavaScript, HTML e CSS, PHP e Node.js, SQL e DBeaver, APIs e integrações, QA e testes de API, Linux e cloud, Figma e UX/UI. Em treino: Python, Jupyter Notebook, LLMs e IA generativa, Hugging Face, APIs de modelos, automação com IA. Próximo nível: fundamentos de ML, preparação de dados, treino e avaliação, RAG, IA em aplicações. Meta final: AI Engineer." width="760">
+</div>
 
-    def objetivo(self):
-        return "IA útil, com respostas de qualidade, boa experiência e dados seguros"
-```
+<br>
 
-**🧪 No laboratório agora**
+Estou direcionando meus estudos e projetos pessoais para a criação de soluções com IA, aproveitando minha base em desenvolvimento, integrações e qualidade de software.
 
-- 🐍 **Python e Jupyter Notebook:** estudos de programação e experimentação.
-- 🧠 **LLMs e IA generativa:** compreensão de modelos de linguagem e suas aplicações em chats, assistentes e atendimento.
-- 🤗 **Hugging Face:** exploração do ecossistema de modelos e das famílias Qwen, Llama, Mistral e Gemma.
-- 🔗 **Integração de IA em aplicações:** estudos sobre APIs de modelos, inferência e consumo de tokens.
-- 🤖 **Automação assistida por IA:** exploração de fluxos para transcrição, organização de informações e redução de tarefas repetitivas.
+<details>
+<summary><b>🧪 Ver o que estou estudando em detalhe</b></summary>
 
-**🚀 Próximos níveis desbloqueáveis:** fundamentos de Machine Learning, preparação de dados, treinamento e avaliação de modelos, RAG e disponibilização de soluções de IA em aplicações.
+<br>
 
-> 💜 Meu objetivo é unir desenvolvimento e QA para construir aplicações de IA úteis, com atenção à qualidade das respostas, à experiência do usuário e à segurança dos dados.
+**Conhecimentos em desenvolvimento:**
 
----
+- **Python e Jupyter Notebook:** estudos de programação e experimentação.
+- **LLMs e IA generativa:** compreensão de modelos de linguagem e suas aplicações em chats, assistentes e atendimento.
+- **Hugging Face:** exploração do ecossistema de modelos e das famílias Qwen, Llama, Mistral e Gemma.
+- **Integração de IA em aplicações:** estudos sobre APIs de modelos, inferência e consumo de tokens.
+- **Automação assistida por IA:** exploração de fluxos para transcrição, organização de informações e redução de tarefas repetitivas.
 
-## 🧫 Laboratório de ideias
+**Próximos aprofundamentos:** fundamentos de Machine Learning, preparação de dados, treinamento e avaliação de modelos, RAG e disponibilização de soluções de IA em aplicações.
 
-### ⚡ Automação e IA aplicada
+</details>
 
-Tenho explorado projetos pessoais de automação de fluxos para afiliados, transcrição de reuniões com IA e apoio às atividades de QA. São iniciativas em evolução, nas quais conecto problemas do cotidiano com desenvolvimento e experimentação.
+> 💜 **Meu objetivo:** unir desenvolvimento e QA para construir aplicações de IA úteis, com atenção à qualidade das respostas, à experiência do usuário e à segurança dos dados.
 
-### 🎯 Da interface à solução
+<br>
 
-| Projeto | Tema |
-| --- | --- |
-| 🦙 **Lhama Impact** | Projeto do meu portfólio de desenvolvimento e design. |
-| 🗺️ **Turismo São Paulo** | Aplicativo de turismo desenvolvido no contexto de hackathon. |
-| 📈 **Dashboard** | Projeto de interface para visualização de informações. |
+<div align="center"><img src="assets/h-04.svg" alt="04 · Laboratório de ideias" width="100%"></div>
+
+**⚡ Automação e IA aplicada.** Tenho explorado projetos pessoais de automação de fluxos para afiliados, transcrição de reuniões com IA e apoio às atividades de QA. São iniciativas em evolução, nas quais conecto problemas do cotidiano com desenvolvimento e experimentação.
+
+<br>
+
+<table align="center">
+  <tr>
+    <td align="center" width="33%">
+      <a href="https://github.com/atararossatti?tab=repositories"><img src="assets/card-lhama-impact.webp" width="250" alt="Projeto Lhama Impact: animação com uma lhama sorridente e o título do projeto"></a><br>
+      <b>🦙 Lhama Impact</b><br>
+      <sub>Projeto do meu portfólio de desenvolvimento e design.</sub>
+    </td>
+    <td align="center" width="33%">
+      <a href="https://github.com/atararossatti?tab=repositories"><img src="assets/card-turismo-sp.webp" width="250" alt="Projeto Aplicativo Turismo São Paulo: animação com a Ponte Estaiada e o título do projeto"></a><br>
+      <b>🗺️ Turismo São Paulo</b><br>
+      <sub>Aplicativo de turismo desenvolvido no contexto de hackathon.</sub>
+    </td>
+    <td align="center" width="33%">
+      <a href="https://github.com/atararossatti?tab=repositories"><img src="assets/card-dashboard.webp" width="250" alt="Projeto Dashboard: animação de uma interface de dashboard no celular"></a><br>
+      <b>📈 Dashboard</b><br>
+      <sub>Projeto de interface para visualização de informações.</sub>
+    </td>
+  </tr>
+</table>
 
 <div align="center">
 
-<a href="https://github.com/atararossatti?tab=repositories"><img src="https://img.shields.io/badge/Explore_meus_reposit%C3%B3rios-%E2%86%92-8B5CF6?style=for-the-badge" alt="Explore meus repositórios"></a>
+<sub>Clique em um card para explorar os repositórios →</sub>
 
 </div>
 
----
+<br>
 
-## 🤝 Ideias em equipe
+<div align="center"><img src="assets/h-05.svg" alt="05 · Ideias em equipe" width="100%"></div>
 
-- 📡 **Hackathon Anatel:** participação no desafio relacionado a TV Boxes ilegais. [Sobre o evento](https://g1.globo.com/sp/sao-paulo/noticia/2024/09/29/apos-promover-desafio-anatel-seleciona-3-melhores-solucoes-para-acabar-com-tv-boxes-ilegais.ghtml).
-- 🏙️ **Hackathon Visite São Paulo:** participação em projeto de aplicativo para turismo em São Paulo. [Registro da participação](https://www.linkedin.com/feed/update/urn:li:activity:7257178025828491265/).
+| 🏆 Missão | O que rolou |
+| --- | --- |
+| 📡 **Hackathon Anatel** | Participação no desafio relacionado a TV Boxes ilegais. [Sobre o evento](https://g1.globo.com/sp/sao-paulo/noticia/2024/09/29/apos-promover-desafio-anatel-seleciona-3-melhores-solucoes-para-acabar-com-tv-boxes-ilegais.ghtml) |
+| 🏙️ **Hackathon Visite São Paulo** | Participação em projeto de aplicativo para turismo em São Paulo. [Registro da participação](https://www.linkedin.com/feed/update/urn:li:activity:7257178025828491265/) |
 
----
+<br>
 
-## 🏅 Conquistas desbloqueadas
+<div align="center"><img src="assets/h-06.svg" alt="06 · Aprender faz parte do processo" width="100%"></div>
 
 <div align="center">
 
@@ -160,20 +164,27 @@ Tenho explorado projetos pessoais de automação de fluxos para afiliados, trans
 
 </div>
 
----
+<br>
 
 <div align="center">
 
-```text
- ┌────────────────────────────────────────────────────────┐
- │  Sempre existe um jeito de simplificar.                │
- │  Eu gosto de encontrá-lo.                              │
- └────────────────────────────────────────────────────────┘
-```
-
-<a href="https://www.linkedin.com/in/atarasilva/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
-<a href="mailto:dev.tec@outlook.com.br"><img src="https://img.shields.io/badge/E--mail-EC4899?style=for-the-badge&logo=gmail&logoColor=white" alt="E-mail"></a>
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,24&height=110&section=footer" alt="" width="100%">
+<a href="https://www.linkedin.com/in/atarasilva/"><img src="assets/btn-linkedin.svg" alt="Abrir LinkedIn" width="270"></a>
+<a href="mailto:dev.tec@outlook.com.br"><img src="assets/btn-email.svg" alt="Vamos conversar por e-mail" width="270"></a>
+<a href="https://github.com/atararossatti?tab=repositories"><img src="assets/btn-projetos.svg" alt="Ver meus repositórios" width="270"></a>
 
 </div>
+
+<br>
+
+<div align="center">
+<details>
+<summary>🎮 <code>↑ ↑ ↓ ↓ ← → ← → B A</code></summary>
+<br>
+<b>Cheat code ativado: +1 vida 💜</b><br>
+Obrigada por ler até aqui! Se quiser trocar ideia sobre QA, automação ou IA, é só chamar.
+</details>
+</div>
+
+<br>
+
+<img src="assets/footer.svg" alt="Sempre existe um jeito de simplificar. Eu gosto de encontrá-lo. Skyline noturna de São Paulo com a ponte estaiada." width="100%">

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 84" width="1000" height="84" role="img" aria-labelledby="t d">
+<title id="t">06 · Aprender faz parte do processo</title>
+<desc id="d">06 · Aprender faz parte do processo</desc>
+<defs>
+<clipPath id="c"><rect x="0" y="6" width="1000" height="72" rx="16"/></clipPath>
+<style>
+
+.run{animation:run 4.5s linear infinite}
+@keyframes run{from{transform:translateX(-60px)}to{transform:translateX(1000px)}}
+.tag{animation:tag 3s ease-in-out infinite}
+@keyframes tag{0%,100%{transform:rotate(-3deg)}50%{transform:rotate(2deg)}}
+.tag{transform-box:fill-box;transform-origin:center}
+
+@media (prefers-reduced-motion: reduce){*{animation:none !important}}
+</style>
+</defs>
+
+<rect x="0" y="6" width="1000" height="72" rx="16" fill="#14141A"/>
+<rect x="2" y="8" width="996" height="68" rx="14" fill="none" stroke="#2E9AD1" stroke-width="2" opacity=".6"/>
+<g class="tag">
+  <rect x="20" y="2" width="74" height="74" rx="10" fill="#000" opacity=".5" transform="translate(5 6)"/>
+  <rect x="20" y="2" width="74" height="74" rx="10" fill="#2E9AD1" stroke="#0B0D12" stroke-width="4"/>
+  <text x="57" y="57" text-anchor="middle" font-family="Impact, 'Arial Black', 'Haettenschweiler', 'Franklin Gothic Heavy', sans-serif" font-size="44" fill="#14141A">06</text>
+</g>
+<text x="116" y="56" font-family="Impact, 'Arial Black', 'Haettenschweiler', 'Franklin Gothic Heavy', sans-serif" font-size="42" letter-spacing="1.5" fill="#F1E8D9">CONQUISTAS</text>
+<text x="974" y="51" text-anchor="end" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="17" fill="#2E9AD1">// aprender faz parte</text>
+<g clip-path="url(#c)"><rect class="run" x="0" y="72" width="60" height="4" rx="2" fill="#2E9AD1"/></g>
+
+</svg>

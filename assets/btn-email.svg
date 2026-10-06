@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 96" width="360" height="96" role="img" aria-labelledby="t d">
+<title id="t">Enviar e-mail</title>
+<desc id="d">Enviar e-mail</desc>
+<defs>
+
+<style>
+
+.coin{transform-box:fill-box;transform-origin:center;animation:spin 2s linear infinite}
+@keyframes spin{0%{transform:scaleX(1)}50%{transform:scaleX(.12)}100%{transform:scaleX(1)}}
+.btn{animation:hover 3s ease-in-out infinite}
+@keyframes hover{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px)}}
+.sub{animation:blink 1.4s steps(1) infinite}
+@keyframes blink{60%{opacity:.35}}
+
+@media (prefers-reduced-motion: reduce){*{animation:none !important}}
+</style>
+</defs>
+
+<g class="btn">
+  <rect x="9" y="13" width="346" height="76" rx="18" fill="#000" opacity=".5"/>
+  <rect x="4" y="6" width="346" height="76" rx="18" fill="#E0524A" stroke="#14141A" stroke-width="5"/>
+  <g transform="translate(52 44)">
+    <ellipse class="coin" cx="0" cy="0" rx="22" ry="22" fill="#F7C948" stroke="#14141A" stroke-width="4"/>
+    <text class="coin" x="0" y="9" text-anchor="middle" font-family="Impact, 'Arial Black', 'Haettenschweiler', 'Franklin Gothic Heavy', sans-serif" font-size="26" fill="#14141A">$</text>
+  </g>
+  <text x="96" y="46" font-family="Impact, 'Arial Black', 'Haettenschweiler', 'Franklin Gothic Heavy', sans-serif" font-size="30" fill="#F1E8D9" textLength="232" lengthAdjust="spacingAndGlyphs">VAMOS CONVERSAR</text>
+  <text class="sub" x="97" y="68" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-weight="700" font-size="13.5" letter-spacing="1" fill="#F1E8D9" opacity=".85">▶ INSERT COIN · E-MAIL</text>
+</g>
+
+</svg>
