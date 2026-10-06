@@ -152,15 +152,16 @@ Estou direcionando meus estudos e projetos pessoais para a criação de soluçõ
 
 <div align="center">
 
-<a href="https://www.credly.com/badges/8ebc4ed7-fc22-40ac-905b-3aeadc437996/public_url"><img src="https://images.credly.com/size/110x110/images/25b13818-6498-47e7-a2b5-83852dacabf2/blob" alt="Credencial no Credly — consultar detalhes" width="90" height="90"></a>
-<a href="https://www.credly.com/badges/eb37ba60-d984-4580-adea-1f1ce2abac09/public_url"><img src="https://images.credly.com/size/110x110/images/52ea4613-6f77-4d62-8e19-5bb5c51722b8/blob" alt="Credencial no Credly — consultar detalhes" width="90" height="90"></a>
-<a href="https://www.credly.com/badges/2314d46d-07d5-4dad-a4a8-0b4aa8e13ab8/public_url"><img src="https://images.credly.com/size/110x110/images/712a773b-9acc-4bc8-90fa-6afdfc95da1e/image.png" alt="Credencial no Credly — consultar detalhes" width="90" height="90"></a>
-<a href="https://www.credly.com/badges/b6384d16-3412-4ee5-830c-73a90abd7df4/public_url"><img src="https://brasil.certiprof.com/cdn/shop/files/Fundamentos_da_Lei_Geral_de_Prote_o_de_Dados_LGPDF_480x480.webp?v=1733256864" alt="Fundamentos da Lei Geral de Proteção de Dados" width="90" height="90"></a>
-<a href="https://www.credly.com/badges/1ba73005-0f15-49f2-b97b-ca90c7f30ba4/public_url"><img src="https://images.credly.com/size/110x110/images/4e3d6f9f-55d7-4ea7-b0e6-f4d4ff543e22/image.png" alt="Credencial no Credly — consultar detalhes" width="90" height="90"></a>
-
+<a href="https://www.credly.com/badges/8ebc4ed7-fc22-40ac-905b-3aeadc437996/public_url"><img src="assets/ach-remote.svg" width="400" alt="Credencial Remote Work Learner 2025, emitida pela Certiprof"></a>
+<a href="https://www.credly.com/badges/eb37ba60-d984-4580-adea-1f1ce2abac09/public_url"><img src="assets/ach-cyber-learner.svg" width="400" alt="Credencial Cybersecurity Awareness Learner 2025, emitida pela Certiprof"></a>
 <br>
+<a href="https://www.credly.com/badges/2314d46d-07d5-4dad-a4a8-0b4aa8e13ab8/public_url"><img src="assets/ach-capc.svg" width="400" alt="Credencial Cybersecurity Awareness CAPC, emitida pela Certiprof"></a>
+<a href="https://www.credly.com/badges/b6384d16-3412-4ee5-830c-73a90abd7df4/public_url"><img src="assets/ach-lgpd.svg" width="400" alt="Credencial Fundamentos da Lei Geral de Proteção de Dados, LGPDF, emitida pela Certiprof"></a>
+<br>
+<a href="https://www.credly.com/badges/1ba73005-0f15-49f2-b97b-ca90c7f30ba4/public_url"><img src="assets/ach-scrum.svg" width="400" alt="Credencial Scrum Foundation Professional Certification, SFPC, emitida pela Certiprof"></a>
+<a href="https://cursos.alura.com.br/certificate/atara-rossatti/figma-construindo-layout-primeiro-site-mobile"><img src="assets/ach-alura-figma.svg" width="400" alt="Certificado da Alura: Figma, construindo o layout do seu primeiro site mobile"></a>
 
-<a href="https://cursos.alura.com.br/certificate/atara-rossatti/figma-construindo-layout-primeiro-site-mobile">Certificado Alura · Figma: construindo o layout do seu site mobile</a>
+<sub>Clique em um card para abrir a credencial.</sub>
 
 </div>
 

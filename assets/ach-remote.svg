@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 132" width="420" height="132" role="img" aria-labelledby="t d">
+<title id="t">Credencial Remote Work Learner 2025, emitida pela Certiprof</title>
+<desc id="d">Credencial Remote Work Learner 2025, emitida pela Certiprof</desc>
+<defs>
+<clipPath id="cl"><rect x="3" y="3" width="414" height="126" rx="16"/></clipPath>
+<pattern id="dt" width="12" height="12" patternUnits="userSpaceOnUse"><circle cx="6" cy="6" r="1.5" fill="#7FB9C6" opacity=".16"/></pattern>
+<style>
+
+.med{animation:bob 3s ease-in-out infinite;animation-delay:0.0s}
+@keyframes bob{0%,100%{transform:translateY(0) rotate(-3deg)}50%{transform:translateY(-4px) rotate(3deg)}}
+.shine{animation:shine 5.5s ease-in-out infinite;animation-delay:0.0s}
+@keyframes shine{0%,55%{transform:translateX(-120px) skewX(-18deg)}100%{transform:translateX(560px) skewX(-18deg)}}
+.tw{transform-box:fill-box;transform-origin:center;animation:tw 2.4s ease-in-out infinite;animation-delay:0.0s}
+@keyframes tw{0%,100%{transform:scale(.4) rotate(0);opacity:.3}50%{transform:scale(1.1) rotate(45deg);opacity:1}}
+.tag{animation:blink 1.6s steps(1) infinite}
+@keyframes blink{70%{opacity:.45}}
+
+@media (prefers-reduced-motion: reduce){*{animation:none !important}}
+</style>
+</defs>
+
+<rect x="3" y="3" width="414" height="126" rx="16" fill="#14141A"/>
+<rect x="3" y="3" width="414" height="126" rx="16" fill="url(#dt)"/>
+<rect x="3" y="3" width="414" height="126" rx="16" fill="none" stroke="#7FB9C6" stroke-width="3"/>
+<g class="med" style="transform-box:fill-box;transform-origin:center">
+  <circle cx="66" cy="68" r="40" fill="#000" opacity=".5" transform="translate(4 5)"/>
+  <circle cx="66" cy="68" r="40" fill="#7FB9C6" stroke="#0B0D12" stroke-width="4.5"/>
+  <circle cx="66" cy="68" r="32" fill="none" stroke="#14141A" stroke-width="2" stroke-dasharray="3 4" opacity=".55"/>
+  <g transform="translate(66 68) scale(1.15)"><path d="M-15,3 L0,-13 L15,3 V15 H-15 Z" fill="#14141A"/><rect x="-4" y="5" width="8" height="10" fill="#7FB9C6"/></g>
+</g>
+<g transform="translate(104 20)"><path class="tw" d="M0,-7 L1.8,-1.8 L7,0 L1.8,1.8 L0,7 L-1.8,1.8 L-7,0 L-1.8,-1.8Z" fill="#F7C948"/></g>
+<text class="tag" x="122" y="34" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-weight="700" font-size="11" letter-spacing="2.2" fill="#7FB9C6">CONQUISTA DESBLOQUEADA</text>
+<text x="122" y="62" font-family="'Trebuchet MS', 'Segoe UI', Verdana, sans-serif" font-weight="800" font-size="18" fill="#F1E8D9">Remote Work</text>
+<text x="122" y="86" font-family="'Trebuchet MS', 'Segoe UI', Verdana, sans-serif" font-weight="800" font-size="18" fill="#F1E8D9">Learner 2025</text>
+
+<text x="122" y="116" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-weight="700" font-size="12" letter-spacing="1.4" fill="#7FB9C6" opacity=".9">CERTIPROF · CREDLY ↗</text>
+<g clip-path="url(#cl)"><rect class="shine" x="0" y="-10" width="46" height="152" fill="#fff" opacity=".10"/></g>
+
+</svg>
