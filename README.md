@@ -1,151 +1,179 @@
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=atararossatti&label=Profile%20views&color=0e75b6&style=flat" alt="atararossatti" /> </p>
+<div align="center">
 
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,24&height=190&section=header&text=%C3%81tara%20Rossatti&fontSize=52&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=curiosidade%20que%20vira%20c%C3%B3digo%20%C2%B7%20ideias%20que%20viram%20solu%C3%A7%C3%B5es&descSize=17&descAlignY=60" alt="Átara Rossatti" width="100%">
 
-<p align="center">
-<a href='https://www.linkedin.com/in/atarasilva/' target="_blank"><img width="100%" src="./ar_dev.png"></a>
+<a href="https://github.com/atararossatti">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=19&duration=3200&pause=900&color=8B5CF6&center=true&vCenter=true&width=640&lines=Desenvolvimento+Full+Stack;Quality+Assurance+%26+Testes;Automa%C3%A7%C3%A3o+de+processos;Em+evolu%C3%A7%C3%A3o+para+AI+%26+ML+Engineering+%E2%9C%A6" alt="Digitando: Full Stack, QA, Automação, AI & ML Engineering">
+</a>
+
+<br><br>
+
+<img src="https://img.shields.io/badge/BUILD-8B5CF6?style=for-the-badge" alt="Build">
+<img src="https://img.shields.io/badge/TEST-06B6D4?style=for-the-badge" alt="Test">
+<img src="https://img.shields.io/badge/AUTOMATE-EC4899?style=for-the-badge" alt="Automate">
+<img src="https://img.shields.io/badge/LEARN-F59E0B?style=for-the-badge" alt="Learn">
+
+<br><br>
+
+<a href="https://www.linkedin.com/in/atarasilva/">LinkedIn</a> &nbsp;·&nbsp;
+<a href="mailto:dev.tec@outlook.com.br">Vamos conversar</a> &nbsp;·&nbsp;
+<a href="https://github.com/atararossatti?tab=repositories">Explore meus projetos</a>
+
+</div>
+
+---
+
+## `~/atara $ whoami`
+
+```text
+nome         : Átara Rossatti
+trilha       : Full Stack  →  QA  →  Automação  →  IA & Machine Learning
+superpoder   : transformar "isso está estranho" em "achei a causa"
+modo padrão  : curiosa, investigativa, orientada a simplificar
+status       : 🌱 compilando a próxima versão de mim
+```
+
+Gosto de entender como as coisas funcionam, investigar problemas e transformar ideias em soluções úteis. Minha trajetória reúne **desenvolvimento web, qualidade de software, implantação, suporte técnico, segurança da informação e UX/UI**.
+
+Na **ELEV Tecnologia**, minha experiência passa pelo desenvolvimento de aplicações, suporte N1 e N2, implantação e QA. Essa vivência me ajuda a conectar o código com a experiência de quem usa o sistema: entender a necessidade, investigar a causa e validar se a solução funciona no dia a dia.
+
+Hoje, estou ampliando meus conhecimentos em **Inteligência Artificial, IA Generativa e Machine Learning**, com foco em aplicações práticas, assistentes e automação de processos.
+
+---
+
+## 🗺️ Linha do tempo (ou: meu `git log`)
+
+```text
+* 🌱 agora      feat: aprofundar IA, IA Generativa e Machine Learning
+* 🤝 2024       feat: hackathons Anatel e Visite São Paulo (trabalho em equipe)
+* 🔎 ELEV Tec.  fix:  bugs investigados, regras validadas, evidências documentadas
+* ⚙️ ELEV Tec.  feat: integrações, APIs e automação de atendimento
+* 🧩 ELEV Tec.  chore: suporte N1/N2, implantação e QA
+* 💡 início     init: curiosidade (+ HTML, CSS e JavaScript)
+```
+
+---
+
+## 🧰 Minha caixa de ferramentas
+
+<div align="center">
+
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
+<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
+<img src="https://img.shields.io/badge/CSS-663399?style=for-the-badge&logo=css&logoColor=white" alt="CSS">
+<img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP">
+<img src="https://img.shields.io/badge/Node.js-5FA04E?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js">
+<img src="https://img.shields.io/badge/SQL-336791?style=for-the-badge" alt="SQL">
+<img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git">
+<img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux">
+<img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" alt="Figma">
+<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+<img src="https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white" alt="Jupyter">
+<img src="https://img.shields.io/badge/Hugging%20Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black" alt="Hugging Face">
+
+</div>
+
 <br>
-<a href="https://img.shields.io/badge/Star-Nominate%20@atararossatti-ffdd00.svg?"><img src="https://img.shields.io/badge/Star-Nominate%20@atararossatti-ffdd00.svg?logo=github&labelColor=181717&longCache=true&style=for-the-badge" alt="Star Nominate @atararossatti"></a>
-<a href="https://www.linkedin.com/in/atararsilva/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
-<a href="https://www.instagram.com/atara_rossatti/" target="_blank"><img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a>
-<a href="https://stackoverflow.com/users/atararossatti" target="_blank"><img src="https://img.shields.io/badge/Stack%20Overflow-FE7A16?style=for-the-badge&logo=stack-overflow&logoColor=white" target="_blank"></a>
-<a href="https://cursos.alura.com.br/certificate/atara-rossatti/figma-construindo-layout-primeiro-site-mobile" target="_blank"><img src="https://img.shields.io/badge/Alura-2F6D92?style=for-the-badge&logo=alura&logoColor=white" target="_blank"></a>
-</p>
 
+| 🎮 Fase | O que eu faço por lá |
+| --- | --- |
+| 🌐 **Desenvolvimento Web** | JavaScript, HTML, CSS, PHP, Node.js, interfaces responsivas, manutenção de aplicações e correção de bugs. |
+| 🔌 **APIs e integrações** | Consumo e desenvolvimento de APIs, integração entre sistemas e análise de requisições e respostas. |
+| 🕵️ **Quality Assurance** | Testes funcionais, exploratórios, de regressão e de API; cenários de teste, homologação, evidências e acompanhamento de defeitos. |
+| 📊 **Dados e produtividade** | SQL, consultas com DBeaver e Excel avançado, incluindo macros e ferramentas do Modo Desenvolvedor. |
+| 🛡️ **Infraestrutura e segurança** | Linux, máquinas virtuais em GCP e Oracle Cloud, configuração de firewall, balanceamento de carga e segurança da informação. |
+| 🎧 **Implantação e suporte** | Troubleshooting, configuração de e-mail, telefonia, PBX, URA e plataformas de atendimento. |
+| 💬 **Automação de atendimento** | Fluxos com Typebot, integrações com WhatsApp Business/API oficial e melhoria de processos. |
+| 🎨 **UX/UI e colaboração** | Figma, prototipação, usabilidade, Git, GitHub, GitLab, metodologias ágeis e conhecimentos de ITIL. |
 
-<p>
-<h1 align="center">Olá 👋, sou Atara Rossatti</h1>
-<h3 align="center">Sou Desenvolvedora Full-Stack e Designer UX/UI</h3>    
-<img align="right" alt="atara-pic" height="170" style="border-radius: 50px;" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhETGeaAyZsEybRwKDHBEUlvAM1l5aME2T-L__iAzOnMbctJdNNsKINBCrO-H6wKbUd0aYvJ6d0te4Bx9M-kuVoeXRJChJ7i5kSKxWhFqJ2cmY6gnFJwcsxsuAhVCcrMVmMhiUg1k-dWwAo6EyBpklwhmxsZM1Zfqep7769_l_pO8wazT-ThuP2fzAm4Q/s320/Design_sem_nome.gif width=676&height=676">
-</p>
+---
 
+## 🔭 Próxima fronteira: inteligência artificial
 
-- 🏅 Participe do Hackathon Anatel <a href="https://g1.globo.com/sp/sao-paulo/noticia/2024/09/29/apos-promover-desafio-anatel-seleciona-3-melhores-solucoes-para-acabar-com-tv-boxes-ilegais.ghtml?kclid=P70KwpF6jI5KWOWW">TV Boxes ilegal</a><br>
-- 📝 Participei do Hackathon Visite São Paulo <a href="https://www.linkedin.com/feed/update/urn:li:activity:7257178025828491265/">Aplicativo para Turismo em São Paulo</a><br>
-- 👨‍💻 Conheça minhas experiências <a href="https://www.linkedin.com/in/atarasilva/">LinkedIn</a><br>
-- 📫 Ou me envie um e-mail para <b>dev.tec@outlook.com.br</b>
+```python
+class Atara:
+    def __init__(self):
+        self.base   = ["desenvolvimento", "integrações", "QA"]
+        self.agora  = ["Python", "LLMs", "IA generativa", "Hugging Face"]
+        self.depois = ["Machine Learning", "RAG", "avaliação de modelos"]
 
-<br><br><br> <!-- Adiciona três quebras de linha para aumentar o espaço -->
- ---------------------
+    def objetivo(self):
+        return "IA útil, com respostas de qualidade, boa experiência e dados seguros"
+```
 
-  
-<table align="center">
-  <h3 align="center">🎨Projetos</h3>
-  <tr>
-  <td align="center"><img src="./Project Llhama Impact.gif" width="200" height="200"><br>Projeto Lhama Impact</td>
-  <td align="center"><img src="./Aplicativo Turismo sao paulo.gif" width="300" height="200"><br>Aplicativo Turismo São Paulo</td>
-  <td align="center"><img src="./Project Dashboard.gif" width="200" height="200"><br>Projeto Dashboard</td>
-  </tr>
-</table>
+**🧪 No laboratório agora**
 
- ---------------------
+- 🐍 **Python e Jupyter Notebook:** estudos de programação e experimentação.
+- 🧠 **LLMs e IA generativa:** compreensão de modelos de linguagem e suas aplicações em chats, assistentes e atendimento.
+- 🤗 **Hugging Face:** exploração do ecossistema de modelos e das famílias Qwen, Llama, Mistral e Gemma.
+- 🔗 **Integração de IA em aplicações:** estudos sobre APIs de modelos, inferência e consumo de tokens.
+- 🤖 **Automação assistida por IA:** exploração de fluxos para transcrição, organização de informações e redução de tarefas repetitivas.
 
-<h3 align="center">🏆 Meus Emblemas</h3>
+**🚀 Próximos níveis desbloqueáveis:** fundamentos de Machine Learning, preparação de dados, treinamento e avaliação de modelos, RAG e disponibilização de soluções de IA em aplicações.
 
-<p align="center">
-<a href="https://www.credly.com/badges/8ebc4ed7-fc22-40ac-905b-3aeadc437996/public_url"><img src="https://images.credly.com/size/110x110/images/25b13818-6498-47e7-a2b5-83852dacabf2/blob" alt="Emblema 1" width="110" height="110" /></a>
-<a href="https://www.credly.com/badges/eb37ba60-d984-4580-adea-1f1ce2abac09/public_url"><img src="https://images.credly.com/size/110x110/images/52ea4613-6f77-4d62-8e19-5bb5c51722b8/blob" alt="Emblema 2" width="110" height="110" /></a>
-<a href="https://www.credly.com/badges/2314d46d-07d5-4dad-a4a8-0b4aa8e13ab8/public_url"><img src="https://images.credly.com/size/110x110/images/712a773b-9acc-4bc8-90fa-6afdfc95da1e/image.png" alt="Emblema 3" width="110" height="110" /></a>
-<a href="https://www.credly.com/badges/b6384d16-3412-4ee5-830c-73a90abd7df4/public_url"><img src="https://brasil.certiprof.com/cdn/shop/files/Fundamentos_da_Lei_Geral_de_Prote_o_de_Dados_LGPDF_480x480.webp?v=1733256864" alt="Emblema 4" width="115" height="115" /></a>
-<a href="https://www.credly.com/badges/1ba73005-0f15-49f2-b97b-ca90c7f30ba4/public_url"><img src="https://images.credly.com/size/110x110/images/4e3d6f9f-55d7-4ea7-b0e6-f4d4ff543e22/image.png" alt="Emblema 5" width="110" height="110" /></a>
-</p>
+> 💜 Meu objetivo é unir desenvolvimento e QA para construir aplicações de IA úteis, com atenção à qualidade das respostas, à experiência do usuário e à segurança dos dados.
 
-- 🌍 Unindo expertise técnica e visão estratégica para construir o futuro da tecnologia. Com sólida experiência em trabalho remoto, sou adepta da colaboração global e da inovação, usando ferramentas e metodologias ágeis como Scrum para entregar resultados consistentes e de alta qualidade.
-- 🔐 Especialista em Cybersecurity e Proteção de Dados, dedico-me a criar ambientes digitais seguros e confiáveis, protegendo informações críticas e assegurando conformidade com as melhores práticas e regulamentações.
-- 📈 Acredito que tecnologia não é apenas sobre código, mas sobre impactar pessoas e transformar negócios. Meu compromisso é ir além dos desafios, buscando soluções que entreguem valor real, eficiência e segurança.
-- 💡 **Inovação guiada por propósito e impulsionada pela excelência!**
+---
 
-<p align="center">
-  <img src="https://camo.githubusercontent.com/5ad6679a100599b10c6833c4c4eb5e7128b58e66a1f95f77fb87bfc791b4dd24/68747470733a2f2f63756c746f667468657061727479706172726f742e636f6d2f706172726f74732f68642f676974687562706172726f742e676966" alt="Passaro 1" width="45" height="45">
-  <img src="https://user-images.githubusercontent.com/74038190/216120974-24a76b31-7f39-41f1-a38f-b3c1377cc612.png" alt="café1" width="45" height="45">
-  <img src="https://camo.githubusercontent.com/428feb3c47baf3db1e34cdd839386a3d4bbe6c2c4b2671111f4c0edff0bedae0/68747470733a2f2f63756c746f667468657061727479706172726f742e636f6d2f666c6167732f68642f6972616e706172726f742e676966" alt="passaro2" width="45" height="45">
-  <img src="https://user-images.githubusercontent.com/74038190/216120974-24a76b31-7f39-41f1-a38f-b3c1377cc612.png" alt="café2" width="45" height="45">
-  <img src="https://camo.githubusercontent.com/ff4478f93581788c3f10a8961c0622cc36f37c7115f91a6b68443726005d4a43/68747470733a2f2f63756c746f667468657061727479706172726f742e636f6d2f706172726f74732f68642f3630667073706172726f742e676966" alt="passaro3" width="45" height="45">
-  <img src="https://user-images.githubusercontent.com/74038190/216120974-24a76b31-7f39-41f1-a38f-b3c1377cc612.png" alt="cafe3" width="45" height="45">
-  <img src="https://camo.githubusercontent.com/9cb8ee82745871e1145ec14cf88678cd603543778df5007c77e219e933fae8b1/68747470733a2f2f63756c746f667468657061727479706172726f742e636f6d2f706172726f74732f68642f6465616c7769746869746e6f77706172726f742e676966" alt="passaro4" width="45" height="45">
-  <img src="https://user-images.githubusercontent.com/74038190/216120974-24a76b31-7f39-41f1-a38f-b3c1377cc612.png" alt="cafe4" width="45" height="45">
-  <img src="https://camo.githubusercontent.com/5ad6679a100599b10c6833c4c4eb5e7128b58e66a1f95f77fb87bfc791b4dd24/68747470733a2f2f63756c746f667468657061727479706172726f742e636f6d2f706172726f74732f68642f676974687562706172726f742e676966" alt="Passaro 1" width="45" height="45">
-  <img src="https://user-images.githubusercontent.com/74038190/216120974-24a76b31-7f39-41f1-a38f-b3c1377cc612.png" alt="café1" width="45" height="45">
-  <img src="https://camo.githubusercontent.com/428feb3c47baf3db1e34cdd839386a3d4bbe6c2c4b2671111f4c0edff0bedae0/68747470733a2f2f63756c746f667468657061727479706172726f742e636f6d2f666c6167732f68642f6972616e706172726f742e676966" alt="passaro2" width="45" height="45">
-  <img src="https://user-images.githubusercontent.com/74038190/216120974-24a76b31-7f39-41f1-a38f-b3c1377cc612.png" alt="café2" width="45" height="45">
-  <img src="https://camo.githubusercontent.com/ff4478f93581788c3f10a8961c0622cc36f37c7115f91a6b68443726005d4a43/68747470733a2f2f63756c746f667468657061727479706172726f742e636f6d2f706172726f74732f68642f3630667073706172726f742e676966" alt="passaro3" width="45" height="45">
-  <img src="https://user-images.githubusercontent.com/74038190/216120974-24a76b31-7f39-41f1-a38f-b3c1377cc612.png" alt="cafe3" width="45" height="45">
-  <img src="https://camo.githubusercontent.com/9cb8ee82745871e1145ec14cf88678cd603543778df5007c77e219e933fae8b1/68747470733a2f2f63756c746f667468657061727479706172726f742e636f6d2f706172726f74732f68642f6465616c7769746869746e6f77706172726f742e676966" alt="passaro4" width="45" height="45">
-  <img src="https://user-images.githubusercontent.com/74038190/216120974-24a76b31-7f39-41f1-a38f-b3c1377cc612.png" alt="cafe4" width="45" height="45">
-  <img src="https://camo.githubusercontent.com/5ad6679a100599b10c6833c4c4eb5e7128b58e66a1f95f77fb87bfc791b4dd24/68747470733a2f2f63756c746f667468657061727479706172726f742e636f6d2f706172726f74732f68642f676974687562706172726f742e676966" alt="Passaro 1" width="45" height="45">
-  </p>
-<p align="center"><img src="https://github.com/atararossatti/atararossatti/blob/output/github-contribution-grid-snake.svg" alt="Snake animation" /></p>
-<p align="center"><img align="center" src="https://github-profile-trophy.vercel.app/?username=atararossatti&theme=darkhub&no-frame=true&margin-w=15&column=5" alt="GitHub Trophies" /></p>
+## 🧫 Laboratório de ideias
 
+### ⚡ Automação e IA aplicada
 
-<br><br><br> <!-- Adiciona três quebras de linha para aumentar o espaço -->
+Tenho explorado projetos pessoais de automação de fluxos para afiliados, transcrição de reuniões com IA e apoio às atividades de QA. São iniciativas em evolução, nas quais conecto problemas do cotidiano com desenvolvimento e experimentação.
 
-<p align="center">
-  <img src="https://camo.githubusercontent.com/5ad6679a100599b10c6833c4c4eb5e7128b58e66a1f95f77fb87bfc791b4dd24/68747470733a2f2f63756c746f667468657061727479706172726f742e636f6d2f706172726f74732f68642f676974687562706172726f742e676966" alt="Passaro 1" width="45" height="45">
-  <img src="https://user-images.githubusercontent.com/74038190/216120974-24a76b31-7f39-41f1-a38f-b3c1377cc612.png" alt="café1" width="45" height="45">
-  <img src="https://camo.githubusercontent.com/428feb3c47baf3db1e34cdd839386a3d4bbe6c2c4b2671111f4c0edff0bedae0/68747470733a2f2f63756c746f667468657061727479706172726f742e636f6d2f666c6167732f68642f6972616e706172726f742e676966" alt="passaro2" width="45" height="45">
-  <img src="https://user-images.githubusercontent.com/74038190/216120974-24a76b31-7f39-41f1-a38f-b3c1377cc612.png" alt="café2" width="45" height="45">
-  <img src="https://camo.githubusercontent.com/ff4478f93581788c3f10a8961c0622cc36f37c7115f91a6b68443726005d4a43/68747470733a2f2f63756c746f667468657061727479706172726f742e636f6d2f706172726f74732f68642f3630667073706172726f742e676966" alt="passaro3" width="45" height="45">
-  <img src="https://user-images.githubusercontent.com/74038190/216120974-24a76b31-7f39-41f1-a38f-b3c1377cc612.png" alt="cafe3" width="45" height="45">
-  <img src="https://camo.githubusercontent.com/9cb8ee82745871e1145ec14cf88678cd603543778df5007c77e219e933fae8b1/68747470733a2f2f63756c746f667468657061727479706172726f742e636f6d2f706172726f74732f68642f6465616c7769746869746e6f77706172726f742e676966" alt="passaro4" width="45" height="45">
-  <img src="https://user-images.githubusercontent.com/74038190/216120974-24a76b31-7f39-41f1-a38f-b3c1377cc612.png" alt="cafe4" width="45" height="45">
-  <img src="https://camo.githubusercontent.com/5ad6679a100599b10c6833c4c4eb5e7128b58e66a1f95f77fb87bfc791b4dd24/68747470733a2f2f63756c746f667468657061727479706172726f742e636f6d2f706172726f74732f68642f676974687562706172726f742e676966" alt="Passaro 1" width="45" height="45">
-  <img src="https://user-images.githubusercontent.com/74038190/216120974-24a76b31-7f39-41f1-a38f-b3c1377cc612.png" alt="café1" width="45" height="45">
-  <img src="https://camo.githubusercontent.com/428feb3c47baf3db1e34cdd839386a3d4bbe6c2c4b2671111f4c0edff0bedae0/68747470733a2f2f63756c746f667468657061727479706172726f742e636f6d2f666c6167732f68642f6972616e706172726f742e676966" alt="passaro2" width="45" height="45">
-  <img src="https://user-images.githubusercontent.com/74038190/216120974-24a76b31-7f39-41f1-a38f-b3c1377cc612.png" alt="café2" width="45" height="45">
-  <img src="https://camo.githubusercontent.com/ff4478f93581788c3f10a8961c0622cc36f37c7115f91a6b68443726005d4a43/68747470733a2f2f63756c746f667468657061727479706172726f742e636f6d2f706172726f74732f68642f3630667073706172726f742e676966" alt="passaro3" width="45" height="45">
-  <img src="https://user-images.githubusercontent.com/74038190/216120974-24a76b31-7f39-41f1-a38f-b3c1377cc612.png" alt="cafe3" width="45" height="45">
-  <img src="https://camo.githubusercontent.com/9cb8ee82745871e1145ec14cf88678cd603543778df5007c77e219e933fae8b1/68747470733a2f2f63756c746f667468657061727479706172726f742e636f6d2f706172726f74732f68642f6465616c7769746869746e6f77706172726f742e676966" alt="passaro4" width="45" height="45">
-  <img src="https://user-images.githubusercontent.com/74038190/216120974-24a76b31-7f39-41f1-a38f-b3c1377cc612.png" alt="cafe4" width="45" height="45">
-  <img src="https://camo.githubusercontent.com/5ad6679a100599b10c6833c4c4eb5e7128b58e66a1f95f77fb87bfc791b4dd24/68747470733a2f2f63756c746f667468657061727479706172726f742e636f6d2f706172726f74732f68642f676974687562706172726f742e676966" alt="Passaro 1" width="45" height="45">
- </p>
+### 🎯 Da interface à solução
 
----------------------
+| Projeto | Tema |
+| --- | --- |
+| 🦙 **Lhama Impact** | Projeto do meu portfólio de desenvolvimento e design. |
+| 🗺️ **Turismo São Paulo** | Aplicativo de turismo desenvolvido no contexto de hackathon. |
+| 📈 **Dashboard** | Projeto de interface para visualização de informações. |
 
-<p align="center">
-<img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=atararossatti&show_icons=true&locale=en&layout=compact&theme=dark" alt="atararossatti" style="width: 30%; max-width: 400px;"/>
-<img align="center" src="https://github-readme-stats.vercel.app/api?username=atararossatti&show_icons=true&locale=en&theme=dark" alt="atararossatti" style="width: 40%; max-width: 400px;" />
-<img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=atararossatti&theme=dark" alt="atararossatti" style="width: 40%; max-width: 500px;" />
-</p>
+<div align="center">
 
- <br><br><br> <!-- Adiciona três quebras de linha para aumentar o espaço -->
+<a href="https://github.com/atararossatti?tab=repositories"><img src="https://img.shields.io/badge/Explore_meus_reposit%C3%B3rios-%E2%86%92-8B5CF6?style=for-the-badge" alt="Explore meus repositórios"></a>
 
----------------------
+</div>
 
-<h3 align="center"> 🛠 Linguagens e ferramentas:</h3>
-<p align="center"> <a href="https://angular.io" target="_blank" rel="noreferrer"> <img src="https://angular.io/assets/images/logos/angular/angular.svg" alt="angular" width="40" height="40"/></a> 
-  <a href="https://angular.io" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/angularjs/angularjs-original-wordmark.svg" alt="angularjs" width="40" height="40"/></a> 
-  <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/></a> 
-  <a href="https://www.figma.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" width="40" height="40"/></a> 
-  <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/></a> 
-  <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/></a> 
-  <a href="https://www.adobe.com/in/products/illustrator.html" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/adobe_illustrator/adobe_illustrator-icon.svg" alt="illustrator" width="40" height="40"/></a> 
-  <a href="https://www.java.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/></a> 
-  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/></a> 
-  <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/></a> 
-  <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/></a> 
-  <a href="https://www.microsoft.com/en-us/sql-server" target="_blank" rel="noreferrer"> <img src="https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg" alt="mssql" width="40" height="40"/></a> 
-  <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/></a> 
-  <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/></a>
-  <a href="https://www.oracle.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/oracle/oracle-original.svg" alt="oracle" width="40" height="40"/></a>
-  <a href="https://www.photoshop.com/en" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-line.svg" alt="photoshop" width="40" height="40"/></a> 
-  <a href="https://www.php.net" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" alt="php" width="40" height="40"/></a> 
-  <a href="https://www.postgresql.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40"/></a> 
-  <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/></a> 
-  <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" altura="40"/></a> 
-  <a href="https://reactnative.dev/" target="_blank" rel="noreferrer"> <img src="https://reactnative.dev/img/header_logo.svg" alt="reactnative" width="40" height="40"/></a> 
-  <a href="https://vuejs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original-wordmark.svg" alt="vuejs" width="40" height="40"/></a> 
-</p>
-<br><br><br> <!-- Adiciona três quebras de linha para aumentar o espaço -->
+---
 
+## 🤝 Ideias em equipe
 
+- 📡 **Hackathon Anatel:** participação no desafio relacionado a TV Boxes ilegais. [Sobre o evento](https://g1.globo.com/sp/sao-paulo/noticia/2024/09/29/apos-promover-desafio-anatel-seleciona-3-melhores-solucoes-para-acabar-com-tv-boxes-ilegais.ghtml).
+- 🏙️ **Hackathon Visite São Paulo:** participação em projeto de aplicativo para turismo em São Paulo. [Registro da participação](https://www.linkedin.com/feed/update/urn:li:activity:7257178025828491265/).
 
+---
 
+## 🏅 Conquistas desbloqueadas
 
+<div align="center">
 
+<a href="https://www.credly.com/badges/8ebc4ed7-fc22-40ac-905b-3aeadc437996/public_url"><img src="https://images.credly.com/size/110x110/images/25b13818-6498-47e7-a2b5-83852dacabf2/blob" alt="Credencial no Credly — consultar detalhes" width="90" height="90"></a>
+<a href="https://www.credly.com/badges/eb37ba60-d984-4580-adea-1f1ce2abac09/public_url"><img src="https://images.credly.com/size/110x110/images/52ea4613-6f77-4d62-8e19-5bb5c51722b8/blob" alt="Credencial no Credly — consultar detalhes" width="90" height="90"></a>
+<a href="https://www.credly.com/badges/2314d46d-07d5-4dad-a4a8-0b4aa8e13ab8/public_url"><img src="https://images.credly.com/size/110x110/images/712a773b-9acc-4bc8-90fa-6afdfc95da1e/image.png" alt="Credencial no Credly — consultar detalhes" width="90" height="90"></a>
+<a href="https://www.credly.com/badges/b6384d16-3412-4ee5-830c-73a90abd7df4/public_url"><img src="https://brasil.certiprof.com/cdn/shop/files/Fundamentos_da_Lei_Geral_de_Prote_o_de_Dados_LGPDF_480x480.webp?v=1733256864" alt="Fundamentos da Lei Geral de Proteção de Dados" width="90" height="90"></a>
+<a href="https://www.credly.com/badges/1ba73005-0f15-49f2-b97b-ca90c7f30ba4/public_url"><img src="https://images.credly.com/size/110x110/images/4e3d6f9f-55d7-4ea7-b0e6-f4d4ff543e22/image.png" alt="Credencial no Credly — consultar detalhes" width="90" height="90"></a>
 
+<br>
 
+<a href="https://cursos.alura.com.br/certificate/atara-rossatti/figma-construindo-layout-primeiro-site-mobile">Certificado Alura · Figma: construindo o layout do seu site mobile</a>
 
+</div>
 
+---
 
+<div align="center">
 
+```text
+ ┌────────────────────────────────────────────────────────┐
+ │  Sempre existe um jeito de simplificar.                │
+ │  Eu gosto de encontrá-lo.                              │
+ └────────────────────────────────────────────────────────┘
+```
 
+<a href="https://www.linkedin.com/in/atarasilva/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+<a href="mailto:dev.tec@outlook.com.br"><img src="https://img.shields.io/badge/E--mail-EC4899?style=for-the-badge&logo=gmail&logoColor=white" alt="E-mail"></a>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,24&height=110&section=footer" alt="" width="100%">
+
+</div>
