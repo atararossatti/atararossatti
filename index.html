@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Controle de Chamados</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    :root {
+      --bg-primary: #f6f7fb; --bg-secondary: #eceef3; --bg-surface: #ffffff; --bg-table-header: #eef1f5;
+      --text-primary: #1f2937; --text-secondary: #111827; --border-color: #d1d5db; --shadow-color: rgba(15, 23, 42, 0.08);
+      --accent-color: #2563eb; --accent-hover: #1d4ed8; --info-color: #0ea5e9; --info-hover: #0284c7;
+      --status-atrasado-bg: #fee2e2; --status-atrasado-text: #7f1d1d;
+      --status-prazo-bg: #dcfce7; --status-prazo-text: #14532d;
+      --pinned-bg: #fff7d6;
+      --priority-alta-bg: #fee2e2; --priority-alta-text: #7f1d1d;
+      --priority-media-bg: #fef3c7; --priority-media-text: #78350f;
+      --priority-baixa-bg: #e0f2fe; --priority-baixa-text: #075985;
+      --aviso-cor-alta: #ef4444; --aviso-cor-media: #f59e0b; --aviso-cor-baixa: #10b981;
+      --menu-width: 260px; --menu-width-collapsed: 80px;
+      --ring: 2px solid #93c5fd; --ring-shadow: 0 0 0 4px rgba(37, 99, 235, 0.15);
+    }
+    body.dark {
+      --bg-primary: #0f172a; --bg-secondary: #0b1329; --bg-surface: #111827; --bg-table-header: #1f2937;
+      --text-primary: #e5e7eb; --text-secondary: #f9fafb; --border-color: #374151; --shadow-color: rgba(0, 0, 0, 0.35);
+      --info-color: #38bdf8; --info-hover: #0ea5e9;
+      --status-atrasado-bg: #7f1d1d; --status-atrasado-text: #fee2e2;
+      --status-prazo-bg: #14532d; --status-prazo-text: #dcfce7;
+      --pinned-bg: #3a2f12;
+      --priority-alta-bg: #7f1d1d; --priority-alta-text: #fee2e2;
+      --priority-media-bg: #78350f; --priority-media-text: #fef3c7;
+      --priority-baixa-bg: #075985; --priority-baixa-text: #e0f2fe;
+    }
+
+    /* Base */
+    body { font-family: 'Roboto', sans-serif; background: linear-gradient(135deg, var(--bg-primary), var(--bg-secondary)); color: var(--text-primary);
+      margin-bottom: 60px; margin-left: var(--menu-width-collapsed); transition: margin-left 0.3s ease, background-color 0.3s, color 0.3s; }
+    body.menu-open { margin-left: var(--menu-width); }
+    .main-content { padding: 20px; transition: padding-left 0.3s ease; max-width: 1400px; margin-right: auto; }
+    .page-view { display: none; }
+    .page-view.active { display: block; }
+    h2, h3 { color: inherit; display: flex; align-items: center; gap: 10px; }
+
+    /* Header - sticky and glass */
+    .cabecalho { position: sticky; top: 0; z-index: 1200; display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; padding: 10px 20px;
+      background-color: color-mix(in oklab, var(--bg-surface) 88%, transparent); border-radius: 12px; box-shadow: 0 8px 20px var(--shadow-color); backdrop-filter: blur(6px); }
+    .logo-titulo { display: flex; align-items: center; gap: 15px; }
+    #logoEmpresa { height: 50px; }
+
+    /* Menus & buttons */
+    .menu-container, .profile-container { position: relative; }
+    .menu-button { background: none; border: none; font-size: 20px; cursor: pointer; color: inherit; width: 44px; height: 44px; border-radius: 10px; display: flex; align-items: center; justify-content: center; transition: background-color 0.2s ease, transform 0.2s ease; padding: 0; }
+    .menu-button:hover, .menu-button:focus-visible { background-color: var(--bg-secondary); outline: var(--ring); box-shadow: var(--ring-shadow); }
+    .menu-button.active { background-color: var(--bg-secondary); }
+    #menuBtn.active { transform: rotate(90deg); }
+    .menu-options { display: block; position: absolute; right: 0; top: calc(100% + 10px); background-color: var(--bg-surface); border: 1px solid var(--border-color); border-radius: 10px; box-shadow: 0 16px 40px rgba(0, 0, 0, 0.2); z-index: 1500; padding: 8px; min-width: 260px; opacity: 0; transform: translateY(-10px) scale(0.95); visibility: hidden; transition: opacity 0.2s ease-out, transform 0.2s ease-out, visibility 0.2s; }
+    .menu-options.show { opacity: 1; transform: translateY(0) scale(1); visibility: visible; }
+    .menu-options button { background: none; border: none; padding: 12px 12px; width: 100%; text-align: left; cursor: pointer; font-size: 14px; color: inherit; border-radius: 8px; display: flex; align-items: center; gap: 12px; transition: background-color 0.2s ease, transform 0.2s ease; }
+    .menu-options button:hover, .menu-options button:focus-visible { background-color: var(--bg-secondary); transform: translateX(2px); outline: none; }
+    .menu-options button i { width: 16px; text-align: center; }
+    .menu-separator { border: none; height: 1px; background-color: var(--border-color); margin: 8px 0; opacity: 0.5; }
+    #userMenu { min-width: 180px; }
+    #userAvatarImg { width: 40px; height: 40px; border-radius: 50%; object-fit: cover; border: 2px solid var(--border-color); }
+
+    /* Tables */
+    .table-wrapper { overflow-x: auto; background-color: var(--bg-surface); border-radius: 0 0 12px 12px; margin-top: 0; box-shadow: 0 6px 16px var(--shadow-color); }
+    table { width: 100%; border-collapse: collapse; min-width: 1000px; }
+    th, td { padding: 12px 15px; text-align: left; border-bottom: 1px solid var(--border-color); vertical-align: middle; }
+    th { background-color: var(--bg-table-header); font-weight: bold; color: var(--text-secondary); position: sticky; top: 0; z-index: 1; }
+    .atrasado { background-color: var(--status-atrasado-bg); color: var(--status-atrasado-text); }
+    .dentro-prazo { background-color: var(--status-prazo-bg); color: var(--status-prazo-text); }
+    .pinned-row { background-color: var(--pinned-bg); }
+    .priority-tag { padding: 4px 10px; border-radius: 12px; font-size: 12px; font-weight: bold; text-transform: uppercase; white-space: nowrap; }
+    .priority-alta { background-color: var(--priority-alta-bg); color: var(--priority-alta-text); }
+    .priority-media { background-color: var(--priority-media-bg); color: var(--priority-media-text); }
+    .priority-baixa { background-color: var(--priority-baixa-bg); color: var(--priority-baixa-text); }
+    .last-update-cell { font-size: 12px; color: #6b7280; }
+    body.dark .last-update-cell { color: #9ca3af; }
+
+    /* Tabs */
+    .tabs { display: flex; gap: 10px; margin-bottom: -1px; position: sticky; top: 80px; z-index: 1100; }
+    .tab-button { padding: 10px 16px; border: 1px solid var(--border-color); border-bottom: none; border-radius: 10px 10px 0 0; background-color: var(--bg-table-header); color: var(--text-primary); cursor: pointer; transition: background-color 0.2s, transform 0.1s; }
+    .tab-button:hover, .tab-button:focus-visible { background-color: var(--bg-surface); outline: var(--ring); box-shadow: var(--ring-shadow); }
+    .tab-button.active { background-color: var(--bg-surface); border-color: var(--border-color); font-weight: bold; }
+    .tab-content { display: none; }
+    .tab-content.active { display: block; }
+    .tab-filters { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; padding: 15px 20px; background-color: var(--bg-surface); border-radius: 12px 12px 0 0; box-shadow: 0 4px 10px var(--shadow-color); }
+    .tab-filters input, .tab-filters select { padding: 10px; border: 1px solid var(--border-color); border-radius: 8px; background-color: var(--bg-surface); color: var(--text-primary); flex: 0 1 300px; }
+
+    /* Modals */
+    .modal-base { display: none; position: fixed; z-index: 2000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.6); justify-content: center; align-items: center; padding: 20px; }
+    .modal-base.active { display: flex; }
+    .modal-content { background: var(--bg-surface); color: var(--text-primary); padding: 25px; border-radius: 12px; width: 90%; max-width: 520px; box-shadow: 0 20px 50px var(--shadow-color); text-align: left; }
+    .modal-content label { display: block; margin: 10px 0 5px 0; font-weight: 700; }
+    .modal-content input, .modal-content select { width: 100%; padding: 12px; font-size: 14px; border: 1px solid var(--border-color); border-radius: 8px; background-color: var(--bg-surface); color: var(--text-primary); box-sizing: border-box; text-transform: uppercase; }
+    .modal-buttons { text-align: center; margin-top: 20px; display: flex; gap: 10px; justify-content: center; }
+    .modal-buttons button { flex-grow: 1; padding: 10px 20px; font-weight: 700; border-radius: 10px; border: none; cursor: pointer; transition: filter 0.2s; }
+    .modal-buttons button:hover, .modal-buttons button:focus-visible { filter: brightness(0.95); outline: var(--ring); box-shadow: var(--ring-shadow); }
+    .btn-save { background-color: #22c55e; color: white; }
+    .btn-cancel { background-color: #ef4444; color: white; }
+    .btn-info { background-color: var(--info-color); color: white; }
+
+    /* Footer */
+    .footer { position: fixed; bottom: 0; left: 0; right: 0; background-color: var(--bg-table-header); color: var(--text-primary); text-align: center; font-size: 14px; padding: 10px 0; box-shadow: 0 -4px 12px var(--shadow-color); user-select: none; z-index: 2001; margin-left: var(--menu-width-collapsed); transition: margin-left 0.3s ease; }
+    body.menu-open .footer { margin-left: var(--menu-width); }
+
+    /* Action buttons */
+    .action-button { border: none; background: none; cursor: pointer; font-size: 1.1em; color: var(--text-primary); margin: 0 6px; transition: transform 0.15s, color 0.2s; border-radius: 8px; width: 36px; height: 36px; display: inline-flex; align-items: center; justify-content: center; }
+    .action-button:hover, .action-button:focus-visible { transform: scale(1.1); outline: var(--ring); box-shadow: var(--ring-shadow); }
+    .btn-edit:hover { color: var(--accent-color); }
+    .btn-finalizar:hover { color: #22c55e; }
+    .btn-excluir:hover { color: #ef4444; }
+    .btn-reabrir:hover { color: #f59e0b; }
+    .action-button.btn-pin.pinned i { color: var(--accent-color); transform: rotate(45deg); }
+    a.link-icon { color: var(--accent-color); text-decoration: none; font-size: 1.1em; }
+    a.link-icon:hover, a.link-icon:focus-visible { color: var(--accent-hover); outline: none; }
+
+    /* Atalhos cards */
+    .atalhos-cards { margin: 20px 0; padding: 20px; background-color: var(--bg-surface); border-radius: 12px; box-shadow: 0 8px 20px var(--shadow-color); position: relative; overflow: hidden; }
+    .cards-container { display: flex; gap: 20px; overflow-x: auto; scroll-behavior: smooth; cursor: grab; user-select: none; -ms-overflow-style: none; scrollbar-width: none; }
+    .cards-container.active-drag { cursor: grabbing; cursor: -webkit-grabbing; }
+    .cards-container::-webkit-scrollbar { display: none; }
+    .card { flex: 0 0 200px; display: flex; flex-direction: column; align-items: center; justify-content: center; border-radius: 12px; padding: 20px; background-color: var(--bg-primary); box-shadow: 0 4px 10px var(--shadow-color); text-align: center; cursor: pointer; transition: transform 0.15s, box-shadow 0.2s; }
+    .card:hover, .card:focus-visible { transform: translateY(-4px); box-shadow: 0 12px 30px var(--shadow-color); outline: var(--ring); }
+    .card-icon { font-size: 2.6em; margin-bottom: 15px; color: var(--accent-color); }
+    .card-title { font-weight: 700; margin: 0 0 5px 0; }
+    .card-description { font-size: 14px; opacity: 0.8; }
+    .arrow { position: absolute; top: 50%; transform: translateY(-50%); background-color: rgba(255, 255, 255, 0.9); border: none; border-radius: 50%; padding: 10px; cursor: pointer; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); z-index: 5; font-size: 1.4em; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; }
+    .arrow-left { left: 10px; }
+    .arrow-right { right: 10px; }
+    body.dark .arrow { background-color: rgba(0, 0, 0, 0.5); color: #fff; }
+
+    /* Avisos */
+    #avisosContainer { display: flex; gap: 15px; padding: 10px 0 20px 0; overflow-x: auto; scrollbar-width: thin; }
+    .aviso-card { display: flex; align-items: center; gap: 15px; padding: 10px 15px; background-color: var(--bg-surface); color: var(--text-primary); border-radius: 10px; box-shadow: 0 4px 12px var(--shadow-color); flex-shrink: 0; position: relative; border-left: 5px solid transparent; }
+    .aviso-card .fa-bell { font-size: 1.4em; animation: shake-bell 2.5s infinite ease-in-out; }
+    .aviso-texto { font-size: 14px; }
+    .aviso-texto a { color: var(--accent-color); text-decoration: none; font-weight: bold; }
+    .aviso-texto a:hover { text-decoration: underline; }
+    .aviso-card[data-priority="alta"] { border-left-color: var(--aviso-cor-alta); } .aviso-card[data-priority="alta"] .fa-bell { color: var(--aviso-cor-alta); }
+    .aviso-card[data-priority="media"] { border-left-color: var(--aviso-cor-media); } .aviso-card[data-priority="media"] .fa-bell { color: var(--aviso-cor-media); }
+    .aviso-card[data-priority="baixa"] { border-left-color: var(--aviso-cor-baixa); } .aviso-card[data-priority="baixa"] .fa-bell { color: var(--aviso-cor-baixa); }
+    .close-aviso { position: absolute; top: -5px; right: -5px; background: #6b7280; color: white; border: none; border-radius: 50%; width: 20px; height: 20px; font-size: 12px; line-height: 20px; text-align: center; cursor: pointer; opacity: 0.6; transition: opacity 0.2s, transform 0.2s; }
+    .aviso-card:hover .close-aviso { opacity: 1; }
+    .close-aviso:hover { transform: scale(1.2); background: #ef4444; }
+    @keyframes shake-bell { 0%, 50%, 100% { transform: rotate(0); } 5%, 15%, 25%, 35%, 45% { transform: rotate(13deg); } 10%, 20%, 30%, 40% { transform: rotate(-13deg); } }
+
+    /* Side menu */
+    .side-menu { position: fixed; top: 0; left: 0; height: 100%; z-index: 2000; width: var(--menu-width-collapsed); background-color: var(--bg-surface); box-shadow: 2px 0 20px var(--shadow-color); padding-top: 20px; display: flex; flex-direction: column; transition: width 0.3s ease; overflow: hidden; }
+    body.menu-open .side-menu { width: var(--menu-width); }
+    .side-menu .menu-header { text-align: center; padding: 0 15px 20px 15px; }
+    .side-menu .menu-toggle { background: none; border: none; color: var(--text-primary); font-size: 22px; cursor: pointer; width: 50px; height: 50px; margin: 0 auto 10px; display: block; border-radius: 10px; }
+    .side-menu .menu-toggle:hover, .side-menu .menu-toggle:focus-visible { background-color: var(--bg-secondary); outline: var(--ring); box-shadow: var(--ring-shadow); }
+    .side-menu .nav-list { list-style: none; padding: 0; margin: 0; }
+    .side-menu .nav-item { display: flex; align-items: center; color: var(--text-primary); text-decoration: none; padding: 14px 22px; white-space: nowrap; transition: background-color 0.2s, padding-left 0.2s; cursor: pointer; border-radius: 10px; margin: 4px 10px; }
+    .side-menu .nav-item:hover, .side-menu .nav-item:focus-visible { background-color: var(--bg-secondary); padding-left: 26px; outline: none; }
+    .side-menu .nav-item.active { background-color: var(--accent-hover); color: white; font-weight: bold; }
+    body.dark .side-menu .nav-item.active { background-color: var(--info-hover); }
+    .side-menu .nav-icon { font-size: 18px; width: 30px; text-align: center; }
+    .side-menu .nav-text { margin-left: 16px; font-size: 15px; opacity: 0; transition: opacity 0.2s ease; }
+    body.menu-open .side-menu .nav-text { opacity: 1; }
+
+    /* Views */
+    .view-container { background-color: var(--bg-surface); padding: 20px; border-radius: 12px; box-shadow: 0 8px 20px var(--shadow-color); }
+    .kanban-filters { display: flex; align-items: center; gap: 12px; padding: 10px; background-color: var(--bg-secondary); border-radius: 12px; margin-bottom: 20px; flex-wrap: wrap; }
+    .kanban-filters .filter-item { display: flex; align-items: center; gap: 8px; }
+    .kanban-filters span { font-weight: bold; }
+    .kanban-filters select, .kanban-filters button { background-color: var(--bg-surface); color: var(--text-primary); border: 1px solid var(--border-color); border-radius: 8px; padding: 6px 10px; cursor: pointer; }
+    .kanban-filters button { transition: background-color 0.2s; }
+    .kanban-filters button:hover, .kanban-filters button.active, .kanban-filters button:focus-visible { background-color: var(--accent-color); color: white; outline: none; }
+    .kanban-board { display: flex; gap: 20px; overflow-x: auto; padding: 10px; min-height: 70vh; align-items: flex-start; }
+    .kanban-column { flex: 0 0 320px; background-color: var(--bg-secondary); border-radius: 12px; display: flex; flex-direction: column; max-height: calc(70vh - 20px); transition: flex-basis 0.3s ease; }
+    .kanban-column-header { display: flex; align-items: center; padding: 12px 15px; border-bottom: 1px solid var(--border-color); font-weight: bold; color: var(--text-primary); border-radius: 12px 12px 0 0; background-color: var(--bg-surface); gap: 8px; }
+    .kanban-column-header-avatar { width: 28px; height: 28px; border-radius: 50%; margin-right: 6px; object-fit: cover; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: bold; flex-shrink: 0; }
+    body.dark .kanban-column-header-avatar { color: #111827; }
+    .kanban-count-badge { background-color: var(--accent-color); color: white; border-radius: 10px; padding: 2px 10px; font-size: 12px; }
+    .kanban-cards { padding: 15px; overflow-y: auto; flex-grow: 1; display: flex; flex-direction: column; gap: 15px; transition: gap 0.3s ease; }
+    .kanban-card { background-color: var(--bg-surface); border-radius: 12px; box-shadow: 0 4px 12px var(--shadow-color); cursor: pointer; transition: all 0.2s ease; display: flex; flex-direction: column; gap: 10px; padding: 12px; }
+    .kanban-card[data-link]:hover, .kanban-card[data-link]:focus-visible { transform: translateY(-4px) scale(1.01); box-shadow: 0 10px 24px var(--shadow-color); outline: var(--ring); }
+    .kanban-card-header { display: flex; justify-content: space-between; align-items: center; }
+    .kanban-card-header .card-id { font-size: 12px; opacity: 0.7; }
+    .kanban-card-body .card-client { font-weight: bold; color: var(--text-secondary); margin-bottom: 5px; }
+    .kanban-card-body .card-title { font-size: 14px; line-height: 1.3; }
+    .kanban-card-footer { display: flex; justify-content: space-between; align-items: center; margin-top: 5px; }
+    .card-days-open { display: flex; align-items: center; gap: 6px; font-size: 12px; opacity: 0.8; }
+    .card-avatar { width: 32px; height: 32px; border-radius: 50%; color: #111827; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 14px; text-transform: uppercase; user-select: none; border: 2px solid var(--bg-surface); transition: width 0.3s, height 0.3s; }
+    .kanban-empty { padding: 40px 20px; text-align: center; opacity: 0.7; border: 2px dashed var(--border-color); border-radius: 12px; margin: auto; font-style: italic; background-color: var(--bg-primary); }
+    .kanban-board.compact-mode .kanban-column { flex-basis: 260px; }
+    .kanban-board.compact-mode .kanban-cards { padding: 10px; gap: 8px; }
+    .kanban-board.compact-mode .kanban-card { padding: 8px; gap: 5px; }
+    .kanban-board.compact-mode .kanban-card-body .card-client { font-size: 0.9em; margin-bottom: 3px; }
+    .kanban-board.compact-mode .kanban-card-body .card-title { font-size: 12px; }
+    .kanban-board.compact-mode .card-avatar { width: 24px; height: 24px; font-size: 10px; }
+
+    /* Dashboard */
+    .dashboard-grid { display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+    .dashboard-card { background-color: var(--bg-surface); border-radius: 12px; padding: 20px; box-shadow: 0 8px 20px var(--shadow-color); display: flex; flex-direction: column; }
+    .dashboard-card h4 { margin: 0 0 15px 0; border-bottom: 1px solid var(--border-color); padding-bottom: 10px; }
+    .metric-card-grid { display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); }
+    .metric-item { background-color: var(--bg-primary); padding: 15px; border-radius: 10px; text-align: center; }
+    .metric-item .value { font-size: 2.2em; font-weight: bold; color: var(--accent-color); }
+    .metric-item .label { font-size: 0.95em; opacity: 0.8; }
+    .sla-alerts-list ul { list-style: none; padding: 0; margin: 0; max-height: 250px; overflow-y: auto; }
+    .sla-alerts-list li { display: flex; justify-content: space-between; align-items: center; padding: 10px; border-radius: 8px; margin-bottom: 8px; }
+    .sla-vencido { background-color: var(--status-atrasado-bg); color: var(--status-atrasado-text); }
+    .sla-vencendo { background-color: var(--priority-media-bg); color: var(--priority-media-text); }
+    .chart-container { position: relative; height: 300px; max-height: 40vh; }
+
+    /* Relatório */
+    .report-filters-panel { padding: 25px; background-color: var(--bg-secondary); border-radius: 12px; margin-bottom: 20px; color: var(--text-primary); box-shadow: 0 6px 16px var(--shadow-color); }
+    body.dark .report-filters-panel { background-color: #182137; }
+    .report-filters-panel h4 { margin-top: 0; display: flex; align-items: center; gap: 8px; margin-bottom: 20px; }
+    .report-filters-grid { display: grid; grid-template-columns: 1fr 1fr 1.25fr 1.25fr; gap: 20px; align-items: end; }
+    .filter-group { display: flex; flex-direction: column; gap: 6px; }
+    .filter-group label { font-weight: bold; font-size: 14px; opacity: 0.9; margin-bottom: 2px; }
+    .filter-group input, .filter-group select { width: 100%; padding: 10px; border-radius: 8px; border: 1px solid var(--border-color); background-color: var(--bg-surface); color: var(--text-primary); }
+    .report-actions { display: flex; justify-content: flex-end; margin-top: 20px; }
+    #gerarRelatorioBtn { padding: 10px 20px; font-weight: bold; background-color: var(--accent-color); color: white; border: none; border-radius: 10px; cursor: pointer; height: 42px; display: flex; align-items: center; justify-content: center; gap: 8px; transition: background-color 0.2s; }
+    #gerarRelatorioBtn:hover, #gerarRelatorioBtn:focus-visible { background-color: var(--accent-hover); outline: none; }
+    @media (max-width: 992px) { .report-filters-grid { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 576px) { .report-filters-grid { grid-template-columns: 1fr; } }
+    #report-results { margin-top: 20px; padding: 20px; background-color: var(--bg-surface); border-radius: 12px; display: none; box-shadow: 0 6px 16px var(--shadow-color); }
+    #reportSummary { margin: 0 0 15px 0; font-size: 1.05em; font-weight: bold; }
+    #exportRelatorioBtn { margin-bottom: 15px; background-color: #16a34a; color: white; padding: 10px 16px; border: none; border-radius: 10px; cursor: pointer; }
+    #exportRelatorioBtn:hover, #exportRelatorioBtn:focus-visible { filter: brightness(0.95); outline: var(--ring); box-shadow: var(--ring-shadow); }
+
+    /* Responsive table stack on small screens */
+    @media (max-width: 720px) {
+      table { min-width: unset; }
+      thead { display: none; }
+      tbody, tr, td { display: block; width: 100%; }
+      tbody tr { background-color: var(--bg-surface); margin: 12px 0; border: 1px solid var(--border-color); border-radius: 12px; box-shadow: 0 4px 12px var(--shadow-color); overflow: hidden; }
+      tbody tr td { border: none; padding: 10px 14px; display: grid; grid-template-columns: 130px 1fr; gap: 8px; }
+      tbody tr td::before { content: attr(data-label); font-weight: 700; color: var(--text-secondary); }
+      tbody tr td:last-child { display: flex; align-items: center; gap: 6px; }
+    }
+
+    /* Reduced motion preference */
+    @media (prefers-reduced-motion: reduce) {
+      * { transition: none !important; animation: none !important; }
+    }
+  </style>
+</head>
+<body class="menu-open">
+
+  <aside class="side-menu" id="sideMenu" aria-label="Menu lateral">
+    <div class="menu-header"><button class="menu-toggle" id="menuToggleBtn" title="Alternar Menu" aria-pressed="true"><i class="fas fa-bars"></i></button></div>
+    <nav class="nav-list">
+        <a class="nav-item active" data-view="meus-chamados"><i class="nav-icon fas fa-user-tag" aria-hidden="true"></i><span class="nav-text">Meus Chamados</span></a>
+        <a class="nav-item" data-view="kanban-suporte"><i class="nav-icon fas fa-columns" aria-hidden="true"></i><span class="nav-text">Kanban Suporte</span></a>
+        <a class="nav-item" data-view="dashboard-geral"><i class="nav-icon fas fa-chart-pie" aria-hidden="true"></i><span class="nav-text">Dashboard Geral</span></a>
+        <a class="nav-item" data-view="relatorio"><i class="nav-icon fas fa-file-invoice" aria-hidden="true"></i><span class="nav-text">Relatório</span></a>
+    </nav>
+  </aside>
+
+  <main class="main-content" id="mainContent">
+    <div class="cabecalho">
+      <div class="logo-titulo"><img id="logoEmpresa" src="imagens/ELEV1.png" alt="Logo" /><h2>Controle de Chamados</h2></div>
+      <div class="cabecalho-acoes" style="display:flex;align-items:center;gap:10px;">
+          <button id="btnAbrirModalCadastro" class="btn-info" aria-label="Cadastrar Chamado"><i class="fas fa-plus-circle" aria-hidden="true"></i> Cadastrar</button>
+          <button id="theme-toggle-btn" title="Mudar tema" aria-label="Alternar tema"><i class="fas fa-moon" aria-hidden="true"></i><i class="fas fa-sun" aria-hidden="true"></i></button>
+          <div class="menu-container">
+              <button class="menu-button" id="menuBtn" aria-expanded="false" aria-haspopup="true" title="Mais opções">⋯</button>
+              <div class="menu-options" id="menuOptions" role="menu">
+                  <button id="addAvisoBtn" role="menuitem"><i class="fas fa-bell" aria-hidden="true"></i> Adicionar Aviso</button>
+                  <hr class="menu-separator">
+                  <button id="btnExportarAbertos" role="menuitem"><i class="fas fa-file-excel" aria-hidden="true"></i> Exportar Abertos (.csv)</button>
+                  <button id="btnImportarAbertos" role="menuitem"><i class="fas fa-upload" aria-hidden="true"></i> Importar Abertos (.csv)</button>
+                  <hr class="menu-separator">
+                  <button id="btnExportarFinalizados" role="menuitem"><i class="fas fa-file-excel" aria-hidden="true"></i> Exportar Finalizados (.csv)</button>
+                  <button id="btnImportarFinalizados" role="menuitem"><i class="fas fa-upload" aria-hidden="true"></i> Importar Finalizados (.csv)</button>
+              </div>
+          </div>
+          <div class="profile-container">
+              <button id="userAvatarBtn" class="menu-button" aria-expanded="false" aria-haspopup="true" aria-label="Abrir menu do usuário"><img id="userAvatarImg" src="imagens/default-avatar.png" alt="Avatar"></button>
+              <div id="userMenu" class="menu-options" role="menu">
+                  <button id="changePhotoBtn" role="menuitem"><i class="fas fa-camera" aria-hidden="true"></i> Alterar Foto</button>
+                  <hr class="menu-separator">
+                  <button id="logoutBtn" role="menuitem"><i class="fas fa-sign-out-alt" aria-hidden="true"></i> Sair</button>
+              </div>
+          </div>
+      </div>
+    </div>
+    <input type="file" id="importAbertosInput" accept=".csv" style="display: none;"><input type="file" id="importFinalizadosInput" accept=".csv" style="display: none;"><input type="file" id="photoUploadInput" accept="image/*" style="display: none;">
+
+    <div id="view-meus-chamados" class="page-view active">
+        <div id="avisosContainer"></div>
+        <div class="atalhos-cards">
+            <h3>Atalhos Rápidos</h3>
+            <div class="cards-container" id="cardsContainer">
+              <div class="card" tabindex="0" data-url="http://192.168.9.202/dashboard/central_servicos"><div class="card-icon"><i class="fas fa-tachometer-alt" aria-hidden="true"></i></div><div class="card-title">Dashboard</div><div class="card-description">Acesse o painel.</div></div>
+              <div class="card" tabindex="0" data-url="https://omniplus.elev.tec.br/login"><div class="card-icon"><i class="fas fa-layer-group" aria-hidden="true"></i></div><div class="card-title">Omniplus</div><div class="card-description">Plataforma de serviços.</div></div>
+              <div class="card" tabindex="0" data-url="https://omnipbx.elev.tec.br/nxt4000/login.php"><div class="card-icon"><i class="fas fa-phone" aria-hidden="true"></i></div><div class="card-title">OmniPBX</div><div class="card-description">Acesse a telefonia.</div></div>
+              <div class="card" tabindex="0" data-url="https://omniconnect.elev.tec.br/logs/modules"><div class="card-icon"><i class="fas fa-plug" aria-hidden="true"></i></div><div class="card-title">Omniconect</div><div class="card-description">Conectividade.</div></div>
+              <div class="card" tabindex="0" data-url="http://192.168.9.53/login"><div class="card-icon"><i class="fas fa-search" aria-hidden="true"></i></div><div class="card-title">Fenix</div><div class="card-description">Monitoramento.</div></div>
+              <div class="card" tabindex="0" data-url="http://192.168.9.40/zabbix/sysmaps.php"><div class="card-icon"><i class="fas fa-server" aria-hidden="true"></i></div><div class="card-title">Zabbix</div><div class="card-description">Monitore a infra.</div></div>
+              <div class="card" tabindex="0" data-url="http://192.168.20.99:3000/d/d3408e33-f25b-4b6a-8c55-83726d77d93e/geral-producao?orgId=3&refresh=1m"><div class="card-icon"><i class="fas fa-chart-line" aria-hidden="true"></i></div><div class="card-title">Grafana</div><div class="card-description">Dados de produção.</div></div>
+              <div class="card" tabindex="0" data-url="https://crm.elev.tec.br/login.php"><div class="card-icon"><i class="fas fa-users" aria-hidden="true"></i></div><div class="card-title">CRM</div><div class="card-description">Gestão de clientes.</div></div>
+              <div class="card" tabindex="0" data-url="https://elevbr.sharepoint.com/sites/operacoes_suporte2"><div class="card-icon"><i class="fas fa-file-alt" aria-hidden="true"></i></div><div class="card-title">Intranet</div><div class="card-description">Documentos.</div></div>
+              <div class="card" tabindex="0" data-url="https://bytestash.elev.internal.br/public/snippets"><div class="card-icon"><i class="fas fa-box-open" aria-hidden="true"></i></div><div class="card-title">ByteStash</div><div class="card-description">Snippets de código.</div></div>
+              <div class="card" tabindex="0" data-url="https://app.zenvia.com/?iss=https%3A%2F%2Faccounts.zenvia.com%2F"><div class="card-icon"><i class="fas fa-comments" aria-hidden="true"></i></div><div class="card-title">Zenvia</div><div class="card-description">Gerencie mensagens.</div></div>
+            </div>
+            <button class="arrow arrow-left" id="arrowLeftBtn" aria-label="Rolar para a esquerda">❮</button><button class="arrow arrow-right" id="arrowRightBtn" aria-label="Rolar para a direita">❯</button>
+        </div>
+        <div class="tabs">
+            <button class="tab-button active" data-tab="abertos">📂 Em Aberto <span id="countAbertos" class="count-badge" style="background:#1d4ed8;color:#fff;border-radius:12px;padding:2px 8px;font-weight:700;">0</span></button>
+            <button class="tab-button" data-tab="finalizados">📁 Finalizados <span id="countFinalizados" class="count-badge" style="background:#1d4ed8;color:#fff;border-radius:12px;padding:2px 8px;font-weight:700;">0</span></button>
+        </div>
+        <div id="abertos" class="tab-content active">
+            <div class="tab-filters"><input type="text" id="filtroTitulo" placeholder="🔍 BUSCAR POR TÍTULO" /><input type="text" id="filtroCliente" placeholder="🔍 BUSCAR POR CLIENTE" /></div>
+            <div class="table-wrapper"><table><thead><tr><th>Número</th><th>Cliente</th><th>Título</th><th>Prioridade</th><th>Data</th><th>Dias</th><th>Última Atualização</th><th>Link</th><th>Ações</th></tr></thead><tbody id="tabelaChamados"></tbody></table></div>
+        </div>
+        <div id="finalizados" class="tab-content">
+            <div class="tab-filters"><label for="filtroDataFinalizados">Filtrar por data:</label><input type="date" id="filtroDataFinalizados" /></div>
+            <div class="table-wrapper"><table><thead><tr><th>Número</th><th>Cliente</th><th>Título</th><th>Abertura</th><th>Finalização</th><th>Link</th><th>Ações</th></tr></thead><tbody id="tabelaFinalizados"></tbody></table></div>
+        </div>
+    </div>
+    
+    <div id="view-kanban-suporte" class="page-view">
+      <div class="view-container">
+        <h3>Kanban Suporte</h3>
+        <div class="kanban-filters">
+            <div class="filter-item"><span id="kanbanCount">Chamados Abertos: 0/0</span></div>
+            <div class="filter-item"><button id="kanbanRefreshBtn" title="Atualizar" aria-label="Atualizar"><i class="fas fa-sync-alt" aria-hidden="true"></i></button></div>
+            <div class="filter-item"><button id="kanbanCompactToggleBtn" title="Modo Compacto" aria-pressed="false" aria-label="Alternar modo compacto"><i class="fas fa-compress-arrows-alt" aria-hidden="true"></i></button></div>
+            <div class="filter-item"><label for="kanbanFiltroProduto">Produto:</label><select id="kanbanFiltroProduto"><option value="">Todos</option></select></div>
+            <div class="filter-item"><label for="kanbanFiltroResponsavel">Responsável:</label><select id="kanbanFiltroResponsavel"><option value="">Todos</option></select></div>
+        </div>
+        <div class="kanban-board" id="kanbanBoardContainer"></div>
+      </div>
+    </div>
+
+    <div id="view-dashboard-geral" class="page-view">
+        <div class="view-container">
+            <h3>Dashboard Geral</h3>
+            <div class="dashboard-grid">
+                <div class="dashboard-card metric-card-grid">
+                    <div class="metric-item"><div id="metricAbertos" class="value">0</div><div class="label">Abertos</div></div>
+                    <div class="metric-item"><div id="metricFinalizados" class="value">0</div><div class="label">Finalizados</div></div>
+                    <div class="metric-item"><div id="metricTempoMedio" class="value">0d</div><div class="label">Tempo Médio Resolução</div></div>
+                </div>
+                <div class="dashboard-card"><h4>Chamados por Prioridade</h4><div class="chart-container"><canvas id="prioridadeChart"></canvas></div></div>
+                <div class="dashboard-card"><h4>Top 10 Clientes com Chamados</h4><div class="chart-container"><canvas id="clienteChart"></canvas></div></div>
+                <div class="dashboard-card sla-alerts-list"><h4>Alertas de SLA</h4><ul id="slaAlertsList"></ul></div>
+            </div>
+        </div>
+    </div>
+      
+    <div id="view-relatorio" class="page-view">
+        <div class="view-container">
+            <h3>Relatório de Chamados</h3>
+            <div class="report-filters-panel">
+                <h4><i class="fas fa-filter" aria-hidden="true"></i> Filtros do Relatório</h4>
+                <div class="report-filters-grid">
+                    <div class="filter-group"><label for="filtroDataDe">De</label><input type="date" id="filtroDataDe"></div>
+                    <div class="filter-group"><label for="filtroDataAte">Até</label><input type="date" id="filtroDataAte"></div>
+                    <div class="filter-group"><label for="filtroStatusRelatorio">Status</label><select id="filtroStatusRelatorio"><option value="ambos">Ambos</option><option value="aberto">Abertos</option><option value="finalizado">Finalizados</option></select></div>
+                    <div class="filter-group"><label for="filtroUsuarioRelatorio">Usuário</label><select id="filtroUsuarioRelatorio"><option value="todos">Todos</option></select></div>
+                </div>
+                 <div class="report-actions">
+                    <button id="gerarRelatorioBtn"><i class="fas fa-cogs" aria-hidden="true"></i> Gerar Relatório</button>
+                 </div>
+            </div>
+            <div id="report-results">
+                <h4 id="reportTitle">Resultados</h4>
+                <p id="reportSummary">Nenhum filtro aplicado.</p>
+                <button id="exportRelatorioBtn" class="btn-info"><i class="fas fa-file-excel" aria-hidden="true"></i> Exportar para .csv</button>
+                <div class="table-wrapper"><table id="tabelaRelatorio"></table></div>
+            </div>
+        </div>
+    </div>
+  </main>
+  
+  <div id="modalFinalizar" class="modal-base"><div class="modal-content"><h3 style="margin-top:0; justify-content:center; display:flex;">Finalizar Chamado</h3><label for="dataFinalizacaoInput">Selecione a data de finalização:</label><input type="date" id="dataFinalizacaoInput" style="text-align:center;" /><div class="modal-buttons"><button id="btnOk" class="btn-save">OK</button><button id="btnCancel" class="btn-cancel">Cancelar</button></div></div></div>
+  <div id="modalEditar" class="modal-base"><div class="modal-content"><h3 style="margin-top:0; justify-content:center; display:flex;">Editar Chamado</h3><input type="hidden" id="editChamadoId"><label for="editNumero">Número:</label><input type="text" id="editNumero" /><label for="editCliente">Cliente:</label><input type="text" id="editCliente" /><label for="editTitulo">Título:</label><input type="text" id="editTitulo" /><label for="editLink">Link:</label><input type="url" id="editLink" /><label for="editPrioridade">Prioridade:</label><select id="editPrioridade"><option value="baixa">Baixa</option><option value="media">Média</option><option value="alta">Alta</option></select><div class="modal-buttons" style="margin-top:25px;"><button id="btnMarcarAtualizado" class="btn-info"><i class="fas fa-check" aria-hidden="true"></i> Marquei como Atualizado</button></div><hr style="margin: 20px 0; border: none; height: 1px; background-color: var(--border-color);"><div class="modal-buttons"><button id="btnSalvarEdicao" class="btn-save">Salvar Alterações</button><button id="btnCancelarEdicao" class="btn-cancel">Cancelar</button></div></div></div>
+  <div id="modalAviso" class="modal-base"><div class="modal-content"><h3 style="margin-top:0; justify-content:center; display:flex;">Criar Novo Aviso</h3><label for="avisoDescricao">Descrição:</label><input type="text" id="avisoDescricao" /><label for="avisoLink">Link (opcional):</label><input type="url" id="avisoLink" /><label for="avisoPrioridade">Prioridade:</label><select id="avisoPrioridade"><option value="baixa">Baixa</option><option value="media" selected>Média</option><option value="alta">Alta</option></select><div class="modal-buttons"><button id="btnSalvarAviso" class="btn-save">Salvar</button><button id="btnCancelarAviso" class="btn-cancel">Cancelar</button></div></div></div>
+  <div id="modalCadastro" class="modal-base"><div class="modal-content"><h3 style="margin-top:0; justify-content:center; display:flex;">Cadastrar Novo Chamado</h3><label for="cadNumero">Número:</label><input type="text" id="cadNumero" placeholder="#️⃣ Número do Chamado" /><label for="cadCliente">Cliente:</label><input type="text" id="cadCliente" placeholder="👤 Nome do Cliente" /><label for="cadTitulo">Título:</label><input type="text" id="cadTitulo" placeholder="📝 Título do Chamado" /><label for="cadDataAbertura">Data de Abertura:</label><input type="date" id="cadDataAbertura" /><label for="cadLink">Link:</label><input type="url" id="cadLink" placeholder="🔗 Link do Projeto" /><label for="cadPrioridade">Prioridade:</label><select id="cadPrioridade"><option value="baixa">Prioridade Baixa</option><option value="media" selected>Prioridade Média</option><option value="alta">Prioridade Alta</option></select><div class="modal-buttons" style="margin-top:25px;"><button id="btnSalvarCadastro" class="btn-save">💾 Salvar</button><button id="btnCancelarCadastro" class="btn-cancel">Cancelar</button></div></div></div>
+  <div class="footer" id="footerDateTime"></div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const dom = {
+        body: document.body, logoEmpresa: document.getElementById('logoEmpresa'), themeToggleBtn: document.getElementById('theme-toggle-btn'), menuBtn: document.getElementById('menuBtn'), menuOptions: document.getElementById('menuOptions'),
+        userAvatarBtn: document.getElementById('userAvatarBtn'), userAvatarImg: document.getElementById('userAvatarImg'), userMenu: document.getElementById('userMenu'),
+        changePhotoBtn: document.getElementById('changePhotoBtn'), logoutBtn: document.getElementById('logoutBtn'), photoUploadInput: document.getElementById('photoUploadInput'),
+        filtros: { titulo: document.getElementById('filtroTitulo'), cliente: document.getElementById('filtroCliente'), dataFinalizados: document.getElementById('filtroDataFinalizados') },
+        tabs: { buttons: document.querySelectorAll('.tab-button'), contents: document.querySelectorAll('.tab-content'), countAbertos: document.getElementById('countAbertos'), countFinalizados: document.getElementById('countFinalizados') },
+        tabelas: { abertos: document.getElementById('tabelaChamados'), finalizados: document.getElementById('tabelaFinalizados') },
+        modalFinalizar: { container: document.getElementById('modalFinalizar'), dataInput: document.getElementById('dataFinalizacaoInput'), btnOk: document.getElementById('btnOk'), btnCancel: document.getElementById('btnCancel') },
+        modalEditar: { container: document.getElementById('modalEditar'), chamadoId: document.getElementById('editChamadoId'), numero: document.getElementById('editNumero'), cliente: document.getElementById('editCliente'), titulo: document.getElementById('editTitulo'), link: document.getElementById('editLink'), prioridade: document.getElementById('editPrioridade'), btnSalvar: document.getElementById('btnSalvarEdicao'), btnCancelar: document.getElementById('btnCancelarEdicao'), btnMarcarAtualizado: document.getElementById('btnMarcarAtualizado') },
+        footer: document.getElementById('footerDateTime'),
+        carousel: { container: document.getElementById('cardsContainer'), cards: document.querySelectorAll('.card'), arrowLeft: document.getElementById('arrowLeftBtn'), arrowRight: document.getElementById('arrowRightBtn') },
+        avisos: { container: document.getElementById('avisosContainer'), addBtn: document.getElementById('addAvisoBtn'), modal: document.getElementById('modalAviso'), descricaoInput: document.getElementById('avisoDescricao'), linkInput: document.getElementById('avisoLink'), prioridadeInput: document.getElementById('avisoPrioridade'), btnSalvar: document.getElementById('btnSalvarAviso'), btnCancelar: document.getElementById('btnCancelarAviso') },
+        btnAbrirModalCadastro: document.getElementById('btnAbrirModalCadastro'),
+        modalCadastro: { container: document.getElementById('modalCadastro'), numero: document.getElementById('cadNumero'), cliente: document.getElementById('cadCliente'), titulo: document.getElementById('cadTitulo'), dataAbertura: document.getElementById('cadDataAbertura'), link: document.getElementById('cadLink'), prioridade: document.getElementById('cadPrioridade'), btnSalvar: document.getElementById('btnSalvarCadastro'), btnCancelar: document.getElementById('btnCancelarCadastro') },
+        importExport: { btnExportarAbertos: document.getElementById('btnExportarAbertos'), btnImportarAbertos: document.getElementById('btnImportarAbertos'), importAbertosInput: document.getElementById('importAbertosInput'), btnExportarFinalizados: document.getElementById('btnExportarFinalizados'), btnImportarFinalizados: document.getElementById('btnImportarFinalizados'), importFinalizadosInput: document.getElementById('importFinalizadosInput') },
+        sideMenu: { toggleBtn: document.getElementById('menuToggleBtn'), navItems: document.querySelectorAll('.nav-item') },
+        views: document.querySelectorAll('.page-view'),
+        kanban: { boardContainer: document.getElementById('kanbanBoardContainer'), count: document.getElementById('kanbanCount'), refreshBtn: document.getElementById('kanbanRefreshBtn'), compactToggleBtn: document.getElementById('kanbanCompactToggleBtn'), filtroProduto: document.getElementById('kanbanFiltroProduto'), filtroResponsavel: document.getElementById('kanbanFiltroResponsavel') },
+        dashboardGeral: { metricAbertos: document.getElementById('metricAbertos'), metricFinalizados: document.getElementById('metricFinalizados'), metricTempoMedio: document.getElementById('metricTempoMedio'), slaAlertsList: document.getElementById('slaAlertsList'), prioridadeChartCtx: document.getElementById('prioridadeChart').getContext('2d'), clienteChartCtx: document.getElementById('clienteChart').getContext('2d') },
+        relatorio: { dataDe: document.getElementById('filtroDataDe'), dataAte: document.getElementById('filtroDataAte'), status: document.getElementById('filtroStatusRelatorio'), usuario: document.getElementById('filtroUsuarioRelatorio'), gerarBtn: document.getElementById('gerarRelatorioBtn'), resultsContainer: document.getElementById('report-results'), summary: document.getElementById('reportSummary'), exportBtn: document.getElementById('exportRelatorioBtn'), table: document.getElementById('tabelaRelatorio') }
+      };
+      let idParaAcao = { finalizar: null, editar: null };
+      let chamadosAbertos = [], chamadosFinalizados = [], avisos = [], currentReportData = [];
+      let charts = { prioridade: null, cliente: null };
+      const currentUserAnalyst = "ATARA SILVA";
+
+      const carregarDados = () => { try { const abertosSalvos = localStorage.getItem('chamados_v4'); const finalizadosSalvos = localStorage.getItem('finalizados_v2'); avisos = JSON.parse(localStorage.getItem('avisos_v1')) || []; chamadosAbertos = abertosSalvos ? JSON.parse(abertosSalvos) : []; chamadosFinalizados = finalizadosSalvos ? JSON.parse(finalizadosSalvos) : []; chamadosAbertos.forEach(c => { if (c.id === undefined) c.id = Date.now() + Math.random(); if (c.isPinned === undefined) c.isPinned = false; if (c.priority === undefined) c.priority = 'media'; if (c.lastInternalUpdate === undefined) c.lastInternalUpdate = null; if (c.analyst === undefined) c.analyst = currentUserAnalyst;}); chamadosFinalizados.forEach(c => { if (c.id === undefined) c.id = Date.now() + Math.random(); if (c.priority === undefined) c.priority = c.priority || 'media'; if (c.analyst === undefined) c.analyst = currentUserAnalyst; }); } catch (error) { console.error("Erro fatal ao carregar dados do localStorage:", error); alert("Não foi possível carregar seus dados. Verifique o console."); } };
+      const salvarDadosChamados = () => { localStorage.setItem('chamados_v4', JSON.stringify(chamadosAbertos)); localStorage.setItem('finalizados_v2', JSON.stringify(chamadosFinalizados)); };
+      const salvarDadosAvisos = () => { localStorage.setItem('avisos_v1', JSON.stringify(avisos)); };
+      const calcularDias = (data) => { if(!data) return 0; const hoje = new Date(); hoje.setHours(0, 0, 0, 0); const abertura = new Date(data); return Math.max(0, Math.floor((hoje - abertura) / (1000 * 60 * 60 * 24))); };
+      const renderizarTudo = () => { renderizarTabelasEContadores(); renderizarKanban(); renderizarAvisos(); if(document.getElementById('view-dashboard-geral').classList.contains('active')) renderizarDashboardGeral(); if(document.getElementById('view-relatorio').classList.contains('active')) renderizarFiltrosRelatorio(); };
+      const renderizarTabelasEContadores = () => { atualizarContadores(); renderizarTabelaAbertos(); renderizarTabelaFinalizados(); };
+      const atualizarContadores = () => { dom.tabs.countAbertos.textContent = chamadosAbertos.length; dom.tabs.countFinalizados.textContent = chamadosFinalizados.length; };
+      const formatRelativeTime = (timestamp) => { if (!timestamp) return '—'; const now = new Date(); const past = new Date(timestamp); const diffInSeconds = Math.floor((now - past) / 1000); if (diffInSeconds < 60) return `há ${diffInSeconds}s`; const diffInMinutes = Math.floor(diffInSeconds / 60); if (diffInMinutes < 60) return `há ${diffInMinutes} min`; const diffInHours = Math.floor(diffInMinutes / 60); if (diffInHours < 24) return `há ${diffInHours} h`; const diffInDays = Math.floor(diffInHours / 24); return diffInDays === 1 ? 'ontem' : `há ${diffInDays} dias`; };
+
+      // Build table with data-labels for responsive
+      const renderizarTabelaAbertos = () => {
+        const filtroTituloVal = dom.filtros.titulo.value.toUpperCase();
+        const filtroClienteVal = dom.filtros.cliente.value.toUpperCase();
+        let html = '';
+        const chamadosOrdenados = [...chamadosAbertos].sort((a, b) => (b.isPinned ? 1 : 0) - (a.isPinned ? 1 : 0));
+        const chamadosFiltrados = chamadosOrdenados.filter(c => c.titulo.toUpperCase().includes(filtroTituloVal) && c.cliente.toUpperCase().includes(filtroClienteVal));
+        if (chamadosFiltrados.length === 0) { dom.tabelas.abertos.innerHTML = `<tr><td colspan="9" style="text-align:center; padding: 20px;">Nenhum chamado aberto encontrado.</td></tr>`; return; }
+        chamadosFiltrados.forEach((chamado) => {
+          const dias = calcularDias(chamado.dataAbertura);
+          const isPinned = chamado.isPinned;
+          const rowClass = `${dias > 5 ? 'atrasado' : 'dentro-prazo'} ${isPinned ? 'pinned-row' : ''}`;
+          const pinClass = isPinned ? 'pinned' : '';
+          const pinTitle = isPinned ? 'Desafixar' : 'Fixar';
+          const linkHtml = chamado.link ? `<a class="link-icon" href="${chamado.link}" target="_blank" rel="noopener noreferrer" title="Abrir Link"><i class="fas fa-link" aria-hidden="true"></i></a>` : '';
+          html += `<tr class="${rowClass}" data-id="${chamado.id}">
+            <td data-label="Número">${chamado.numero}</td>
+            <td data-label="Cliente">${chamado.cliente}</td>
+            <td data-label="Título">${chamado.titulo}</td>
+            <td data-label="Prioridade"><span class="priority-tag priority-${chamado.priority}">${chamado.priority}</span></td>
+            <td data-label="Data">${new Date(chamado.dataAbertura).toLocaleDateString('pt-BR', {timeZone: 'UTC'})}</td>
+            <td data-label="Dias">${dias}</td>
+            <td data-label="Última Atualização" class="last-update-cell">${formatRelativeTime(chamado.lastInternalUpdate)}</td>
+            <td data-label="Link">${linkHtml}</td>
+            <td data-label="Ações">
+              <button class="action-button btn-pin ${pinClass}" data-action="toggle-pin" title="${pinTitle}" aria-label="${pinTitle}"><i class="fas fa-thumbtack" aria-hidden="true"></i></button>
+              <button class="action-button btn-edit" data-action="edit" title="Editar" aria-label="Editar"><i class="fas fa-pencil-alt" aria-hidden="true"></i></button>
+              <button class="action-button btn-finalizar" data-action="finalizar" title="Finalizar" aria-label="Finalizar"><i class="fas fa-check-circle" aria-hidden="true"></i></button>
+              <button class="action-button btn-excluir" data-action="excluir" title="Excluir" aria-label="Excluir"><i class="fas fa-trash-alt" aria-hidden="true"></i></button>
+            </td>
+          </tr>`;
+        });
+        dom.tabelas.abertos.innerHTML = html;
+      };
+
+      // BUGFIX: use id instead of filtered index for reabrir
+      const renderizarTabelaFinalizados = () => {
+        const filtroDataVal = dom.filtros.dataFinalizados.value;
+        let html = '';
+        const chamadosFiltrados = chamadosFinalizados.filter(c => !filtroDataVal || c.dataFim === filtroDataVal);
+        if(chamadosFiltrados.length === 0) { dom.tabelas.finalizados.innerHTML = `<tr><td colspan="7" style="text-align:center; padding: 20px;">Nenhum chamado finalizado encontrado.</td></tr>`; return; }
+        chamadosFiltrados.forEach((chamado) => {
+          const linkHtml = chamado.link ? `<a class="link-icon" href="${chamado.link}" target="_blank" rel="noopener noreferrer"><i class="fas fa-link" aria-hidden="true"></i></a>` : '';
+          html += `<tr data-id="${chamado.id}">
+            <td data-label="Número">${chamado.numero}</td>
+            <td data-label="Cliente">${chamado.cliente}</td>
+            <td data-label="Título">${chamado.titulo}</td>
+            <td data-label="Abertura">${new Date(chamado.dataAbertura).toLocaleDateString('pt-BR', {timeZone: 'UTC'})}</td>
+            <td data-label="Finalização">${new Date(chamado.dataFim).toLocaleDateString('pt-BR', {timeZone: 'UTC'})}</td>
+            <td data-label="Link">${linkHtml}</td>
+            <td data-label="Ações"><button class="action-button btn-reabrir" data-action="reabrir" title="Reabrir" aria-label="Reabrir"><i class="fas fa-undo" aria-hidden="true"></i></button></td>
+          </tr>`;
+        });
+        dom.tabelas.finalizados.innerHTML = html;
+      };
+
+      const renderizarAvisos = () => { let html = ''; avisos.forEach((aviso, index) => { const linkHtml = aviso.link ? ` <a href="${aviso.link}" target="_blank" rel="noopener noreferrer">Saiba mais</a>` : ''; html += `<div class="aviso-card" data-priority="${aviso.prioridade}" data-index="${index}"><i class="fas fa-bell" aria-hidden="true"></i><div class="aviso-texto">${aviso.descricao}${linkHtml}</div><button class="close-aviso" title="Dispensar" aria-label="Dispensar">×</button></div>`; }); dom.avisos.container.innerHTML = html; };
+      const stringToColor = (str) => { let hash = 0; if(!str) return 'hsl(210, 50%, 80%)'; for (let i = 0; i < str.length; i++) { hash = str.charCodeAt(i) + ((hash << 5) - hash); } const h = hash % 360; return `hsl(${h}, 65%, 80%)`; };
+      const createAnalystAvatar = (analystName) => { const userAvatarUrl = localStorage.getItem('user_avatar'); if (analystName === currentUserAnalyst && userAvatarUrl) { return `<img src="${userAvatarUrl}" alt="${analystName}" class="kanban-column-header-avatar">`; } if (analystName === "AGUARDANDO...") return '<i class="fas fa-clock" aria-hidden="true"></i>'; if (analystName === "VISITA TÉCNICA") return '<i class="fas fa-hard-hat" aria-hidden="true"></i>'; const initials = analystName.split(' ').map(n => n[0]).join('').substring(0, 2); const bgColor = stringToColor(analystName); return `<div class="kanban-column-header-avatar" style="background-color: ${bgColor}" title="${analystName}">${initials}</div>`; };
+      const renderizarKanban = () => { const board = dom.kanban.boardContainer; board.innerHTML = ''; const analystColumns = ["ADRIANO SANDES", "ATARA SILVA", "CAIO SANTOS", "DANIEL ARAUJO", "IGOR FERREIRA", "MARCOS PAIVA", "THIAGO VIEIRA", "AGUARDANDO...", "VISITA TÉCNICA"]; analystColumns.forEach(analystName => { const tickets = (analystName === currentUserAnalyst) ? chamadosAbertos : []; board.appendChild(createKanbanColumn(analystName, tickets)); }); };
+      const createKanbanColumn = (title, tickets) => { const avatarHtml = createAnalystAvatar(title); const columnEl = document.createElement('div'); columnEl.className = 'kanban-column'; columnEl.innerHTML = `<div class="kanban-column-header">${avatarHtml}<span>${title}</span><span class="kanban-count-badge">${tickets.length}</span></div><div class="kanban-cards">${tickets.length === 0 ? '<div class="kanban-empty">Nenhum Chamado</div>' : tickets.map(ticket => createKanbanCard(ticket)).join('')}</div>`; return columnEl; };
+      const createKanbanCard = (ticket) => { const initials = ticket.cliente.split(' ').map(n => n[0]).join('').substring(0, 2); const diasAbertos = calcularDias(ticket.dataAbertura); const linkAttr = ticket.link ? `data-link="${ticket.link}"` : ""; const cursorStyle = ticket.link ? 'pointer' : 'default'; const avatarColor = stringToColor(ticket.cliente); return `<div class="kanban-card" ${linkAttr} style="cursor: ${cursorStyle}" title="${ticket.link ? 'Clique para abrir o link' : 'Sem link associado'}"><div class="kanban-card-header"><span class="card-id">#${ticket.numero}</span><span class="priority-tag priority-${ticket.priority}">${ticket.priority}</span></div><div class="kanban-card-body"><div class="card-client">${ticket.cliente}</div><div class="card-title">${ticket.titulo}</div></div><div class="kanban-card-footer"><div class="card-days-open" title="${diasAbertos} dias em aberto"><i class="far fa-clock" aria-hidden="true"></i><span>${diasAbertos}d</span></div><div class="card-avatar" style="background-color: ${avatarColor}" title="${ticket.cliente}">${initials}</div></div></div>`; };
+      const renderizarDashboardGeral = () => { dom.dashboardGeral.metricAbertos.textContent = chamadosAbertos.length; dom.dashboardGeral.metricFinalizados.textContent = chamadosFinalizados.length; if (chamadosFinalizados.length > 0) { const totalDias = chamadosFinalizados.reduce((acc, c) => acc + Math.ceil(Math.abs(new Date(c.dataFim) - new Date(c.dataAbertura)) / (1000 * 60 * 60 * 24)), 0); dom.dashboardGeral.metricTempoMedio.textContent = `${(totalDias / chamadosFinalizados.length).toFixed(1)}d`; } else { dom.dashboardGeral.metricTempoMedio.textContent = 'N/A'; } const alertasSla = chamadosAbertos.map(c => ({ ...c, dias: calcularDias(c.dataAbertura) })).filter(c => c.dias >= 4).sort((a,b) => b.dias - a.dias); if (alertasSla.length > 0) { dom.dashboardGeral.slaAlertsList.innerHTML = alertasSla.map(c => `<li class="${c.dias > 5 ? 'sla-vencido' : 'sla-vencendo'}"><span>#${c.numero} - ${c.cliente}</span> <strong>${c.dias} dias (${c.dias > 5 ? 'Vencido':'Vencendo'})</strong></li>`).join(''); } else { dom.dashboardGeral.slaAlertsList.innerHTML = '<li style="text-align: center; opacity: 0.7;">Nenhum alerta de SLA.</li>'; } renderizarGraficoPrioridade(); renderizarGraficoClientes(); };
+      const renderizarGraficoPrioridade = () => { if (charts.prioridade) charts.prioridade.destroy(); const p = chamadosAbertos.reduce((acc, c) => { acc[c.priority] = (acc[c.priority] || 0) + 1; return acc; }, {}); charts.prioridade = new Chart(dom.dashboardGeral.prioridadeChartCtx, { type: 'doughnut', data: { labels: ['Alta', 'Média', 'Baixa'], datasets: [{ data: [p.alta || 0, p.media || 0, p.baixa || 0], backgroundColor: ['#fca5a5', '#fde68a', '#bae6fd'], borderColor: ['#7f1d1d', '#78350f', '#075985'], borderWidth: 1 }] }, options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { position: 'top' }}}}); };
+      const renderizarGraficoClientes = () => { if(charts.cliente) charts.cliente.destroy(); const counts = chamadosAbertos.reduce((acc, c) => { acc[c.cliente] = (acc[c.cliente] || 0) + 1; return acc; }, {}); const sorted = Object.entries(counts).sort(([,a],[,b]) => b-a).slice(0, 10); charts.cliente = new Chart(dom.dashboardGeral.clienteChartCtx, { type: 'bar', data: { labels: sorted.map(i => i[0]), datasets: [{ label: 'Chamados Abertos', data: sorted.map(i => i[1]), backgroundColor: 'rgba(37, 99, 235, 0.6)', borderColor: 'rgba(37, 99, 235, 1)', borderWidth: 1 }] }, options: { indexAxis: 'y', responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false }}}}); };
+      const renderizarFiltrosRelatorio = () => { const todos = [...chamadosAbertos, ...chamadosFinalizados]; const users = [...new Set(todos.map(c => c.analyst).filter(Boolean))]; dom.relatorio.usuario.innerHTML = '<option value="todos">Todos</option>'; users.forEach(user => { dom.relatorio.usuario.innerHTML += `<option value="${user}">${user}</option>`; }); };
+      const gerarRelatorio = () => { const de=dom.relatorio.dataDe.value, ate=dom.relatorio.dataAte.value?dom.relatorio.dataAte.value+'T23:59:59':null, status=dom.relatorio.status.value, usuario=dom.relatorio.usuario.value; let dados=[]; if(status==='aberto'||status==='ambos')dados.push(...chamadosAbertos.map(c=>({...c,status:'Aberto'}))); if(status==='finalizado'||status==='ambos')dados.push(...chamadosFinalizados.map(c=>({...c,status:'Finalizado'}))); currentReportData=dados.filter(c=>{ const dataChamado=new Date(c.dataAbertura); if(de&&dataChamado<new Date(de))return false; if(ate&&dataChamado>new Date(ate))return false; if(usuario!=='todos'&&c.analyst!==usuario)return false; return true;}); displayReportResults(currentReportData); };
+      const displayReportResults = (data) => { dom.relatorio.resultsContainer.style.display='block'; dom.relatorio.summary.textContent=`Relatório gerado com ${data.length} chamado(s).`; const table=dom.relatorio.table; table.innerHTML=`<thead><tr><th>Número</th><th>Cliente</th><th>Título</th><th>Analista</th><th>Status</th><th>Abertura</th><th>Finalização</th></tr></thead>`; let tbody='<tbody>'; if(data.length===0){tbody+='<tr><td colspan="7" style="text-align:center;">Nenhum resultado.</td></tr>';}else{data.forEach(c=>{tbody+=`<tr><td data-label="Número">${c.numero||''}</td><td data-label="Cliente">${c.cliente||''}</td><td data-label="Título">${c.titulo||''}</td><td data-label="Analista">${c.analyst||'N/A'}</td><td data-label="Status">${c.status||''}</td><td data-label="Abertura">${c.dataAbertura?new Date(c.dataAbertura).toLocaleDateString('pt-BR',{timeZone:'UTC'}):''}</td><td data-label="Finalização">${c.dataFim?new Date(c.dataFim).toLocaleDateString('pt-BR',{timeZone:'UTC'}):'—'}</td></tr>`;});} table.innerHTML+=tbody+'</tbody>'; };
+      const salvarChamado = () => { const m = dom.modalCadastro; const novo = { id: Date.now(), numero: m.numero.value.toUpperCase(), cliente: m.cliente.value.toUpperCase(), titulo: m.titulo.value.toUpperCase(), dataAbertura: m.dataAbertura.value, link: m.link.value, priority: m.prioridade.value, isPinned: false, lastInternalUpdate: null, analyst: currentUserAnalyst }; if (!novo.numero || !novo.cliente || !novo.titulo || !novo.dataAbertura) { alert('⚠️ Preencha os campos obrigatórios.'); return; } chamadosAbertos.unshift(novo); salvarDadosChamados(); renderizarTudo(); fecharModalCadastro(); };
+      const abrirModalCadastro = () => { const m=dom.modalCadastro; m.container.classList.add('active'); [m.numero,m.cliente,m.titulo,m.link].forEach(i=>i.value=''); m.dataAbertura.value=new Date().toISOString().split('T')[0]; m.prioridade.value='media'; };
+      const fecharModalCadastro = () => dom.modalCadastro.container.classList.remove('active');
+      const abrirModalEditar = (id) => { const c = chamadosAbertos.find(c => c.id === id); if (!c) return; idParaAcao.editar = id; const m = dom.modalEditar; m.chamadoId.value = c.id; m.numero.value = c.numero; m.cliente.value = c.cliente; m.titulo.value = c.titulo; m.link.value = c.link; m.prioridade.value = c.priority; m.container.classList.add('active'); };
+      const fecharModalEditar = () => { dom.modalEditar.container.classList.remove('active'); idParaAcao.editar = null; };
+      const salvarEdicao = () => { const id = idParaAcao.editar; if (!id) return; const c = chamadosAbertos.find(c => c.id === id); if (c) { const m = dom.modalEditar; c.numero = m.numero.value.toUpperCase(); c.cliente = m.cliente.value.toUpperCase(); c.titulo = m.titulo.value.toUpperCase(); c.link = m.link.value; c.priority = m.prioridade.value; salvarDadosChamados(); renderizarTudo(); } fecharModalEditar(); };
+      const marcarComoAtualizado = () => { const c = chamadosAbertos.find(c => c.id === idParaAcao.editar); if(c){ c.lastInternalUpdate = Date.now(); } salvarEdicao(); };
+      const abrirModalFinalizar = (id) => { idParaAcao.finalizar = id; dom.modalFinalizar.dataInput.value = new Date().toISOString().split('T')[0]; dom.modalFinalizar.container.classList.add('active'); };
+      const fecharModalFinalizar = () => { dom.modalFinalizar.container.classList.remove('active'); idParaAcao.finalizar = null; };
+      const confirmarFinalizar = () => { const id = idParaAcao.finalizar; const dataFim = dom.modalFinalizar.dataInput.value; if (!dataFim) { alert('Selecione uma data.'); return; } const index = chamadosAbertos.findIndex(c => c.id === id); if (index > -1) { const c = chamadosAbertos.splice(index, 1)[0]; c.dataFim = dataFim; c.isPinned = false; chamadosFinalizados.unshift(c); salvarDadosChamados(); fecharModalFinalizar(); renderizarTudo(); } };
+      const excluirChamado = (id) => { const i = chamadosAbertos.findIndex(c => c.id === id); if (i > -1 && confirm(`Deseja excluir o chamado #${chamadosAbertos[i].numero}?`)) { chamadosAbertos.splice(i, 1); salvarDadosChamados(); renderizarTudo(); } };
+      const reabrirChamado = (id) => { const idx = chamadosFinalizados.findIndex(c => c.id === id); if (idx === -1) return; const c = chamadosFinalizados.splice(idx, 1)[0]; delete c.dataFim; c.isPinned = false; chamadosAbertos.unshift(c); salvarDadosChamados(); renderizarTudo(); };
+      const togglePinChamado = (id) => { const c = chamadosAbertos.find(c => c.id === id); if (c) { c.isPinned = !c.isPinned; salvarDadosChamados(); renderizarTudo(); } };
+      const salvarAviso = () => { const desc = dom.avisos.descricaoInput.value.trim(); if (!desc) return; avisos.push({ descricao: desc, link: dom.avisos.linkInput.value.trim(), prioridade: dom.avisos.prioridadeInput.value }); salvarDadosAvisos(); renderizarAvisos(); fecharModalAviso(); };
+      const excluirAviso = (index) => { avisos.splice(index, 1); salvarDadosAvisos(); renderizarAvisos(); };
+      const abrirModalAviso = () => { dom.avisos.modal.classList.add('active'); dom.avisos.descricaoInput.value = ''; dom.avisos.linkInput.value = ''; };
+      const fecharModalAviso = () => dom.avisos.modal.classList.remove('active');
+      const switchView = (viewId) => { dom.views.forEach(v => v.classList.remove('active')); document.getElementById(`view-${viewId}`).classList.add('active'); dom.sideMenu.navItems.forEach(item => item.classList.toggle('active', item.dataset.view === viewId)); if (viewId === 'dashboard-geral') renderizarDashboardGeral(); if(viewId==='relatorio') renderizarFiltrosRelatorio(); };
+      const abrirAba = (tabId) => { dom.tabs.contents.forEach(c => c.classList.remove('active')); document.getElementById(tabId).classList.add('active'); dom.tabs.buttons.forEach(b => b.classList.toggle('active', b.dataset.tab === tabId)); };
+      const setTheme = (theme) => { dom.body.classList.toggle('dark', theme === 'dark'); localStorage.setItem('tema', theme); dom.logoEmpresa.src = theme === 'dark' ? 'imagens/ELEV2.png' : 'imagens/ELEV1.png'; if (document.getElementById('view-dashboard-geral').classList.contains('active')) renderizarDashboardGeral(); };
+      const atualizarDataHora = () => { dom.footer.textContent = new Date().toLocaleString('pt-BR', { dateStyle: 'full', timeStyle: 'medium' }); };
+      const exportToCsv = (filename, data) => { if (data.length === 0) return alert("Não há dados para exportar."); const headers = Object.keys(data[0]); const csvContent = [headers.join(','),...data.map(row => headers.map(header => { let v=row[header]; return typeof v==='string' && v.includes(',')?`"${v.replace(/"/g,'""')}"`:v}).join(','))].join('\n'); const blob = new Blob([csvContent], {type:'text/csv;charset=utf-8;'}); const link = document.createElement("a"); link.href = URL.createObjectURL(blob); link.download = filename; link.style.visibility = 'hidden'; document.body.appendChild(link); link.click(); document.body.removeChild(link); };
+      const importFromCsv = (file, target) => { if (!file) return; const reader = new FileReader(); reader.onload = (e) => { const rows = e.target.result.split('\n').filter(r => r.trim()); if(rows.length < 2 || !confirm("Atenção! Isso substituirá os dados atuais. Continuar?")) return; const headers = rows[0].split(',').map(h=>h.trim()); const data = rows.slice(1).map(r => { const values = r.match(/\"[^\"]*\"|[^,]+/g) || []; return headers.reduce((obj, h, i) => { let v = (values[i]||'').replace(/^\"|\"$/g,''); if(v==='true')v=true; else if(v==='false')v=false; else if(!isNaN(v) && v.trim() !== '' && !h.includes('numero'))v=Number(v); obj[h]=v; return obj;},{}); }); if (target === 'abertos') chamadosAbertos = data; else chamadosFinalizados = data; salvarDadosChamados(); renderizarTudo(); alert("Dados importados!"); }; reader.readAsText(file); };
+      const loadUserProfile = () => { const savedAvatar = localStorage.getItem('user_avatar'); if(savedAvatar) dom.userAvatarImg.src = savedAvatar; };
+
+      const init = () => {
+        carregarDados(); loadUserProfile();
+        dom.sideMenu.toggleBtn.addEventListener('click', () => { const open = !dom.body.classList.contains('menu-open'); dom.body.classList.toggle('menu-open'); dom.sideMenu.toggleBtn.setAttribute('aria-pressed', String(open)); });
+        dom.sideMenu.navItems.forEach(item => item.addEventListener('click', (e) => switchView(e.currentTarget.dataset.view)));
+        dom.tabs.buttons.forEach(button => button.addEventListener('click', (e) => abrirAba(e.currentTarget.dataset.tab)));
+        [dom.filtros.titulo, dom.filtros.cliente, dom.filtros.dataFinalizados].forEach(el => el.addEventListener('input', renderizarTudo));
+
+        dom.tabelas.abertos.addEventListener('click', (e) => { const btn=e.target.closest('button[data-action]'); if(!btn) return; const id = parseFloat(btn.closest('tr').dataset.id); const action=btn.dataset.action; if(action==='edit')abrirModalEditar(id); if(action==='finalizar')abrirModalFinalizar(id); if(action==='excluir')excluirChamado(id); if(action==='toggle-pin')togglePinChamado(id); });
+        dom.tabelas.finalizados.addEventListener('click', (e) => { const tr = e.target.closest('tr'); if(!tr) return; if (e.target.closest('[data-action="reabrir"]')) reabrirChamado(parseFloat(tr.dataset.id)); });
+        dom.kanban.boardContainer.addEventListener('click', (e) => { const card=e.target.closest('.kanban-card'); if (card && card.dataset.link) window.open(card.dataset.link, '_blank', 'noopener,noreferrer'); });
+        dom.kanban.compactToggleBtn.addEventListener('click', (e) => { dom.kanban.boardContainer.classList.toggle('compact-mode'); const pressed = dom.kanban.compactToggleBtn.getAttribute('aria-pressed') === 'true'; dom.kanban.compactToggleBtn.setAttribute('aria-pressed', String(!pressed)); e.currentTarget.classList.toggle('active'); });
+        dom.kanban.refreshBtn.addEventListener('click', renderizarTudo);
+
+        dom.btnAbrirModalCadastro.addEventListener('click', abrirModalCadastro);
+        dom.modalCadastro.btnSalvar.addEventListener('click', salvarChamado); dom.modalCadastro.btnCancelar.addEventListener('click', fecharModalCadastro);
+        dom.modalFinalizar.btnOk.addEventListener('click', confirmarFinalizar); dom.modalFinalizar.btnCancel.addEventListener('click', fecharModalFinalizar);
+        dom.modalEditar.btnSalvar.addEventListener('click', salvarEdicao); dom.modalEditar.btnCancelar.addEventListener('click', fecharModalEditar); dom.modalEditar.btnMarcarAtualizado.addEventListener('click', marcarComoAtualizado);
+        dom.avisos.addBtn.addEventListener('click', abrirModalAviso); dom.avisos.btnSalvar.addEventListener('click', salvarAviso); dom.avisos.btnCancelar.addEventListener('click', fecharModalAviso);
+        dom.avisos.container.addEventListener('click', (e) => { if (e.target.classList.contains('close-aviso')) excluirAviso(parseInt(e.target.closest('.aviso-card').dataset.index)); });
+
+        window.addEventListener('click', (e) => { if(!e.target.closest('.menu-container')) { dom.menuOptions.classList.remove('show'); dom.menuBtn.classList.remove('active'); dom.menuBtn.setAttribute('aria-expanded', 'false'); } if(!e.target.closest('.profile-container')) { dom.userMenu.classList.remove('show'); dom.userAvatarBtn.classList.remove('active'); dom.userAvatarBtn.setAttribute('aria-expanded', 'false'); }});
+        dom.menuBtn.addEventListener('click', (e) => { e.stopPropagation(); dom.userMenu.classList.remove('show'); dom.userAvatarBtn.classList.remove('active'); const show = !dom.menuOptions.classList.contains('show'); dom.menuOptions.classList.toggle('show'); dom.menuBtn.classList.toggle('active'); dom.menuBtn.setAttribute('aria-expanded', String(show)); });
+        dom.userAvatarBtn.addEventListener('click', (e) => { e.stopPropagation(); dom.menuOptions.classList.remove('show'); dom.menuBtn.classList.remove('active'); const show = !dom.userMenu.classList.contains('show'); dom.userMenu.classList.toggle('show'); dom.userAvatarBtn.classList.toggle('active'); dom.userAvatarBtn.setAttribute('aria-expanded', String(show)); });
+        dom.changePhotoBtn.addEventListener('click', () => dom.photoUploadInput.click());
+        dom.photoUploadInput.addEventListener('change', (e) => { if (e.target.files && e.target.files[0]) { const reader = new FileReader(); reader.onload = (ev) => { const imgData = ev.target.result; dom.userAvatarImg.src = imgData; localStorage.setItem('user_avatar', imgData); renderizarKanban();}; reader.readAsDataURL(e.target.files[0]); }});
+        dom.logoutBtn.addEventListener('click', () => { if(confirm("Deseja realmente sair?")) location.reload(); });
+        
+        dom.importExport.btnExportarAbertos.addEventListener('click', () => exportToCsv('chamados-abertos.csv', chamadosAbertos));
+        dom.importExport.btnExportarFinalizados.addEventListener('click', () => exportToCsv('chamados-finalizados.csv', chamadosFinalizados));
+        dom.importExport.btnImportarAbertos.addEventListener('click', () => dom.importExport.importAbertosInput.click());
+        dom.importExport.btnImportarFinalizados.addEventListener('click', () => dom.importExport.importFinalizadosInput.click());
+        dom.importExport.importAbertosInput.addEventListener('change', (e) => importFromCsv(e.target.files[0], 'abertos'));
+        dom.importExport.importFinalizadosInput.addEventListener('change', (e) => importFromCsv(e.target.files[0], 'finalizados'));
+
+        const slider = dom.carousel.container;
+        if(slider){ let isDown=false,startX,scrollLeft; const start = (x) => { isDown=true; slider.classList.add('active-drag'); startX=x-slider.offsetLeft; scrollLeft=slider.scrollLeft; }; slider.addEventListener('mousedown',(e)=>start(e.pageX)); slider.addEventListener('touchstart',(e)=>start(e.touches[0].pageX),{passive:true}); const end=()=>{isDown=false; slider.classList.remove('active-drag');}; slider.addEventListener('mouseleave',end); slider.addEventListener('mouseup',end); slider.addEventListener('touchend',end); const move = (x) => { if(!isDown)return; slider.scrollLeft = scrollLeft-(x-startX)*2; }; slider.addEventListener('mousemove',(e)=>{ move(e.pageX); }); slider.addEventListener('touchmove',(e)=>{ move(e.touches[0].pageX); },{passive:true}); dom.carousel.arrowLeft.addEventListener('click',()=>slider.scrollLeft-=220); dom.carousel.arrowRight.addEventListener('click',()=>slider.scrollLeft+=220); dom.carousel.cards.forEach(c => { const open = () => { if (c.dataset.url) window.open(c.dataset.url, '_blank', 'noopener,noreferrer'); }; c.addEventListener('click', open); c.addEventListener('keydown', (e) => { if(e.key==='Enter' || e.key===' ') { e.preventDefault(); open(); } }); }); }
+        
+        setTheme(localStorage.getItem('tema') || 'light');
+        dom.themeToggleBtn.addEventListener('click', () => setTheme(dom.body.classList.contains('dark') ? 'light' : 'dark'));
+        
+        dom.relatorio.gerarBtn.addEventListener('click', gerarRelatorio);
+        dom.relatorio.exportBtn.addEventListener('click', () => { const dataToExport = currentReportData.map(({id, isPinned, lastInternalUpdate, ...keep}) => keep); exportToCsv('relatorio_chamados.csv', dataToExport); });
+
+        atualizarDataHora(); setInterval(atualizarDataHora, 1000);
+        renderizarTudo();
+        switchView('meus-chamados');
+      };
+
+      init();
+    });
+  </script>
+</body>
+</html>
+
