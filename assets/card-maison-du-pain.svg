@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 500" width="500" height="500" role="img" aria-label="Maison du Pain: experiência web cinematográfica de uma padaria francesa fictícia, com croissant em 3D">
+  <defs>
+    <radialGradient id="bg" cx="0.5" cy="0.36" r="0.7">
+      <stop offset="0" stop-color="#6b4019"/>
+      <stop offset="0.55" stop-color="#2a170a"/>
+      <stop offset="1" stop-color="#120a05"/>
+    </radialGradient>
+    <linearGradient id="dough" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f8cd78"/>
+      <stop offset="0.55" stop-color="#e09b44"/>
+      <stop offset="1" stop-color="#b8661f"/>
+    </linearGradient>
+    <g id="seg">
+      <ellipse rx="50" ry="60" fill="url(#dough)" stroke="#8a4a17" stroke-width="3" vector-effect="non-scaling-stroke"/>
+      <path d="M-38 -22 Q0 -40 38 -22" fill="none" stroke="#9a5a1e" stroke-width="3" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+      <path d="M-44 8 Q0 -10 44 8" fill="none" stroke="#9a5a1e" stroke-width="3" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+      <path d="M-38 36 Q0 20 38 36" fill="none" stroke="#9a5a1e" stroke-width="3" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+      <path d="M-30 -44 Q-6 -54 18 -50" fill="none" stroke="#fff1c4" stroke-opacity="0.65" stroke-width="5" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    </g>
+    <style>
+      .steam { fill: none; stroke: #f6e7c8; stroke-width: 5; stroke-linecap: round; opacity: .3; animation: rise 3.4s ease-in-out infinite; }
+      .s2 { animation-delay: 1.1s; }
+      .s3 { animation-delay: 2.2s; }
+      @keyframes rise { 0% { opacity: 0; transform: translateY(14px); } 40% { opacity: .38; } 100% { opacity: 0; transform: translateY(-14px); } }
+      .spark { fill: #ffd98a; animation: twinkle 2.8s ease-in-out infinite; }
+      .k2 { animation-delay: .9s; }
+      .k3 { animation-delay: 1.8s; }
+      @keyframes twinkle { 50% { opacity: .15; } }
+      .serif { font-family: 'Playfair Display', Georgia, 'Times New Roman', serif; font-style: italic; font-weight: 800; }
+    </style>
+  </defs>
+
+  <rect width="500" height="500" fill="url(#bg)"/>
+
+  <!-- brilhos -->
+  <circle class="spark" cx="70" cy="80" r="3"/>
+  <circle class="spark k2" cx="430" cy="110" r="4"/>
+  <circle class="spark k3" cx="395" cy="60" r="2.5"/>
+  <circle class="spark k2" cx="95" cy="190" r="2.5"/>
+  <circle class="spark" cx="455" cy="230" r="3"/>
+
+  <!-- vapor -->
+  <path class="steam" d="M215 90 q-14 -18 0 -34 t0 -34"/>
+  <path class="steam s2" d="M250 80 q-14 -18 0 -34 t0 -34"/>
+  <path class="steam s3" d="M285 90 q-14 -18 0 -34 t0 -34"/>
+
+  <!-- sombra -->
+  <ellipse cx="250" cy="332" rx="160" ry="14" fill="#000" opacity="0.38"/>
+
+  <!-- croissant -->
+  <use href="#seg" xlink:href="#seg" transform="translate(100 275) rotate(-72) scale(0.5)"/>
+  <use href="#seg" xlink:href="#seg" transform="translate(400 275) rotate(72) scale(0.5)"/>
+  <use href="#seg" xlink:href="#seg" transform="translate(135 230) rotate(-55) scale(0.8)"/>
+  <use href="#seg" xlink:href="#seg" transform="translate(365 230) rotate(55) scale(0.8)"/>
+  <use href="#seg" xlink:href="#seg" transform="translate(185 190) rotate(-28)"/>
+  <use href="#seg" xlink:href="#seg" transform="translate(315 190) rotate(28)"/>
+  <use href="#seg" xlink:href="#seg" transform="translate(250 170) scale(1.3)"/>
+
+  <text x="250" y="366" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="17" letter-spacing="2" fill="#f6e7c8" fill-opacity="0.75">Next.js · Three.js · GSAP</text>
+
+  <!-- título -->
+  <text x="50" y="398" transform="rotate(-6 50 398)" font-family="'Brush Script MT', 'Segoe Script', cursive" font-style="italic" font-size="26" font-weight="700" fill="#ff5a3d">Project</text>
+  <text class="serif" x="48" y="440" font-size="48" fill="#f6e7c8" stroke="#1a0d05" stroke-width="3" paint-order="stroke">MAISON</text>
+  <text class="serif" x="48" y="487" font-size="48" fill="#f2b45a" stroke="#1a0d05" stroke-width="3" paint-order="stroke">DU PAIN</text>
+</svg>

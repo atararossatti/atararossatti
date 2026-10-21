@@ -131,6 +131,23 @@ Estou direcionando meus estudos e projetos pessoais para a criação de soluçõ
   </tr>
 </table>
 
+<br>
+
+<table align="center">
+  <tr>
+    <td align="center" width="50%">
+      <a href="https://github.com/atararossatti/projeto-churn"><img src="assets/card-projeto-churn.svg" width="250" alt="Projeto Churn: medidor com recall de 76% na previsão de cancelamento de clientes, feito com Python, scikit-learn, FastAPI e Docker"></a><br>
+      <b>📞 Projeto Churn</b><br>
+      <sub>Machine Learning de ponta a ponta: previsão de cancelamento de clientes, API em FastAPI e Docker.</sub>
+    </td>
+    <td align="center" width="50%">
+      <a href="https://github.com/atararossatti/Maison-du-Pain"><img src="assets/card-maison-du-pain.svg" width="250" alt="Projeto Maison du Pain: croissant dourado com vapor sobre fundo escuro, experiência web de uma padaria francesa fictícia"></a><br>
+      <b>🥐 Maison du Pain</b><br>
+      <sub>Experiência web cinematográfica de uma padaria francesa fictícia, com Next.js, Three.js e GSAP.</sub>
+    </td>
+  </tr>
+</table>
+
 <div align="center">
 
 <sub>Clique em um card para explorar os repositórios →</sub>

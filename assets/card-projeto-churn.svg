@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500" role="img" aria-label="Projeto Churn: previsão de cancelamento de clientes com Machine Learning, recall de 76%">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1219"/>
+      <stop offset="1" stop-color="#12303a"/>
+    </linearGradient>
+    <linearGradient id="ringGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8fe0f2"/>
+      <stop offset="1" stop-color="#3a9bb5"/>
+    </linearGradient>
+    <pattern id="grid" width="25" height="25" patternUnits="userSpaceOnUse">
+      <path d="M25 0H0V25" fill="none" stroke="#7fd3e6" stroke-opacity="0.07"/>
+    </pattern>
+    <style>
+      .ring { stroke-dasharray: 596.9; stroke-dashoffset: 143.3; animation: fill 2.2s ease-out; }
+      @keyframes fill { from { stroke-dashoffset: 596.9; } }
+      .pulse { animation: pulse 2.4s ease-in-out infinite; }
+      @keyframes pulse { 50% { opacity: .3; } }
+      .title { font-family: Impact, 'Arial Black', 'Helvetica Neue', sans-serif; font-style: italic; font-weight: 900; }
+      .pill { font-family: 'Segoe UI', Arial, sans-serif; font-size: 15px; font-weight: 600; fill: #bfeaf4; text-anchor: middle; }
+    </style>
+  </defs>
+
+  <rect width="500" height="500" fill="url(#bg)"/>
+  <rect width="500" height="500" fill="url(#grid)"/>
+
+  <!-- medidor de recall -->
+  <circle cx="250" cy="185" r="95" fill="none" stroke="#1c3340" stroke-width="20"/>
+  <circle class="ring" cx="250" cy="185" r="95" fill="none" stroke="url(#ringGrad)" stroke-width="20" stroke-linecap="round" transform="rotate(-90 250 185)"/>
+  <circle class="pulse" cx="155.2" cy="179" r="9" fill="#ffffff"/>
+  <text x="250" y="203" text-anchor="middle" font-family="Impact, 'Arial Black', sans-serif" font-size="64" font-weight="900" fill="#ffffff">76%</text>
+  <text x="250" y="232" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="18" letter-spacing="4" fill="#7fd3e6">RECALL</text>
+
+  <!-- tecnologias -->
+  <g>
+    <rect x="47" y="310" width="80" height="30" rx="15" fill="#10252f" stroke="#2d6475"/>
+    <text class="pill" x="87" y="330">Python</text>
+    <rect x="139" y="310" width="120" height="30" rx="15" fill="#10252f" stroke="#2d6475"/>
+    <text class="pill" x="199" y="330">scikit-learn</text>
+    <rect x="271" y="310" width="90" height="30" rx="15" fill="#10252f" stroke="#2d6475"/>
+    <text class="pill" x="316" y="330">FastAPI</text>
+    <rect x="373" y="310" width="80" height="30" rx="15" fill="#10252f" stroke="#2d6475"/>
+    <text class="pill" x="413" y="330">Docker</text>
+  </g>
+
+  <!-- título -->
+  <text x="50" y="385" transform="rotate(-6 50 385)" font-family="'Brush Script MT', 'Segoe Script', cursive" font-style="italic" font-size="26" font-weight="700" fill="#ff4d3d">Project</text>
+  <text class="title" x="48" y="436" font-size="56" fill="#5cc0d6" stroke="#06141a" stroke-width="3" paint-order="stroke">PROJETO</text>
+  <text class="title" x="48" y="487" font-size="56" fill="#5cc0d6" stroke="#06141a" stroke-width="3" paint-order="stroke">CHURN</text>
+</svg>
